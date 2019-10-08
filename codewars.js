@@ -77,5 +77,8 @@ let multiplyAll = (arr) => {
     }
   }
 
+let newFunc = multiplyAll([1, 2, 3])
 
+console.log(newFunc(2))
 
+console.log("Is this working?!")

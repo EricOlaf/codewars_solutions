@@ -71,14 +71,63 @@
 // console.log(sumOfDifferences([10, 2, 7]), `problem [10, 2 7]`)
 // //8
 
-let multiplyAll = (arr) => {
-    return function(num){
-      return arr.map(i => i*num)
-    }
-  }
+///////////////////
+/*NEW PROBLEM*/
+///////////////////
 
-let newFunc = multiplyAll([1, 2, 3])
+// let multiplyAll = (arr) => {
+//     return function(num){
+//       return arr.map(i => i*num)
+//     }
+//   }
 
-console.log(newFunc(2))
+// let newFunc = multiplyAll([1, 2, 3])
 
-console.log("Is this working?!")
+// console.log(newFunc(2))
+
+///////////////////
+/*NEW PROBLEM*/
+///////////////////
+
+// function tickets(arr){
+//   let bill25 = 0, bill50 = 0;
+
+//     for(let i = 0; i < arr.length; i++){
+//         if(arr[i] === 25){
+//             bill25++;
+//         }else if(arr[i] === 50){
+//             bill50++;
+//             if(bill25 < 1){
+//                 return "NO";
+//             } else{
+//                 bill25--;
+//             }
+//         }else{
+//             if(bill50 > 0 && bill25 > 0){
+//                 bill50--;
+//                 bill25--;
+//             }else if(bill25 > 2){
+//                 bill25 -= 3;
+//             }else{
+//                 return "NO";
+//             }
+//         }
+//     }
+//     return "YES"
+// }
+
+// console.log(tickets([25, 25, 50]))
+// console.log(tickets([25, 100]))
+
+// /*COOL ANSWER!!!*/
+
+// function tickets(peopleInLine){
+//     let [c25,c50,c100] = [0,0,0];
+//     for(let v of peopleInLine) {
+//       if(v===25) c25++;
+//       if(v===50) {c50++; c25--;}
+//       if(v===100) {c25--; c50>0?c50--:c25-=2;}
+//       if(c25<0||c50<0) return 'NO'
+//     }
+//     return 'YES'
+//   }

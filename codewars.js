@@ -60,6 +60,7 @@
 //     0
 // }
 
+//When using a ternary you write return first then the condition. If you want two options you go with ? :, but if you want only and if you use a &&.
 
 // console.log(sumOfDifferences([]), `problem []`)
 // //0
@@ -69,3 +70,12 @@
 // //7
 // console.log(sumOfDifferences([10, 2, 7]), `problem [10, 2 7]`)
 // //8
+
+let multiplyAll = (arr) => {
+    return function(num){
+      return arr.map(i => i*num)
+    }
+  }
+
+
+

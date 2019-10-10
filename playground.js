@@ -102,11 +102,6 @@
 //     console.log(penalty + count);
 // }
 
-
-
-
-
-
 // function parFinder(str) {
 //     let parCounter = 0;
 //     let penalty = 0;
@@ -637,3 +632,5 @@ var abby = Object.create(personProto,
 // input.addEventListener('keyup', debounce((e)=>{
 //     console.log(input.value)
 // }, 1000));
+
+

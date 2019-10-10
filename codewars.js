@@ -131,6 +131,98 @@
 //     }
 //     return 'YES'
 //   }
+// function addLetters(...letters) {
+
+//     let lettersArray = "abcdefghijklmnopqrstuvwxyz".split("");
+//     let total = 0;
+    
+//     if (letters.length < 1){return "z"};
+
+//     for( let i = 0; i < letters.length; i++ ){
+//         total += lettersArray.indexOf(letters[i]) + 1;
+//     }
+
+//     console.log(total);
+
+//     if(total < 26){
+//         return lettersArray[total -1]
+//     } else if(total % 26 === 0){
+//         return "z"
+//     } else{
+//         return lettersArray[total % 26 -1]
+//     }
+
+//     return "not working";
+       
+// }
+
+// console.log(addLetters("a", "b"))
+// console.log(addLetters("a", "y"))
+// console.log(addLetters("b", "y"))
+
+// ///////////////////
+// /*NEW PROBLEM*/
+// ///////////////////
+
+// /*MY ANSWER*/
+
+// let noSpace = (str) => {
+//     let ans = ""
+//     for(let i = 0; i < str.length; i++){
+//         if(str[i] !== " "){
+//             ans += str[i] 
+//         }
+//     }
+//     return ans
+// }
+
+// console.log(noSpace("a b 1 2"))
+// console.log("ab12")
+
+// /*COOL ANSWER!!!*/
+
+// function noSpace(x){return x.split(' ').join('')}
 
 
-//Testing, 123
+// ///////////////////
+// /*NEW PROBLEM*/
+// ///////////////////
+
+
+// function calculate(str) {
+//     const newStr = str.split("")
+//     let sum = 0;
+//     let currentNum = 1;
+    
+//     newStr.forEach((s)=>{
+    
+//         if (isNaN(parseInt(s))){
+//             if( s === "p"){
+//                 currentNum = 1
+//             }
+//             if(s === "m"){
+//                 currentNum = -1
+//             }
+//         } else {
+//             sum += s * currentNum
+//         }
+//     })
+//     return sum;
+// }
+    
+//     console.log(calculate("1plus2plus3plus4"))
+
+ /*COOL ANSWER!!!*/
+
+ 
+//  function calculate(str) {
+//     return eval(str.split("plus").join("+").split("minus").join("-")).toString();
+//   }
+  
+//   console.log(calculate("1plus2plus3plus4"))
+
+//   console.log(eval("2+2"))
+
+//eval() is a global function in JavaScript that evaluates a specified string as JavaScript code and executes it.
+
+

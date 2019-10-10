@@ -255,3 +255,16 @@
 //   return good_count < 1 ? 'Fail!' : 
 //          good_count < 3 ? 'Publish!' : 'I smell a series!';
 // }
+
+// function squaresNeeded(grains){
+//   let amount = 1, i = 1;
+//   if(!grains){return 0;}
+//   while(amount < grains){
+//       grains -= amount;
+//       amount *= 2;
+//       i++
+//   }
+//   return i;
+// }
+
+// console.log(squaresNeeded(9))

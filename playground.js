@@ -637,21 +637,3 @@ var abby = Object.create(personProto,
 // input.addEventListener('keyup', debounce((e)=>{
 //     console.log(input.value)
 // }, 1000));
-
-let input = document.querySelector("input");
-
-input.addEventListener('keyup', debounce((e)=>{
-    console.log(input.value)
-}, 2000))
-
-function debounce (func, time) {
-    let timer = null;
-    return function(...args){
-        if(timer){
-            clearTimeout(timer)
-        }
-        timer = setTimeout(()=>{
-            func(...args)
-        }, time)
-    }
-}

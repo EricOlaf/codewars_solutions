@@ -226,3 +226,32 @@
 //eval() is a global function in JavaScript that evaluates a specified string as JavaScript code and executes it.
 
 
+// function well(x){
+//     let g = 0;
+
+//     x.forEach(e=>{
+//         if(e === 'good'){
+//             g++
+//         }
+//     });
+
+//     switch(true){
+//         case g< 1 :
+//             return 'Fail!';
+//         case g< 3 :
+//         return 'Publish!';
+//         default:
+//         return 'I smell a series!'
+//     }
+
+//   }
+
+//   console.log(well(['bad', 'bad', 'bad']))
+//   console.log(well(['good', 'bad', 'bad', 'bad', 'bad', 'good', 'bad', 'bad', 'good']))
+//   console.log(well([]))
+
+//const well = x => {
+//   const good_count = x.filter(x => x == 'good').length;
+//   return good_count < 1 ? 'Fail!' : 
+//          good_count < 3 ? 'Publish!' : 'I smell a series!';
+// }

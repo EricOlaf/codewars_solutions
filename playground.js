@@ -633,4 +633,3 @@ var abby = Object.create(personProto,
 //     console.log(input.value)
 // }, 1000));
 
-

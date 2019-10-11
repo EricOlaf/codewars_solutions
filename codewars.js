@@ -268,3 +268,19 @@
 // }
 
 // console.log(squaresNeeded(9))
+
+
+function firstNSmallest(array, n){
+    let finalArr = [], sortedArr, origArr = [...array];
+    sortedArr = array.sort((a, b)=> a-b).slice(0, n);
+    origArr.forEach((e,i)=>{
+        if(sortedArr.includes(e)){
+            let ind = sortedArr.indexOf(e);
+            sortedArr.splice(ind, 1);
+            finalArr.push(e)
+        }
+    })
+    return finalArr
+}
+  
+  console.log(firstNSmallest([1,2,3,1,2],3))

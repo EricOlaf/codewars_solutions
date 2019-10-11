@@ -615,13 +615,15 @@ var abby = Object.create(personProto,
 ////////////////////////////////////
 //Know this for interview questions!
 
+
+//Cache the dom🤘🏻
 // var input = document.querySelector("input")
 
 // const debounce = (func, timer) => {
 //     let timeID = null;
 //     return (...args) => {
 //         if(timeID){
-//             clearTimeout(timeID);
+//             clearTimeout(timeID)
 //         }
 //         timeID = setTimeout(()=>{
 //             func(...args);

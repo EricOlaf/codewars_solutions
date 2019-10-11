@@ -225,6 +225,10 @@
 
 //eval() is a global function in JavaScript that evaluates a specified string as JavaScript code and executes it.
 
+// ///////////////////
+// /*NEW PROBLEM*/
+// ///////////////////
+
 
 // function well(x){
 //     let g = 0;
@@ -256,6 +260,10 @@
 //          good_count < 3 ? 'Publish!' : 'I smell a series!';
 // }
 
+// ///////////////////
+// /*NEW PROBLEM*/
+// ///////////////////
+
 // function squaresNeeded(grains){
 //   let amount = 1, i = 1;
 //   if(!grains){return 0;}
@@ -269,18 +277,30 @@
 
 // console.log(squaresNeeded(9))
 
+// ///////////////////
+// /*NEW PROBLEM*/
+// ///////////////////
 
-function firstNSmallest(array, n){
-    let finalArr = [], sortedArr, origArr = [...array];
-    sortedArr = array.sort((a, b)=> a-b).slice(0, n);
-    origArr.forEach((e,i)=>{
-        if(sortedArr.includes(e)){
-            let ind = sortedArr.indexOf(e);
-            sortedArr.splice(ind, 1);
-            finalArr.push(e)
-        }
-    })
-    return finalArr
-}
+
+// function firstNSmallest(array, n){
+//     let finalArr = [], sortedArr, origArr = [...array];
+//     sortedArr = array.sort((a, b)=> a-b).slice(0, n);
+//     origArr.forEach((e,i)=>{
+//         if(sortedArr.includes(e)){
+//             let ind = sortedArr.indexOf(e);
+//             sortedArr.splice(ind, 1);
+//             finalArr.push(e)
+//         }
+//     })
+//     return finalArr
+// }
   
-  console.log(firstNSmallest([1,2,3,1,2],3))
+//   console.log(firstNSmallest([1,2,3,1,2],3))
+
+
+//   function firstNSmallest(array, n){
+//     while(array.length != n) {
+//       array.splice(array.lastIndexOf(Math.max(...array)), 1)
+//       }
+//       return array
+//     }

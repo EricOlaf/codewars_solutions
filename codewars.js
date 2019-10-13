@@ -54,11 +54,7 @@
 //     return arr.length > 1 ? Math.max(...arr) - Math.min(...arr) : 0;
 // }
 
-// let sumOfDifferences = (arr) => {
-//     return arr.length > 1 ?
-//     Math.max(...arr) - Math.min(...arr) :
-//     0
-// }
+//Math.max and Math.min take in numbers and not arrays, that's why we use the spread operator!
 
 //When using a ternary you write return first then the condition. If you want two options you go with ? :, but if you want only and if you use a &&.
 
@@ -131,6 +127,11 @@
 //     }
 //     return 'YES'
 //   }
+
+///////////////////
+/*NEW PROBLEM*/
+///////////////////
+
 // function addLetters(...letters) {
 
 //     let lettersArray = "abcdefghijklmnopqrstuvwxyz".split("");
@@ -315,15 +316,22 @@
 //     return code.split('').sort().join('');
 //   }
 
+// ///////////////////
+// /*NEW PROBLEM*/
+// ///////////////////
+
+/*REVIEW*/
+
 //This one was tricky and I couldn't figure it out on my own. If we add the same string together twice and it has a repeating pattern than the index of the next copy of the string starting at the index one won't be the same as the length. If it is the same as the length it shows there is no repeating pattern because we just pick up the second string passed in.
 
 //EXAMPLE: s = "abab" if we add (s+s) we get "abababab" if we try to find the index of the first case of s while starting at index one, we would get two because "ab[abab]ab" I added in the brackets to show where s is. In other words if there is a repeating pattern then there would be at least one instance of s before the start of the second s.
 
-function hasSubpattern(s){
-    console.log((s + s))
-    console.log((s + s).indexOf(s, 0))
-    console.log((s + s).indexOf(s, 1))
-    return (s + s).indexOf(s, 1) != s.length
-}
+// function hasSubpattern(s){
+//     console.log((s + s))
+//     console.log((s + s).indexOf(s, 0))
+//     console.log((s + s).indexOf(s, 1))
+//     return (s + s).indexOf(s, 1) != s.length
+// }
 
-console.log(hasSubpattern("abcabc"))
+// console.log(hasSubpattern("abcabc"))
+

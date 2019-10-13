@@ -35,7 +35,6 @@
 // console.log('z = ' + z);
 // // z = 0
 
-
 // console.log(x[0])
 
 //////////////////////////////
@@ -445,8 +444,10 @@ var abby = Object.create(personProto,
 // ericAccount.deposit(20)
 // let abbyAccount = bankOfEric(10000000, "Abby")
 // abbyAccount.takeOut(1)
+// ericAccount.takeOut(50)
 
 // console.log(abbyAccount)
+// console.log(ericAccount)
 
 ////////////////////////////////////////////////////////////
 //BIND, CALL, APPLY
@@ -470,6 +471,11 @@ var abby = Object.create(personProto,
 //     age : 35,
 //     job : "programmer"
 // }
+
+
+// emily.presentation = john.presentation
+
+// emily.presentation("formal", "morning")
 
 // john.presentation("formal", "morning")
 
@@ -634,5 +640,3 @@ var abby = Object.create(personProto,
 // input.addEventListener('keyup', debounce((e)=>{
 //     console.log(input.value)
 // }, 1000));
-
-

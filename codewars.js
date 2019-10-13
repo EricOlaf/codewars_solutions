@@ -309,6 +309,8 @@
 // /*NEW PROBLEM*/
 // ///////////////////
 
+//Takes in a string of letters and returns a string of sorted letters.
+
 function sortGiftCode(code){
     return code.split('').sort().join('');
   }

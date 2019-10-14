@@ -385,3 +385,30 @@
 
 //   console.log(hasSubpattern('ab12a1b2'))
 
+
+///////////////////
+/*NEW PROBLEM*/
+///////////////////
+
+// function firstNonRepeated(s) {
+//     let myObj = {};
+//   for(let i = 0; i < s.length; i++){
+//       if(myObj.hasOwnProperty(s[i])){
+//           myObj[s[i]]++;
+//       }else{
+//         myObj[s[i]] = 1;
+//       }
+//   }
+ 
+//   for(let i = 0; i < s.length; i++){
+//     if(myObj[s[i]] === 1){
+//         return s[i];
+//     }
+// }
+//   return null;
+// }
+
+// console.log(firstNonRepeated("bab"))
+// console.log(firstNonRepeated("abaababcaba"))
+// console.log(firstNonRepeated("abcbc1"))
+// console.log(firstNonRepeated("abab"))

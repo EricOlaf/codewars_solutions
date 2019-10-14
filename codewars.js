@@ -352,19 +352,32 @@ function hasSubpattern(string){
             lettersObj[a] = 1
         }
     })
-
+    
     for(key in lettersObj){
-        if(lettersObj.key = 1 ){
+        if(lettersObj[key] === 1 ){
             return false;
         }
-        if(lettersObj.key > maxNumOfLetters){
-            maxNumOfLetters = lettersObj.key;
+        if(lettersObj[key] > maxNumOfLetters){
+            maxNumOfLetters = lettersObj[key];
         }
     }
 
     for(let i = maxNumOfLetters; i > 1; i--){
-        
+        let trigger = null;
+        for(key in lettersObj){
+            if(trigger === null || trigger === true){
+                if(lettersObj[key]%i === 0){
+                    trigger = true;
+                }else{
+                    trigger = false;
+                }
+            }
+        }
+        if(trigger === true){
+            return true;
+        }
     }
+    return false;
   }
 
-  hasSubpattern('1212')
+  console.log(hasSubpattern('ab12a1b2'))

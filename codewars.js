@@ -335,3 +335,36 @@
 
 // console.log(hasSubpattern("abcabc"))
 
+// ///////////////////
+// /*NEW PROBLEM*/
+// ///////////////////
+
+function hasSubpattern(string){
+    let lettersObj = {};
+    let strArr = string.split("");
+    let maxNumOfLetters = 0;
+    
+    strArr.forEach((a)=>{
+        if(lettersObj.hasOwnProperty(a)){
+            lettersObj[a]++
+        }
+        else{
+            lettersObj[a] = 1
+        }
+    })
+
+    for(key in lettersObj){
+        if(lettersObj.key = 1 ){
+            return false;
+        }
+        if(lettersObj.key > maxNumOfLetters){
+            maxNumOfLetters = lettersObj.key;
+        }
+    }
+
+    for(let i = maxNumOfLetters; i > 1; i--){
+        
+    }
+  }
+
+  hasSubpattern('1212')

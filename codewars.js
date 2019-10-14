@@ -339,45 +339,49 @@
 // /*NEW PROBLEM*/
 // ///////////////////
 
-function hasSubpattern(string){
-    let lettersObj = {};
-    let strArr = string.split("");
-    let maxNumOfLetters = 0;
-    
-    strArr.forEach((a)=>{
-        if(lettersObj.hasOwnProperty(a)){
-            lettersObj[a]++
-        }
-        else{
-            lettersObj[a] = 1
-        }
-    })
-    
-    for(key in lettersObj){
-        if(lettersObj[key] === 1 ){
-            return false;
-        }
-        if(lettersObj[key] > maxNumOfLetters){
-            maxNumOfLetters = lettersObj[key];
-        }
-    }
+/*REVIEW*/
+//On this kata I was supposed to take in a string that could have a repeating pattern but that the letters were possibly scrambled. The pattern that I saw was that if there were some type of repeating pattern than all letters must have at least one shared denominator greater than one. I made an obj that contained the charaters as keys and the amount of occurences as the values. I check to make sure that each character occured at least twice and calculated the max number of occurences, because that would be the starting point for my loop in the next phase. Then I looped over numbers starting at the max occurences and decremented after each loop until 2. If all characters shared the same denominator than it could be a scrambled pattern and I returned true. if I went through the loop and didn't find any shared denominator than I return a false.
 
-    for(let i = maxNumOfLetters; i > 1; i--){
-        let trigger = null;
-        for(key in lettersObj){
-            if(trigger === null || trigger === true){
-                if(lettersObj[key]%i === 0){
-                    trigger = true;
-                }else{
-                    trigger = false;
-                }
-            }
-        }
-        if(trigger === true){
-            return true;
-        }
-    }
-    return false;
-  }
+// function hasSubpattern(string){
+//     let lettersObj = {};
+//     let strArr = string.split("");
+//     let maxNumOfLetters = 0;
+    
+//     strArr.forEach((a)=>{
+//         if(lettersObj.hasOwnProperty(a)){
+//             lettersObj[a]++
+//         }
+//         else{
+//             lettersObj[a] = 1
+//         }
+//     })
+    
+//     for(key in lettersObj){
+//         if(lettersObj[key] === 1 ){
+//             return false;
+//         }
+//         if(lettersObj[key] > maxNumOfLetters){
+//             maxNumOfLetters = lettersObj[key];
+//         }
+//     }
 
-  console.log(hasSubpattern('ab12a1b2'))
+//     for(let i = maxNumOfLetters; i > 1; i--){
+//         let trigger = null;
+//         for(key in lettersObj){
+//             if(trigger === null || trigger === true){
+//                 if(lettersObj[key]%i === 0){
+//                     trigger = true;
+//                 }else{
+//                     trigger = false;
+//                 }
+//             }
+//         }
+//         if(trigger === true){
+//             return true;
+//         }
+//     }
+//     return false;
+//   }
+
+//   console.log(hasSubpattern('ab12a1b2'))
+

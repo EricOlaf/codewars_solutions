@@ -477,8 +477,29 @@
 // console.log(myFib(7))
 // console.log(myFib(9))
 
+///////////////////
+/*NEW PROBLEM*/
+///////////////////
 
+// FIZZ BUZZ
 
+const fizzBuzz = () => {
+    let ans = [];
+    for(let i = 1; i <= 100; i++){
+        if(i%3 === 0 && i%5 === 0){
+            ans.push("fizzbuzz")
+        } else if(i%3 === 0){
+            ans.push("fizz")
+        } else if(i%5 === 0){
+            ans.push("buzz")
+        } else {
+            ans.push(i)
+        }
+    }
+    return ans
+};
+
+console.log(fizzBuzz());
 
 
 

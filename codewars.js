@@ -413,3 +413,25 @@
 // console.log(firstNonRepeated("abaababcaba"))
 // console.log(firstNonRepeated("abcbc1"))
 // console.log(firstNonRepeated("abab"))
+
+///////////////////
+/*NEW PROBLEM*/
+///////////////////
+
+// evens in ascending order and than odds in descending 
+function menFromBoys(arr){
+    let men = [], boys = [];
+    arr.forEach(x=>{
+        if(x%2 === 0 && !men.includes(x)){
+            men.push(x);
+        }else if (x%2 !== 0 && !boys.includes(x)){
+            boys.push(x);
+        }
+    })
+    men.sort((a,b)=> a-b)
+    boys.sort((a,b)=> b-a)
+
+    return([...men, ...boys])
+}
+
+console.log(menFromBoys([20,33,50,20,34,43,46,100]))

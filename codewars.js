@@ -419,19 +419,63 @@
 ///////////////////
 
 // evens in ascending order and than odds in descending 
-function menFromBoys(arr){
-    let men = [], boys = [];
-    arr.forEach(x=>{
-        if(x%2 === 0 && !men.includes(x)){
-            men.push(x);
-        }else if (x%2 !== 0 && !boys.includes(x)){
-            boys.push(x);
-        }
-    })
-    men.sort((a,b)=> a-b)
-    boys.sort((a,b)=> b-a)
+// function menFromBoys(arr){
+//     let men = [], boys = [];
+//     arr.forEach(x=>{
+//         if(x%2 === 0 && !men.includes(x)){
+//             men.push(x);
+//         }else if (x%2 !== 0 && !boys.includes(x)){
+//             boys.push(x);
+//         }
+//     })
+//     men.sort((a,b)=> a-b)
+//     boys.sort((a,b)=> b-a)
 
-    return([...men, ...boys])
+//     return([...men, ...boys])
+// }
+
+// console.log(menFromBoys([20,33,50,20,34,43,46,100]))
+
+///////////////////
+/*NEW PROBLEM*/
+///////////////////
+
+// FIBONACCI
+
+// function myFib(n){
+//     let prev1=0, prev2=1, curr=0, i=1;
+//     if(n === 1){console.log(1)}
+//     else{
+//         while(i < n){
+//             curr = prev1 + prev2;
+//             prev1 = prev2;
+//             prev2 = curr;
+//             i++;
+//         }
+//         console.log(`current: ${curr}`)
+//     }
+// }
+
+const myFib = (n) => {
+    const fibArr = [0,1]
+    for(let i=2; i < n+1; i++){
+        fibArr.push(fibArr[i-1] + fibArr[i-2]);
+    }
+    return(fibArr[n])
 }
 
-console.log(menFromBoys([20,33,50,20,34,43,46,100]))
+// const myFib = (n) => {
+
+// }
+console.log(myFib(0))
+console.log(myFib(1))
+console.log(myFib(2))
+console.log(myFib(3))
+console.log(myFib(7))
+
+
+
+
+
+
+

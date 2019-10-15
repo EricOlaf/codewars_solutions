@@ -456,17 +456,17 @@
 //     }
 // }
 
-const myFib = (n) => {
-    const fibArr = [0,1]
-    for(let i=2; i < n+1; i++){
-        fibArr.push(fibArr[i-1] + fibArr[i-2]);
-    }
-    return(fibArr[n])
-}
-
 // const myFib = (n) => {
-
+//     const fibArr = [0,1]
+//     for(let i=2; i < n+1; i++){
+//         fibArr.push(fibArr[i-1] + fibArr[i-2]);
+//     }
+//     return(fibArr[n])
 // }
+
+const myFib = (n) => {
+
+}
 console.log(myFib(0))
 console.log(myFib(1))
 console.log(myFib(2))

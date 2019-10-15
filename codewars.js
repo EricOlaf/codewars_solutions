@@ -464,14 +464,18 @@
 //     return(fibArr[n])
 // }
 
-const myFib = (n) => {
-
-}
-console.log(myFib(0))
-console.log(myFib(1))
-console.log(myFib(2))
-console.log(myFib(3))
-console.log(myFib(7))
+// const myFib = (n) => {
+//     while(n < 2){
+//         return n
+//     }
+//     return myFib(n-1) + myFib(n-2);
+// }
+// console.log(myFib(0))
+// console.log(myFib(1))
+// console.log(myFib(2))
+// console.log(myFib(3))
+// console.log(myFib(7))
+// console.log(myFib(9))
 
 
 

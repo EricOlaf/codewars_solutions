@@ -483,24 +483,65 @@
 
 // FIZZ BUZZ
 
-const fizzBuzz = () => {
-    let ans = [];
-    for(let i = 1; i <= 100; i++){
-        if(i%3 === 0 && i%5 === 0){
-            ans.push("fizzbuzz")
-        } else if(i%3 === 0){
-            ans.push("fizz")
-        } else if(i%5 === 0){
-            ans.push("buzz")
-        } else {
-            ans.push(i)
-        }
-    }
-    return ans
-};
+// const fizzBuzz = () => {
+//     let ans = [];
+//     for(let i = 1; i <= 100; i++){
+//         if(i%3 === 0 && i%5 === 0){
+//             ans.push("fizzbuzz")
+//         } else if(i%3 === 0){
+//             ans.push("fizz")
+//         } else if(i%5 === 0){
+//             ans.push("buzz")
+//         } else {
+//             ans.push(i)
+//         }
+//     }
+//     return ans
+// };
 
-console.log(fizzBuzz());
+// console.log(fizzBuzz());
 
+// const fizzBuzz = (n1, n2) => {
+//     //variables
+//     const mult = n1*n2; multAns = "fizzbuzz"; oneAns = "fizz"; twoAns = "buzz";
 
+//     //function to find if a is divisible by b with no remainder and returns true or false.
+//     const equal = (a, b) => {
+//         return a%b === 0;
+//     }
 
+//     //Shorter function for console.log and enables dry.
+//     const cl = (x) => {
+//         console.log(x)
+//     }
 
+//     for(let i = 1; i <=100; i++){
+//         switch(true){
+//             case equal(i, mult) :
+//                 cl(multAns);
+//                 break;
+//             case equal(i, n1) :
+//                 cl(oneAns);
+//                 break;
+//             case equal(i, n2) :
+//                 cl(twoAns);
+//                 break;
+//             default : 
+//                 cl(i);
+//         }
+//     }
+// }
+
+// fizzBuzz(3,5)
+
+///////////////////
+/*NEW PROBLEM*/
+///////////////////
+
+function rowSumOddNumbers(n) {
+	let row = 0, itemCount = 0;
+  
+  for(let i = 0; i <= n; i++){
+    
+  }
+}

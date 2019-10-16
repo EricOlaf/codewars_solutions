@@ -538,10 +538,15 @@
 /*NEW PROBLEM*/
 ///////////////////
 
-function rowSumOddNumbers(n) {
-	let row = 0, itemCount = 0;
-  
-  for(let i = 0; i <= n; i++){
-    
-  }
-}
+//Find the sum of the row on a pyramid of negative that starts at one
+//ex:
+
+
+
+// 1,
+// 3, 5
+// 7, 9, 11,
+// 13, 15, 17, 19
+
+
+const rowSumOddNumbers = n => n**3

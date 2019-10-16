@@ -538,6 +538,20 @@
 /*NEW PROBLEM*/
 ///////////////////
 
+//PALINDROME
+
+// const myPalindrome = (str) => {
+//     let  newStr = str.toLowerCase().split(" ").join("");
+//     return  newStr.split("").reverse().join("") ===  newStr;
+// }
+
+// console.log(myPalindrome("Race car"))
+// console.log(myPalindrome("eric"))
+
+///////////////////
+/*NEW PROBLEM*/
+///////////////////
+
 //Find the sum of the row on a pyramid of negative that starts at one
 //ex:
 // 1,
@@ -557,13 +571,14 @@
 //In we can use let sec = new Date().getSeconds() to to get the seconds .getMinutes(), .getHours()
 //In this example we use .getDay which returns 0-6 where 5 equals Friday.
 
-function unluckyDays(year){
-    let unlucky = 0;
-    for (var i = 0; i < 12; i++) {
-      if(new Date(year, i, 13).getDay() === 5){
-        unlucky++;
-      }
-    }
-    return unlucky;
-}
+// function unluckyDays(year){
+//     let unlucky = 0;
+//     for (var i = 0; i < 12; i++) {
+//       if(new Date(year, i, 13).getDay() === 5){
+//         unlucky++;
+//       }
+//     }
+//     return unlucky;
+// }
+
 

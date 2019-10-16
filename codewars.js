@@ -551,3 +551,19 @@
 ///////////////////
 /*NEW PROBLEM*/
 ///////////////////
+
+//Return all of the friday the 13th in a given year.
+
+//In we can use let sec = new Date().getSeconds() to to get the seconds .getMinutes(), .getHours()
+//In this example we use .getDay which returns 0-6 where 5 equals Friday.
+
+function unluckyDays(year){
+    let unlucky = 0;
+    for (var i = 0; i < 12; i++) {
+      if(new Date(year, i, 13).getDay() === 5){
+        unlucky++;
+      }
+    }
+    return unlucky;
+}
+

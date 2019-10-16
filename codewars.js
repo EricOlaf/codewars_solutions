@@ -540,13 +540,14 @@
 
 //Find the sum of the row on a pyramid of negative that starts at one
 //ex:
-
-
-
 // 1,
 // 3, 5
 // 7, 9, 11,
 // 13, 15, 17, 19
 
+// const rowSumOddNumbers = n => n**3
+//Notice how they show exponentts with a double **, you could use a Math.pow(n, 3) as well.
 
-const rowSumOddNumbers = n => n**3
+///////////////////
+/*NEW PROBLEM*/
+///////////////////

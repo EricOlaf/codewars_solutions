@@ -134,6 +134,8 @@
 
 // function addLetters(...letters) {
 
+//     console.log(letters)//the parameters get turned into an array with the name letters.
+
 //     let lettersArray = "abcdefghijklmnopqrstuvwxyz".split("");
 //     let total = 0;
     
@@ -160,6 +162,7 @@
 // console.log(addLetters("a", "b"))
 // console.log(addLetters("a", "y"))
 // console.log(addLetters("b", "y"))
+// console.log(addLetters("b"))
 
 // ///////////////////
 // /*NEW PROBLEM*/
@@ -214,7 +217,6 @@
 //     console.log(calculate("1plus2plus3plus4"))
 
  /*COOL ANSWER!!!*/
-
  
 //  function calculate(str) {
 //     return eval(str.split("plus").join("+").split("minus").join("-")).toString();
@@ -456,12 +458,12 @@
 //     }
 // }
 
-// const myFib = (n) => {
+// const myFib = x => {
 //     const fibArr = [0,1]
-//     for(let i=2; i < n+1; i++){
-//         fibArr.push(fibArr[i-1] + fibArr[i-2]);
+//     for(let i = 2; i < x+1; i++){
+//         fibArr[i] = fibArr[i-1] + fibArr[i-2]
 //     }
-//     return(fibArr[n])
+//     return fibArr[x-1];
 // }
 
 // const myFib = (n) => {
@@ -501,38 +503,37 @@
 
 // console.log(fizzBuzz());
 
-// const fizzBuzz = (n1, n2) => {
-//     //variables
-//     const mult = n1*n2; multAns = "fizzbuzz"; oneAns = "fizz"; twoAns = "buzz";
+const fizzBuzz = (n1, n2) => {
+    //variables
+    const mult = n1*n2; multAns = "fizzbuzz"; oneAns = "fizz"; twoAns = "buzz";
 
-//     //function to find if a is divisible by b with no remainder and returns true or false.
-//     const equal = (a, b) => {
-//         return a%b === 0;
-//     }
+    //function to find if a is divisible by b with no remainder and returns true or false.
+    const equal = (a, b) => {
+        return a%b === 0;
+    }
 
-//     //Shorter function for console.log and enables dry.
-//     const cl = (x) => {
-//         console.log(x)
-//     }
+    //Shorter function for console.log and enables dry.
+   let output = ""
 
-//     for(let i = 1; i <=100; i++){
-//         switch(true){
-//             case equal(i, mult) :
-//                 cl(multAns);
-//                 break;
-//             case equal(i, n1) :
-//                 cl(oneAns);
-//                 break;
-//             case equal(i, n2) :
-//                 cl(twoAns);
-//                 break;
-//             default : 
-//                 cl(i);
-//         }
-//     }
-// }
+    for(let i = 1; i <=100; i++){
+        switch(true){
+            case equal(i, mult) :
+                output += multAns +"\n";
+                break;
+            case equal(i, n1) :
+                 output += oneAns +"\n"
+                break;
+            case equal(i, n2) :
+                output += twoAns +"\n"
+                break;
+            default : 
+                output += i +"\n"
+        }
+    }
+    return output;
+}
 
-// fizzBuzz(3,5)
+console.log(fizzBuzz(3,5, "fizz"))
 
 ///////////////////
 /*NEW PROBLEM*/

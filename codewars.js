@@ -503,37 +503,37 @@
 
 // console.log(fizzBuzz());
 
-const fizzBuzz = (n1, n2) => {
-    //variables
-    const mult = n1*n2; multAns = "fizzbuzz"; oneAns = "fizz"; twoAns = "buzz";
+// const fizzBuzz = (n1, n2) => {
+//     //variables
+//     const mult = n1*n2; multAns = "fizzbuzz"; oneAns = "fizz"; twoAns = "buzz";
 
-    //function to find if a is divisible by b with no remainder and returns true or false.
-    const equal = (a, b) => {
-        return a%b === 0;
-    }
+//     //function to find if a is divisible by b with no remainder and returns true or false.
+//     const equal = (a, b) => {
+//         return a%b === 0;
+//     }
 
-    //Shorter function for console.log and enables dry.
-   let output = ""
+//     //Shorter function for console.log and enables dry.
+//    let output = ""
 
-    for(let i = 1; i <=100; i++){
-        switch(true){
-            case equal(i, mult) :
-                output += multAns +"\n";
-                break;
-            case equal(i, n1) :
-                 output += oneAns +"\n"
-                break;
-            case equal(i, n2) :
-                output += twoAns +"\n"
-                break;
-            default : 
-                output += i +"\n"
-        }
-    }
-    return output;
-}
+//     for(let i = 1; i <=100; i++){
+//         switch(true){
+//             case equal(i, mult) :
+//                 output += multAns +"\n";
+//                 break;
+//             case equal(i, n1) :
+//                  output += oneAns +"\n"
+//                 break;
+//             case equal(i, n2) :
+//                 output += twoAns +"\n"
+//                 break;
+//             default : 
+//                 output += i +"\n"
+//         }
+//     }
+//     return output;
+// }
 
-console.log(fizzBuzz(3,5, "fizz"))
+// console.log(fizzBuzz(3,5, "fizz"))
 
 ///////////////////
 /*NEW PROBLEM*/
@@ -582,4 +582,39 @@ console.log(fizzBuzz(3,5, "fizz"))
 //     return unlucky;
 // }
 
+///////////////////
+/*NEW PROBLEM*/
+///////////////////
+
+//add the outer right number of nums increasing by one in a pyramid pattern.
+
+// [1]
+// 2,[3]
+// 4,5,[6]
+// 7,8,9,[10]
+
+// const sumTriangularNumbers = (n) => {
+//     let num = 1, incNum = 2, total = 1;
+
+//     if(n<1)return 0;
+
+//     for(let i = 1; i < n; i++){
+//         num += incNum;
+//         total += num;
+//         incNum ++;
+//     }
+
+//     return total;
+// }
+
+/*COOL ANSWER*/
+
+// function sumTriangularNumbers(n) {
+//     return n < 0 ? 0 : n * (n + 1) * (n + 2) / 6;
+//   }
+
+// console.log(sumTriangularNumbers(2))
+// console.log(sumTriangularNumbers(3))
+// console.log(sumTriangularNumbers(4))
+// console.log(sumTriangularNumbers(-1))
 

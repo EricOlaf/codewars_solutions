@@ -640,3 +640,55 @@ var abby = Object.create(personProto,
 // input.addEventListener('keyup', debounce((e)=>{
 //     console.log(input.value)
 // }, 1000));
+
+
+// const input = document.querySelector('input')
+
+// const debounce = (fn, timeDebounce) => {
+//    let debTimer = null;
+//    return function(a){
+//        console.log(this);
+//        if(debTimer){
+//            clearTimeout(debTimer)
+//        }
+//        debTimer = setTimeout(()=>{fn(a)}, timeDebounce)
+//    } 
+// }
+
+// input.addEventListener('keyup', debounce((e)=>{
+//     console.log(e)
+// }, 2000))
+
+// const keyFunc = () => {
+//     return(...e)=>{
+//         console.log(...e)
+//     }
+// }
+
+
+// input.addEventListener('keyup', (e)=>{keyFunc(e)})
+
+
+// var button = document.querySelector("button"); 
+// function debounce (func, delay){ 
+//     let debounceTimer 
+//     console.log('outer '+ this)
+//     return function(a) { 
+//         console.log("inner " + this)
+//         console.log("args " + arguments)
+//         console.log(a)
+//         const context = this
+//         const args = arguments 
+//             clearTimeout(debounceTimer) 
+//                 debounceTimer 
+//             = setTimeout(() => func.apply(context, args), delay) 
+//     } 
+// }  
+// button.addEventListener('click', debounce(function() { 
+//     console.log("evList " + this)
+//         alert("Hello\nNo matter how many times you" + 
+//             "click the debounce button, I get " + 
+//             "executed once every 3 seconds!!") 
+//                         }, 3000)); 
+
+

@@ -646,12 +646,17 @@
 
 function largestPower(n){
     const logFunc = () => Math.log(n)/Math.log(3)
-    if(n <= 3){return 0}
-    console.log(logFunc(), n)
-    console.log(3**logFunc().toFixed(5), typeof(n.toFixed(5)))
-    if (3**logFunc().toFixed(5) === n){return(Math.floor(logFunc()) -1)}
-    else{return Math.floor(logFunc())}
-  }
+    switch(true){
+    case n ===1: 
+        return -1;
+    case n <= 3:
+        return 0;
+    case 3**logFunc().toFixed(5) === n:
+        return(Math.floor(logFunc()) -1)
+    default: 
+        return Math.floor(logFunc());
+    }
+}
 
   console.log("0 " + largestPower(0))
   console.log("3 " + largestPower(3))

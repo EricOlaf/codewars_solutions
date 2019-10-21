@@ -161,7 +161,7 @@
 // console.log(obj1.age, varAge)
 
 /////////////////////////////////////////
-// Lecture: Passing functions as arguments
+// Lecture: Passing functions as arguments ie CALLBACKS
 /////////////////////////////////////////
 
 // var years = [1990, 1988, 1993, 2000, 2007];
@@ -203,7 +203,7 @@
 // console.log(rates)
 
 //////////////////////////////////////////////////
-// Lecture: Functions returning another function
+// Lecture: Functions returning another function; ie CLOSURE
 //////////////////////////////////////////////////
 
 // function intQuestion(job) {
@@ -559,6 +559,8 @@ var abby = Object.create(personProto,
 ////////////////////////////////////
 //How to use reduce on an object
 ////////////////////////////////////
+
+//arr.reduce((a,b)=>a+b)
 
 // var initialValue = 0;
 // var sum = [{x: 1}, {x: 2}, {x: 3}].reduce(function (accumulator, currentValue) {

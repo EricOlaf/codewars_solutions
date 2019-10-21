@@ -9,10 +9,8 @@
 // console.log('y = ' + y);
 // // y = 3
 
-// var z = 0;
-
-
-
+z = 0;
+let z = 1;
 
 // var myFunc = () => {
 //     console.log('z = ' + z);

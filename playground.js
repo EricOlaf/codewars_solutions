@@ -9,8 +9,8 @@
 // console.log('y = ' + y);
 // // y = 3
 
-z = 0;
-let z = 1;
+// z = 0;
+// let z = 1; Cannont access variable before it's declared.
 
 // var myFunc = () => {
 //     console.log('z = ' + z);
@@ -58,6 +58,7 @@ let z = 1;
 //////////////////////////////
 //PARENTHESES QUESTION
 //////////////////////////////
+//Good programmers recognize patterns.
 
 // function findPar(str) {
 //     let penalty = 0, braces = 0;

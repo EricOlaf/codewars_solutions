@@ -81,6 +81,8 @@
 
 // console.log(newFunc(2))
 
+//This is also called currying!
+
 ///////////////////
 /*NEW PROBLEM*/
 ///////////////////

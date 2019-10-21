@@ -123,7 +123,7 @@
 //  parFinder(str4)
 //  parFinder(str5)
 
-//object inherting from another object
+//object inherting from another object. When this occurs the second object is just a reference pointer.
 // var obj1 = {
 //     name: "eric",
 //     age: 30

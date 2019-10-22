@@ -670,3 +670,9 @@
 /*NEW PROBLEM*/
 ///////////////////
 
+// const solution = (str) => str.split("").reverse().join("");
+
+///////////////////
+/*NEW PROBLEM*/
+///////////////////
+

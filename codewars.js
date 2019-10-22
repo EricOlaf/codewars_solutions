@@ -676,3 +676,11 @@
 /*NEW PROBLEM*/
 ///////////////////
 
+//reverse a sentence while the words maintain their order.
+
+// function myRevSent(s){
+//     return s.split("").reverse().join("").split(" ").reverse().join(" ")
+// }
+
+// console.log(myRevSent("Hi fam"))
+

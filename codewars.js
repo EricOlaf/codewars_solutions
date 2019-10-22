@@ -646,22 +646,27 @@
 
 //Logrithmic problem!
 
-function largestPower(n){
-    const logFunc = () => Math.log(n)/Math.log(3)
-    switch(true){
-    case n ===1: 
-        return -1;
-    case n <= 3:
-        return 0;
-    case 3**logFunc().toFixed(5) === n:
-        return(Math.floor(logFunc()) -1)
-    default: 
-        return Math.floor(logFunc());
-    }
-}
+// function largestPower(n){
+//     const logFunc = () => Math.log(n)/Math.log(3)
+//     switch(true){
+//     case n ===1: 
+//         return -1;
+//     case n <= 3:
+//         return 0;
+//     case 3**logFunc().toFixed(5) === n:
+//         return(Math.floor(logFunc()) -1)
+//     default: 
+//         return Math.floor(logFunc());
+//     }
+// }
 
-  console.log("0 " + largestPower(0))
-  console.log("3 " + largestPower(3))
-  console.log("5 " + largestPower(5))
-  console.log("81 " + largestPower( 81))
-  console.log("82 " + largestPower( 82))
+//   console.log("0 " + largestPower(0))
+//   console.log("3 " + largestPower(3))
+//   console.log("5 " + largestPower(5))
+//   console.log("81 " + largestPower( 81))
+//   console.log("82 " + largestPower( 82))
+
+///////////////////
+/*NEW PROBLEM*/
+///////////////////
+

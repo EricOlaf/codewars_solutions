@@ -684,3 +684,46 @@
 
 // console.log(myRevSent("Hi fam"))
 
+///////////////////
+/*NEW PROBLEM*/
+///////////////////
+
+// function distinctDigitYear(year) {
+//     let newArr = []  
+//     for(let i = year; newArr.length < 4; i++){
+//         let yStr = i + ""
+//         if(!newArr.includes(yStr[0])){
+//             newArr.push(yStr[0])
+//             console.log("push 0 " + newArr + " " + i)
+//             if(!newArr.includes(yStr[1])){
+                
+//                 newArr.push(yStr[1])
+//                 console.log("push 1 " + newArr + " " + i)
+//                 if(!newArr.includes(yStr[2])){
+                    
+//                     newArr.push(yStr[2])
+//                     console.log("push 2 " + newArr + " " + i)
+//                     if(!newArr.includes(yStr[3])){
+//                         console.log("final " + i)
+//                         return i
+//                     }
+//                 }
+//             }  
+//         }
+//         newArr = [];
+//     }
+// }
+
+// function distinctDigitYear(year) {
+//     do{year++}while(new Set(year.toString()).size < 4);
+//     return year;  
+//   }
+
+//The Set object lets you store unique values of any type, whether primitive values or object references.
+
+//   let numArr = [];
+//   const num = "12"
+//   numArr.push(num[0])
+// console.log(!numArr.includes(num[1]))
+
+// console.log(distinctDigitYear(1998))

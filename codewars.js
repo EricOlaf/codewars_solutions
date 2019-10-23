@@ -727,3 +727,15 @@
 // console.log(!numArr.includes(num[1]))
 
 // console.log(distinctDigitYear(1998))
+
+///////////////////
+/*NEW PROBLEM*/
+///////////////////
+
+//How to remove the first and last char of a string.
+
+// function removeChar(str) {
+//     return str.slice(1, -1);
+//   }
+
+//   console.log(removeChar("olaveson"))

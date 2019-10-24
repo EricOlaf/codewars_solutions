@@ -719,14 +719,20 @@
 //     return year;  
 //   }
 
+
+// function distinctDigitYear(year){
+//     do{ year++} while(new Set(year.toString()).size < 4)
+//     return year
+// }
+
+
 //The Set object lets you store unique values of any type, whether primitive values or object references.
 
-//   let numArr = [];
-//   const num = "12"
-//   numArr.push(num[0])
-// console.log(!numArr.includes(num[1]))
+//   const newSet = new Set ("12");
+// for(i of newSet){
+//     console.log(i)
+// }
 
-// console.log(distinctDigitYear(1998))
 
 ///////////////////
 /*NEW PROBLEM*/

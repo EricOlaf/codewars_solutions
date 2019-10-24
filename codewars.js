@@ -739,3 +739,19 @@
 //   }
 
 //   console.log(removeChar("olaveson"))
+
+///////////////////
+/*NEW PROBLEM*/
+///////////////////
+
+//Dumb question
+
+// function swapValues() {
+//     var args = Array.prototype.slice.call(arguments); 
+//     var temp = args[0];
+//     args[0] = args[1];
+//     args[1] = temp;
+//     return args
+// }
+
+// console.log()

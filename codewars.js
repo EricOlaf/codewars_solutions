@@ -744,11 +744,11 @@
 /*NEW PROBLEM*/
 ///////////////////
 
-function getSize(w, h, d){
-    let ans = []
-    ans.push(w*h*2 + w*d*2 + h*d*2)
-    ans.push(w*h*d)
-    return(ans)
-  }
+// function getSize(w, h, d){
+//     let ans = []
+//     ans.push(w*h*2 + w*d*2 + h*d*2)
+//     ans.push(w*h*d)
+//     return(ans)
+//   }
 
-  getSize(2, 2, 2)
+//   getSize(2, 2, 2)

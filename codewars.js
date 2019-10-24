@@ -744,14 +744,11 @@
 /*NEW PROBLEM*/
 ///////////////////
 
-//Dumb question
+function getSize(w, h, d){
+    let ans = []
+    ans.push(w*h*2 + w*d*2 + h*d*2)
+    ans.push(w*h*d)
+    return(ans)
+  }
 
-// function swapValues() {
-//     var args = Array.prototype.slice.call(arguments); 
-//     var temp = args[0];
-//     args[0] = args[1];
-//     args[1] = temp;
-//     return args
-// }
-
-// console.log()
+  getSize(2, 2, 2)

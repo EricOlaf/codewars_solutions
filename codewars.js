@@ -762,3 +762,11 @@
 ///////////////////
 /*NEW PROBLEM*/
 ///////////////////
+
+// function inviteMoreWomen(L) {
+//     let num = L.length 
+//     return(L.filter(e=> e === -1).length/num < 0.5 )
+// }
+
+//   console.log(inviteMoreWomen([1, -1, 1, 1, -1, 1]))
+//   console.log(inviteMoreWomen([1, -1, -1]))

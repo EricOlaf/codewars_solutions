@@ -693,3 +693,17 @@ var abby = Object.create(personProto,
 //                         }, 3000)); 
 
 
+///////////////////
+/*NEW PROBLEM TIC-TAC-TOE*/
+///////////////////
+
+// Setup the HTML and CSS to accomodate a basic game. Use semantic HTML, CSS3 variables, grid. 
+
+// 1. cache the dom.
+
+// 2. set up startup variables and data structures. init function
+
+// 3. be able to reflect the changes a user makes. Player 1 and 2
+
+// 4. be 
+

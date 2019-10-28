@@ -795,3 +795,15 @@
 
 // str = str.reverse()
 // console.log(str)
+
+///////////////////
+/*NEW PROBLEM*/
+///////////////////
+
+// new debounce
+
+//cache the dom
+
+//debounce closure
+
+//event listener

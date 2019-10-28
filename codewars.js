@@ -799,11 +799,24 @@
 ///////////////////
 /*NEW PROBLEM*/
 ///////////////////
-
 // new debounce
 
+const ts = 2000
 //cache the dom
+const input = document.querySelector('.debounce')
 
 //debounce closure
+const debounce = (cb) => {
+    let timer = null;
+    return function(e){
+        clearTimeout(timer)
+        timer = setTimeout(()=>{
+            cb(e)
+        }, ts)
+    }
+}
 
 //event listener
+input.addEventListener('keyup', debounce(function(e){
+    console.log(input.value, e.key)
+}))

@@ -784,3 +784,14 @@
 // }
 
 // console.log(wordsToMarks("attitude"))
+
+///////////////////
+/*NEW PROBLEM*/
+///////////////////
+
+//Reverse a string
+
+var str = "eric"
+
+str = str.reverse()
+console.log(str)

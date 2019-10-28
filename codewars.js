@@ -723,12 +723,6 @@
 //   }
 
 
-// function distinctDigitYear(year){
-//     do{ year++} while(new Set(year.toString()).size < 4)
-//     return year
-// }
-
-
 //The Set object lets you store unique values of any type, whether primitive values or object references.
 
 //   const newSet = new Set ("12");
@@ -815,17 +809,18 @@
 //     const debounce = (cb) => {
 //         let timer = null;
 //         return function(e){
+//             const thisDB = this
 //             clearTimeout(timer)
-//             timer = setTimeout(()=>{
-//                 cb(e);
-//             }, ts);
+//             timer = setTimeout(
+//                 ()=> cb(e), ts
+//             );
 //         };
 //     };
 
 //     const setup = () => {
 //         //event listener
-//         input.addEventListener('keyup', debounce(function(e){
-//             console.log(input.value, e.key);
+//         input.addEventListener('keyup', debounce((e)=>{
+//             console.log(input.value, e.key, this);
 //         }));
 //     };
 //     return setup

@@ -246,11 +246,11 @@
 
 //     switch(true){
 //         case g< 1 :
-//             return 'Fail!';
+//            return 'Fail!';
 //         case g< 3 :
-//         return 'Publish!';
+//            return 'Publish!';
 //         default:
-//         return 'I smell a series!'
+//            return 'I smell a series!'
 //     }
 
 //   }
@@ -269,6 +269,8 @@
 // /*NEW PROBLEM*/
 // ///////////////////
 
+//Good question!!!
+
 // function squaresNeeded(grains){
 //   let amount = 1, i = 1;
 //   if(!grains){return 0;}
@@ -286,7 +288,6 @@
 // /*NEW PROBLEM*/
 // ///////////////////
 
-
 // function firstNSmallest(array, n){
 //     let finalArr = [], sortedArr, origArr = [...array];
 //     sortedArr = array.sort((a, b)=> a-b).slice(0, n);
@@ -301,7 +302,6 @@
 // }
   
 //   console.log(firstNSmallest([1,2,3,1,2],3))
-
 
 //   function firstNSmallest(array, n){
 //     while(array.length != n) {
@@ -465,7 +465,15 @@
 //     for(let i = 2; i < x+1; i++){
 //         fibArr[i] = fibArr[i-1] + fibArr[i-2]
 //     }
-//     return fibArr[x-1];
+//     return fibArr[x];
+// }
+
+// const myFib = x => {
+//     let fibArr = [0, 1]
+//     for(let i = 2; i < x; i++){
+//         fibArr.push(fibArr[i-1] + fibArr[i-2])
+//     }
+//     return fibArr[x-1]
 // }
 
 // const myFib = (n) => {
@@ -488,54 +496,49 @@
 // FIZZ BUZZ
 
 // const fizzBuzz = () => {
-//     let ans = [];
 //     for(let i = 1; i <= 100; i++){
 //         if(i%3 === 0 && i%5 === 0){
-//             ans.push("fizzbuzz")
+//             console.log("fizzbuzz")
 //         } else if(i%3 === 0){
-//             ans.push("fizz")
+//             console.log("fizz")
 //         } else if(i%5 === 0){
-//             ans.push("buzz")
+//             console.log("buzz")
 //         } else {
-//             ans.push(i)
+//             console.log(i)
 //         }
 //     }
-//     return ans
 // };
 
-// console.log(fizzBuzz());
+// fizzBuzz();
 
-// const fizzBuzz = (n1, n2) => {
-//     //variables
-//     const mult = n1*n2; multAns = "fizzbuzz"; oneAns = "fizz"; twoAns = "buzz";
-
-//     //function to find if a is divisible by b with no remainder and returns true or false.
-//     const equal = (a, b) => {
+// const fizzBuzz = (num) =>{
+//     const num1 = 3, num2 = 5, num3 = num1 * num2, wrd1 = 'Fizz', wrd2 = 'Buzz', wrd3 = wrd1 + wrd2;
+//     let ans = ""
+//     const checkTrue = (a, b) =>{
 //         return a%b === 0;
 //     }
-
-//     //Shorter function for console.log and enables dry.
-//    let output = ""
-
-//     for(let i = 1; i <=100; i++){
+//     const retFunc = (x) => {
+//         ans += x + "\n";
+//     }
+//     for(let i = 1; i <= num; i++){
 //         switch(true){
-//             case equal(i, mult) :
-//                 output += multAns +"\n";
+//             case checkTrue(i, num3):
+//                 retFunc(wrd3)
 //                 break;
-//             case equal(i, n1) :
-//                  output += oneAns +"\n"
+//             case checkTrue(i, num2):
+//                 retFunc(wrd2)
 //                 break;
-//             case equal(i, n2) :
-//                 output += twoAns +"\n"
+//             case checkTrue(i, num1):
+//                 retFunc(wrd1)
 //                 break;
-//             default : 
-//                 output += i +"\n"
+//             default:
+//                 retFunc(i);
 //         }
 //     }
-//     return output;
+//     console.log(ans)
 // }
 
-// console.log(fizzBuzz(3,5, "fizz"))
+// fizzBuzz(100)
 
 ///////////////////
 /*NEW PROBLEM*/
@@ -829,10 +832,3 @@
 // })()
 
 // dbController()
-
-
-
-
-
-
-

@@ -789,9 +789,9 @@
 /*NEW PROBLEM*/
 ///////////////////
 
-//Reverse a string
+//Reverse a string, reverse is a prototype of an array, not a string.
 
-var str = "eric"
+// var str = "eric"
 
-str = str.reverse()
-console.log(str)
+// str = str.reverse()
+// console.log(str)

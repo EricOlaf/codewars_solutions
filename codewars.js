@@ -770,3 +770,8 @@
 
 //   console.log(inviteMoreWomen([1, -1, 1, 1, -1, 1]))
 //   console.log(inviteMoreWomen([1, -1, -1]))
+
+///////////////////
+/*NEW PROBLEM*/
+///////////////////
+

@@ -827,3 +827,28 @@
 // })()
 
 // dbController()
+
+///////////////////
+/*NEW PROBLEM*/
+///////////////////
+
+//Capitalize the first letter of each word in a string
+
+// const caps = str =>{
+//     strArr = str.toLowerCase().split(" ");
+
+//     let capStr = strArr.map(e=>{
+//         return e.substring(0, 1).toUpperCase() + e.substring(1);
+//     })
+
+//     return capStr.join(" ");
+// }
+
+const caps = str =>
+    str
+        .toLowerCase()
+        .split(' ')
+        .map(word=> word[0].toUpperCase() + word.substring(1))
+        .join(' ')
+
+console.log(caps("hello my namE is ERIC and I am da coolest"))

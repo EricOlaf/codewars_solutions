@@ -801,22 +801,38 @@
 ///////////////////
 // new debounce
 
-const ts = 2000
-//cache the dom
-const input = document.querySelector('.debounce')
+// const dbController = (()=>{
+//     //define variables
+//     const ts = 2000;
 
-//debounce closure
-const debounce = (cb) => {
-    let timer = null;
-    return function(e){
-        clearTimeout(timer)
-        timer = setTimeout(()=>{
-            cb(e)
-        }, ts)
-    }
-}
+//     //cache the dom/dom strings
+//     const input = document.querySelector('.debounce');
 
-//event listener
-input.addEventListener('keyup', debounce(function(e){
-    console.log(input.value, e.key)
-}))
+//     //debounce closure
+//     const debounce = (cb) => {
+//         let timer = null;
+//         return function(e){
+//             clearTimeout(timer)
+//             timer = setTimeout(()=>{
+//                 cb(e);
+//             }, ts);
+//         };
+//     };
+
+//     const setup = () => {
+//         //event listener
+//         input.addEventListener('keyup', debounce(function(e){
+//             console.log(input.value, e.key);
+//         }));
+//     };
+//     return setup
+// })()
+
+// dbController()
+
+
+
+
+
+
+

@@ -775,12 +775,12 @@
 /*NEW PROBLEM*/
 ///////////////////
 
-function wordsToMarks(string){
-    let ltrArr = "0abcdefghijklmnopqrstuvwxyz".split(""), score = 0;
-    string.split("").forEach(e => {
-        score += ltrArr.indexOf(e)
-    });
-    return(score)
-}
+// function wordsToMarks(string){
+//     let ltrArr = "0abcdefghijklmnopqrstuvwxyz".split(""), score = 0;
+//     string.split("").forEach(e => {
+//         score += ltrArr.indexOf(e)
+//     });
+//     return(score)
+// }
 
-console.log(wordsToMarks("attitude"))
+// console.log(wordsToMarks("attitude"))

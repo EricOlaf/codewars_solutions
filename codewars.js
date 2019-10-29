@@ -833,6 +833,7 @@
 ///////////////////
 
 //Capitalize the first letter of each word in a string
+//Go over .substring() / .substr() is depricated...
 
 // const caps = str =>{
 //     strArr = str.toLowerCase().split(" ");
@@ -844,11 +845,22 @@
 //     return capStr.join(" ");
 // }
 
-const caps = str =>
-    str
-        .toLowerCase()
-        .split(' ')
-        .map(word=> word[0].toUpperCase() + word.substring(1))
-        .join(' ')
+// const caps = str =>
+//     str
+//         .toLowerCase()
+//         .split(' ')
+//         .map(word=> word[0].toUpperCase() + word.substring(1))
+//         .join(' ')
 
-console.log(caps("hello my namE is ERIC and I am da coolest"))
+// console.log(caps("hello my namE is ERIC and I am a PROgrammer"))
+
+///////////////////
+/*NEW PROBLEM*/
+///////////////////
+
+//given the argument n find out what layer n is in in a continuous spiral square.
+
+// 05 04 03
+// 06 01 02
+// 07 08 09
+

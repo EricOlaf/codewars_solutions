@@ -864,3 +864,19 @@
 // 06 01 02
 // 07 08 09
 
+const spiralNum = (n) => {
+    let total = 1, layer = 1, incNum = 0;
+    while(n > total){
+        incNum += 8;
+        total += incNum;
+        layer++;
+    }
+    return layer
+}
+
+console.log(spiralNum(1))
+console.log(spiralNum(5))
+console.log(spiralNum(9))
+console.log(spiralNum(10))
+console.log(spiralNum(15))
+console.log(spiralNum(25))

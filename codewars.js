@@ -884,3 +884,22 @@
 ///////////////////
 /*NEW PROBLEM*/
 ///////////////////
+
+//find the first non-consecutive number
+
+// function firstNonConsecutive (arr) {
+//     for(let i = 0; i < arr.length - 1; i++){
+//         if(arr[i] !== arr[i+1] - 1 ){
+//             return arr[i+1]
+//         }    
+//     }
+//     // arr.forEach((e, i, arr)=>{
+//     //     if(e !== arr[i+1]-1){
+//     //         return arr[i+1]
+//     //     }
+//     // })
+//     return null
+// }
+
+console.log(firstNonConsecutive([1,2,3,4,6,7,8]))
+console.log(firstNonConsecutive([1,2,3]))

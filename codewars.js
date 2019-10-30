@@ -881,9 +881,9 @@
 // console.log(spiralNum(15))
 // console.log(spiralNum(25))
 
-///////////////////
-/*NEW PROBLEM*/
-///////////////////
+// ///////////////////
+// /*NEW PROBLEM*/
+// ///////////////////
 
 //find the first non-consecutive number
 
@@ -901,5 +901,19 @@
 //     return null
 // }
 
-console.log(firstNonConsecutive([1,2,3,4,6,7,8]))
-console.log(firstNonConsecutive([1,2,3]))
+/*COOL ANSWER*/
+
+//I love how this answer thinks differently about how to arrive at a particular answer. It starts off at
+
+// function firstNonConsecutive (arr) {
+//     let result = arr.find((val, index) => val !== index + arr[0]);
+
+//     return (isNaN(result)) ? null : result;
+// }
+
+// console.log(firstNonConsecutive([1,2,3,4,6,7,8]))
+// console.log(firstNonConsecutive([1,2,3]))
+
+// ///////////////////
+// /*NEW PROBLEM*/
+// ///////////////////

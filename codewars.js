@@ -920,9 +920,14 @@
 
 //convert a number to binary and find the longest string of zeros with ones on each end.
 
+//we can use the toString(2) to make a number binary or use a base of whatever we would like. The two in the parens is what binary uses.
+
 function gap(num) {
     let numStr = num.toString(2);
-    console.log(numStr)
+    let counter, max, foundAOne;
+    numStr.split("").forEach(e => {
+        
+    });
 }
 
 gap(3);

@@ -922,13 +922,27 @@
 
 //we can use the toString(2) to make a number binary or use a base of whatever we would like. The two in the parens is what binary uses.
 
-function gap(num) {
-    let numStr = num.toString(2);
-    let counter, max, foundAOne;
-    numStr.split("").forEach(e => {
-        
-    });
-}
+// function gap(num) {
+//     let counter = 0, max = 0, oneStart = false;
+//     num.toString(2).split("").forEach(e => {
+//         if(!oneStart){
+//             if(e === "1"){
+//                 oneStart = true;
+//             }
+//         }else if(oneStart){
+//             if(e === "0"){
+//                 counter++;
+//             }else if(e === "1"){
+//                 if(counter > max){
+//                     max = counter;
+//                 }
+//                 counter = 0;
+//             }
+//         }
+//     });
+//     return max;
+// }
 
-gap(3);
-// console.log((3).toString(2))
+// console.log(gap(9))
+// console.log(gap(529));
+// // console.log((3).toString(2))

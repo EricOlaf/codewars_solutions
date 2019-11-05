@@ -917,3 +917,13 @@
 // ///////////////////
 // /*NEW PROBLEM*/
 // ///////////////////
+
+//convert a number to binary and find the longest string of zeros with ones on each end.
+
+function gap(num) {
+    let numStr = num.toString(2);
+    console.log(numStr)
+}
+
+gap(3);
+// console.log((3).toString(2))

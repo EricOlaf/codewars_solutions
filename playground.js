@@ -711,4 +711,37 @@ var abby = Object.create(personProto,
 /*CALL BACKS/PROMISES/ASYNC AWAIT*/
 ///////////////////
 
+// function myFunky(){
+//     console.log('1')
+//     setTimeout(()=>{
+//         console.log('2')
+//     }, 2000);
+//     (()=>console.log('3'))();
+//     setTimeout(()=>{
+//         console.log('4')
+//         myCB();
+//     }, 2000);
+//     console.log('5')
 
+// }
+
+// const myCB =()=>{
+//     console.log('this is the cb');
+// }
+
+// setTimeout(()=>{
+//     console.log('one');
+//     setTimeout(()=>{
+//         console.log('two')
+//     }, 2000);
+//     (()=>{
+//         console.log('three');
+//     })()
+//     setTimeout(()=>{
+//         console.log('four')
+//         myCB();
+//     }, 2000);
+
+// }, 2000)
+
+// myFunky();

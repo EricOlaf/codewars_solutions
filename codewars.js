@@ -951,3 +951,6 @@
 // /*NEW PROBLEM*/
 // ///////////////////
 
+const number = arr => arr.map((e, i)=> `${++i}: ${e}`)
+
+//Refactored into smaller code and made into an arrow function.

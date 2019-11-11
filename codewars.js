@@ -946,3 +946,8 @@
 // console.log(gap(9))
 // console.log(gap(529));
 // // console.log((3).toString(2))
+
+// ///////////////////
+// /*NEW PROBLEM*/
+// ///////////////////
+

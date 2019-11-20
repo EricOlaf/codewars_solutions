@@ -951,6 +951,14 @@
 // /*NEW PROBLEM*/
 // ///////////////////
 
-const number = arr => arr.map((e, i)=> `${++i}: ${e}`)
+// const number = arr => arr.map((e, i)=> `${++i}: ${e}`)
 
 //Refactored into smaller code and made into an arrow function.
+
+// ///////////////////
+// /*NEW PROBLEM*/
+// ///////////////////
+
+// const twoSort = (s) =>  s.sort().shift().split('').join("***");
+
+// console.log(twoSort(["bitcoin", "take", "over", "the", "world", "maybe", "who", "knows", "perhaps"]));

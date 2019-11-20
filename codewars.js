@@ -967,12 +967,12 @@
 /*NEW PROBLEM*/
 ///////////////////
 
-function bmi(weight, height) {
-    let val = (weight/(height*height))
-    if(val <= 18.5){return 'Underweight'}
-    else if(val <= 25.0){return "Normal"}
-    else if(val <= 30.0){return "Overweight"}
-    else{return "Obese"};
-  }
+// function bmi(weight, height) {
+//     let val = (weight/(height*height))
+//     if(val <= 18.5){return 'Underweight'}
+//     else if(val <= 25.0){return "Normal"}
+//     else if(val <= 30.0){return "Overweight"}
+//     else{return "Obese"};
+//   }
 
-  console.log(bmi(80, 1.80))
+//   console.log(bmi(80, 1.80))

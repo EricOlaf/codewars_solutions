@@ -955,10 +955,24 @@
 
 //Refactored into smaller code and made into an arrow function.
 
-// ///////////////////
-// /*NEW PROBLEM*/
-// ///////////////////
+///////////////////
+/*NEW PROBLEM*/
+///////////////////
 
 // const twoSort = (s) =>  s.sort().shift().split('').join("***");
 
 // console.log(twoSort(["bitcoin", "take", "over", "the", "world", "maybe", "who", "knows", "perhaps"]));
+
+///////////////////
+/*NEW PROBLEM*/
+///////////////////
+
+function bmi(weight, height) {
+    let val = (weight/(height*height))
+    if(val <= 18.5){return 'Underweight'}
+    else if(val <= 25.0){return "Normal"}
+    else if(val <= 30.0){return "Overweight"}
+    else{return "Obese"};
+  }
+
+  console.log(bmi(80, 1.80))

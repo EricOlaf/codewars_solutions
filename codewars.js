@@ -836,7 +836,27 @@
 //     return setup
 // })()
 
+
+const timeSeconds = 2000;
+
+const input = document.querySelector(".debounce");
+
+const debounce = cb => {
+    let timer = null;
+    return function (e){
+        clearTimeout(timer);
+        timer = setTimeout(()=>{
+            cb(e)
+        }, timeSeconds)
+    }
+    
+}
+
+input.addEventListener('keyup', debounce(e=>console.log(input.value)))
+
 // dbController()
+
+
 
 ///////////////////
 /*NEW PROBLEM*/

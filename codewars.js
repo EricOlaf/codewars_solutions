@@ -469,6 +469,16 @@
 // }
 
 // const myFib = x => {
+//     const fibArr = [0,1];
+//     for(let i = 2; i < x+1; i++){
+//         fibArr[i] = fibArr[i-1] + fibArr[i-2];
+//     }
+//     return fibArr[x];
+// }
+
+// console.log(myFib(6))
+
+// const myFib = x => {
 //     let fibArr = [0, 1]
 //     for(let i = 2; i < x; i++){
 //         fibArr.push(fibArr[i-1] + fibArr[i-2])

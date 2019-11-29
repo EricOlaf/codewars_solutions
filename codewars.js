@@ -1060,26 +1060,26 @@
 // }
 
 
-const maxLetter = arr =>{
-    let max = 0;
-    const myObj = {};
-    return arr.reduce((total, letter)=>{
-        if(myObj[letter]){
-            myObj[letter]++;
-        }else{
-            myObj[letter] = 1;
-        }if(myObj[letter] === max){
-            total += `, ${letter}`
-        }if(myObj[letter] > max){
-            total = letter;
-            max = myObj[letter];
-        }
-        return total;
-    }, "")
-}
+// const maxLetter = arr =>{
+//     let max = 0;
+//     const myObj = {};
+//     return arr.reduce((total, letter)=>{
+//         if(myObj[letter]){
+//             myObj[letter]++;
+//         }else{
+//             myObj[letter] = 1;
+//         }if(myObj[letter] === max){
+//             total += `, ${letter}`
+//         }if(myObj[letter] > max){
+//             total = letter;
+//             max = myObj[letter];
+//         }
+//         return total;
+//     }, "")
+// }
 
-console.log(maxLetter(['a', 'b', 'c', 'a']))
-console.log(maxLetter(['a', 'b', 'c', 'c', 'a']))
+// console.log(maxLetter(['a', 'b', 'c', 'a']))
+// console.log(maxLetter(['a', 'b', 'c', 'c', 'a']))
 
 
 // Hey Kekoa,

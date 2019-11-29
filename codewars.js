@@ -837,22 +837,22 @@
 // })()
 
 
-const timeSeconds = 2000;
+// const timeSeconds = 2000;
 
-const input = document.querySelector(".debounce");
+// const input = document.querySelector(".debounce");
 
-const debounce = cb => {
-    let timer = null;
-    return function (e){
-        clearTimeout(timer);
-        timer = setTimeout(()=>{
-            cb(e)
-        }, timeSeconds)
-    }
+// const debounce = cb => {
+//     let timer = null;
+//     return function (e){
+//         clearTimeout(timer);
+//         timer = setTimeout(()=>{
+//             cb(e)
+//         }, timeSeconds)
+//     }
     
-}
+// }
 
-input.addEventListener('keyup', debounce(e=>console.log(input.value)))
+// input.addEventListener('keyup', debounce(e=>console.log(input.value)))
 
 // dbController()
 

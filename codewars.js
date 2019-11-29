@@ -1007,6 +1007,10 @@
 
 //   console.log(bmi(80, 1.80))
 
+///////////////////
+/*NEW PROBLEM*/
+///////////////////
+
 // const maxLetter = arr => {
 //     let maxNumOccurence = 0, ans = "";
 //     const letterObj = {};
@@ -1032,6 +1036,36 @@
 //     }
 //     return ans;
 // }
+
+const myArr = ['a', 'b', 'c']
+const myObj = {
+    'a':1,
+    'b':1
+}
+
+console.log(myObj[myArr[0]])
+
+const maxLetter = arr =>{
+    let max = 0, ans ='';
+    const myObj = {};
+    arr.forEach(e=>{
+        if(myObj[e]){
+            myObj[e]++;
+        }else{
+            myObj[e] = 1;
+        }
+    })
+    Object.keys(myObj).forEach(key=>{
+        let num = myObj[key];
+        if(num > max){
+            ans = key;
+            max = num;
+        }else if(num === max){
+            ans += `, ${key}`
+        }
+    })
+    return ans;
+}
 
 console.log(maxLetter(['a', 'b', 'c', 'a']))
 console.log(maxLetter(['a', 'b', 'c', 'c', 'a']))

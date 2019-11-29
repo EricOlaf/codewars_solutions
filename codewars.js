@@ -1006,3 +1006,37 @@
 //   }
 
 //   console.log(bmi(80, 1.80))
+
+// const maxLetter = arr => {
+//     let maxNumOccurence = 0, ans = "";
+//     const letterObj = {};
+//     arr.forEach(letter => {
+//         console.log(letter)
+//         let objVal = letterObj[letter]; 
+//         if(letterObj.hasOwnProperty(letter)){
+//             objVal++;
+//         }else{
+//             objVal = 1; 
+//         }
+//         console.log(objVal)
+//     });
+//     console.log(letterObj)
+//     for(const objKey in letterObj){
+//         const objVal = letterObj.objKey;
+//         if(objVal > maxNumOccurence){
+//           ans = objKey;
+//           maxNumOccurence = objVal;  
+//         }else if(objVal === maxNumOccurence){
+//             ans += `, ${obj}`;
+//         }
+//     }
+//     return ans;
+// }
+
+console.log(maxLetter(['a', 'b', 'c', 'a']))
+console.log(maxLetter(['a', 'b', 'c', 'c', 'a']))
+
+
+// Hey Kekoa,
+
+// I want to thank you for taking the time to interview and get to know me. It was a pleasure talking with you and the team about programming. Our conversation made me even more excited to potentially work at TradeSation. 

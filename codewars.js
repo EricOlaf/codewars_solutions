@@ -1080,8 +1080,11 @@
 
 // console.log(maxLetter(['a', 'b', 'c', 'a']))
 // console.log(maxLetter(['a', 'b', 'c', 'c', 'a']))
-
+ 
 
 // Hey Kekoa,
+//  I want to thank you for taking the time to interview/get to know me. It was a pleasure talking with you and the team. Our conversation made me even more excited to potentially work at TradeSation. If you have time please check out:
+// https://codepen.io/ericolaf/pen/RwNboGx
 
-// I want to thank you for taking the time to interview and get to know me. It was a pleasure talking with you and the team about programming. Our conversation made me even more excited to potentially work at TradeSation. 
+// Thank you,
+// Eric

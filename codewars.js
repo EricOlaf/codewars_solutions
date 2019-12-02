@@ -1093,25 +1093,34 @@
 /*NEW PROBLEM*/
 ///////////////////
 
-const testit = (a, b) =>{
-    const myObj = {}
-    const ans = [...a, ...b].sort((a, b)=> a-b);
-    const finalAns = [];
-    ans.forEach(e=>{
-        if(myObj[e]){
-            myObj[e]++
-        }else{
-            myObj[e] = 1;
-        }
-    })
-    for(const key in myObj){
-        if(myObj[key]%2 === 0){
-            finalAns.push(parseInt(key), parseInt(key));
-        }else{
-            finalAns.push(parseInt(key))
-        }
-    }
-    return finalAns;
-};
+// const testit = (a, b) =>{
+//     const myObj = {}
+//     const ans = [...a, ...b].sort((a, b)=> a-b);
+//     const finalAns = [];
+//     ans.forEach(e=>{
+//         if(myObj[e]){
+//             myObj[e]++
+//         }else{
+//             myObj[e] = 1;
+//         }
+//     })
+//     for(const key in myObj){
+//         if(myObj[key]%2 === 0){
+//             finalAns.push(parseInt(key), parseInt(key));
+//         }else{
+//             finalAns.push(parseInt(key))
+//         }
+//     }
+//     return finalAns;
+// };
 
-console.log(testit([1,2,2,2],[5,3,4,2]));
+// const testit = (a, b) =>{
+//      const a2 = new Set(a), b2 = new Set(b);
+//      return [...a2, ...b2].sort((a,b)=>a-b);
+// };
+
+// console.log(testit([1,2,2,2],[5,3,4,2]));
+
+///////////////////
+/*NEW PROBLEM*/
+///////////////////

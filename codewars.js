@@ -1088,3 +1088,11 @@
 
 // Thank you,
 // Eric
+
+///////////////////
+/*NEW PROBLEM*/
+///////////////////
+
+const testit = (a, b) => [...a, ...b].sort((a, b)=> a-b);
+
+console.log(testit([1,2],[5,3,4]));

@@ -746,3 +746,34 @@ var abby = Object.create(personProto,
 
 // myFunky();
 
+const myObj = {
+    1: "one",
+    "2": "two",
+    three: "three",
+    "four": "four",
+    five5: 5
+};
+
+
+
+//DOT NOTATION
+
+//console.log(myObj.1); DOESN'T WORK, JS VARIABLES DON'T START W NUMBERS.
+//console.log(myObj."2"); DOESN'T WORK
+//console.log(myObj.three); WORKS
+//console.log(myObj.four); POSSIBLE WITHOUT QUOTES, CAN REFERENCE A VARIABLE WITH QUOTES BUT CAN'T HAVE QUOTES AFTER THE DOT.
+//console.log(myObj.five5); WORKS
+
+//SUMMARY: 
+
+//BRACKET NOTATION
+
+// console.log(myObj[1]); WORKS
+// console.log(myObj["2"]); WORKS
+// console.log(myObj["three"]); POSSIBLE WITH QUOTES
+// console.log(myObj["four"]); 
+// console.log(myObj["five5"]);
+
+//SUMMARY:
+
+

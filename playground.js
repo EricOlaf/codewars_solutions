@@ -746,15 +746,25 @@ var abby = Object.create(personProto,
 
 // myFunky();
 
-const myObj = {
-    1: "one",
-    "2": "two",
-    three: "three",
-    "four": "four",
-    five5: 5
-};
+// const three = "three";
 
+// const myArr = [1, "2", three, "four", "five5"]
 
+// const myObj = {
+//     1: "one",
+//     "2": "two",
+//     three: "three",
+//     "four": "four",
+//     five5: 5
+// };
+
+// myArr.forEach(e=>{
+//     console.log(e, myObj[e]);
+// })
+
+// for(let i = 0; i < myArr.length; i++){
+//     console.log(myObj[myArr[i]])
+// }
 
 //DOT NOTATION
 
@@ -764,8 +774,6 @@ const myObj = {
 //console.log(myObj.four); POSSIBLE WITHOUT QUOTES, CAN REFERENCE A VARIABLE WITH QUOTES BUT CAN'T HAVE QUOTES AFTER THE DOT.
 //console.log(myObj.five5); WORKS
 
-//SUMMARY: 
-
 //BRACKET NOTATION
 
 // console.log(myObj[1]); WORKS
@@ -773,7 +781,3 @@ const myObj = {
 // console.log(myObj["three"]); POSSIBLE WITH QUOTES
 // console.log(myObj["four"]); 
 // console.log(myObj["five5"]);
-
-//SUMMARY:
-
-

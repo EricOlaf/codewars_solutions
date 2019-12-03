@@ -1125,27 +1125,27 @@
 /*NEW PROBLEM*/
 ///////////////////
 
-var countDeafRats = function(town) {
-    const townArr = town.split("")
-    let foundP = false;
-    let deafRats = 0;
-    let beforeTail = 0;
-    let beforeBody = 0;
-    let afterTail = 0;
-    let afterBody = 0;
-    townArr.forEach(e=>{
-        if(!foundP){
-            if(e==="P")foundP = true;
-            if(e==="~")beforeTail +=1;
-            if(e==="O")beforeBody +=1;
-            if(beforeBody > beforeTail)deafRats +=1;
-        }else{
-            if(e==="~")afterTail +=1;
-            if(e==="O")afterBody +=1;
-            if(afterTail > afterBody)deafRats +=1;
-        }
-    })
-    return deafRats;
-  }
+// var countDeafRats = function(town) {
+//     const townArr = town.split("")
+//     let foundP = false;
+//     let deafRats = 0;
+//     let beforeTail = 0;
+//     let beforeBody = 0;
+//     let afterTail = 0;
+//     let afterBody = 0;
+//     townArr.forEach(e=>{
+//         if(!foundP){
+//             if(e==="P")foundP = true;
+//             if(e==="~")beforeTail +=1;
+//             if(e==="O")beforeBody +=1;
+//             if(beforeBody > beforeTail)deafRats +=1;
+//         }else{
+//             if(e==="~")afterTail +=1;
+//             if(e==="O")afterBody +=1;
+//             if(afterTail > afterBody)deafRats +=1;
+//         }
+//     })
+//     return deafRats;
+//   }
 
-  console.log(countDeafRats("~O~O~O~O P"));
+//   console.log(countDeafRats("~O~O~O~O P"));

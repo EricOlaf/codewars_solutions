@@ -1149,3 +1149,19 @@
 //   }
 
 //   console.log(countDeafRats("~O~O~O~O P"));
+
+// const myObj = {
+//     one: 1,
+//     two: 2,
+//     three: 'three'
+// }
+
+// for(const key in myObj){
+//     console.log(myObj[key]);
+// }
+
+// for(const key in myObj){
+//     console.log("again, " + myObj[key]);
+// }
+
+// console.log(key)

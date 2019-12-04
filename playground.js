@@ -782,15 +782,21 @@ var abby = Object.create(personProto,
 // console.log(myObj["four"]); 
 // console.log(myObj["five5"]);
 
-let num = 0
-async function myF(){
-  num += 1;
-  console.log(num);
-  num += await 5;
-  console.log(num);
-}
-console.log(num);
+// let num = 0;
 
-myF();
-num+=10;
-console.log(num);
+// async function myF(){
+//   num += 1;
+//   console.log(num);
+//   num += 5;
+//   console.log(num);
+// }
+
+// console.log(num);
+
+// myF();
+// num+=10;
+// console.log(num);
+
+//OUTPUT IS ORDER IS 0, 1, 11, 6
+//WO AWAIT (w or wo async doesnt matter) THE ORDER IS 0, 1, 6, 16
+

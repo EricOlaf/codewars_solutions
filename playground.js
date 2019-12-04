@@ -800,3 +800,51 @@ var abby = Object.create(personProto,
 //OUTPUT IS ORDER IS 0, 1, 11, 6
 //WO AWAIT (w or wo async doesnt matter) THE ORDER IS 0, 1, 6, 16
 
+///////////////////////////
+//REVEALING MODULE PATTERN
+///////////////////////////
+
+// const myFuncHey = (function(){
+//     const data=[1, 2, 3];
+    
+//    function add(){
+//         let num = 0;
+//         console.log("add")
+//         num = data[0] + data[2];
+//         console.log(num);
+//     };
+//     function remove(){
+//         console.log(data)
+//         console.log("remove")
+//     };
+//     return{
+//         render: function(){
+//             console.log(data)
+//             console.log("render")
+//             add();
+//         },
+//     }
+// })();
+
+// myFuncHey.render();
+
+
+//TURN THE CODE BELOW INTO A REVEALING MODULE PATTERN!
+
+// let myModule = {
+//     data:[1, 2, 3],
+//     render: function(){
+//         console.log(this.data)
+//         console.log("render")
+//     },
+//     add: function(){
+//         console.log(this.data)
+//         console.log("add")
+//     },
+//     remove: function(){
+//         console.log(this.data)
+//         console.log("remove")
+//     },
+// }
+
+

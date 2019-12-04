@@ -781,3 +781,16 @@ var abby = Object.create(personProto,
 // console.log(myObj["three"]); POSSIBLE WITH QUOTES
 // console.log(myObj["four"]); 
 // console.log(myObj["five5"]);
+
+let num = 0
+async function myF(){
+  num += 1;
+  console.log(num);
+  num += await 5;
+  console.log(num);
+}
+console.log(num);
+
+myF();
+num+=10;
+console.log(num);

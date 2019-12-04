@@ -1170,10 +1170,12 @@
 /*NEW PROBLEM*/
 ///////////////////
 
-const generateRange = (min, max, step) => {
-    const arr = [];
-      for(let i = min; i <= max; step){
-          arr.push(i);
-      }
-      return arr;
-}
+// const generateRange = (min, max, step) => {
+//     const arr = [];
+//       for(let i = min; i <= max; i+= step){
+//           arr.push(i);
+//       }
+//       return arr;
+// }
+
+// console.log(generateRange(2, 10, 2))

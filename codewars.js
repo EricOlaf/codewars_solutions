@@ -1165,3 +1165,15 @@
 // }
 
 // console.log(key)
+
+///////////////////
+/*NEW PROBLEM*/
+///////////////////
+
+const generateRange = (min, max, step) => {
+    const arr = [];
+      for(let i = min; i <= max; step){
+          arr.push(i);
+      }
+      return arr;
+}

@@ -804,6 +804,27 @@ var abby = Object.create(personProto,
 //REVEALING MODULE PATTERN
 ///////////////////////////
 
+//TURN THE CODE BELOW INTO A REVEALING MODULE PATTERN!
+
+// let myModule = {
+//     data:[1, 2, 3],
+//     render: function(){
+//         console.log(this.data)
+//         console.log("render")
+//     },
+//     add: function(){
+//         console.log(this.data)
+//         console.log("add")
+//     },
+//     remove: function(){
+//         console.log(this.data)
+//         console.log("remove")
+//     },
+// }
+
+//MY ANSWER
+
+
 // const myFuncHey = (function(){
 //     const data=[1, 2, 3];
     
@@ -828,23 +849,29 @@ var abby = Object.create(personProto,
 
 // myFuncHey.render();
 
+/////////////////////////
+//MAKE SURE NUMBER OF ARGS IS TWO
 
-//TURN THE CODE BELOW INTO A REVEALING MODULE PATTERN!
 
-// let myModule = {
-//     data:[1, 2, 3],
-//     render: function(){
-//         console.log(this.data)
-//         console.log("render")
-//     },
-//     add: function(){
-//         console.log(this.data)
-//         console.log("add")
-//     },
-//     remove: function(){
-//         console.log(this.data)
-//         console.log("remove")
-//     },
+//MY ANSWER
+// const f = (...args) => {
+//     if(args.length === 2){
+//         return `carry on with ${args[0]} + ${args[1]}`;
+//     }else{
+//         return "nope!!!";
+//     }
 // }
 
+//STEVE'S ANSWER
 
+// const f2 = function(a, b){
+//     if(arguments.length === f2.length){
+//         return `carry on with ${a} + ${b}`;
+//     } else {
+//         return "nope!!!";
+//     }
+// }
+//The length property of a function is the length of the number of arguments actually passed in.
+
+// console.log(f2(2, 3))
+// console.log(f2(1, 2, 4))

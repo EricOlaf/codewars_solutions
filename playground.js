@@ -9,8 +9,8 @@
 // console.log('y = ' + y);
 // // y = 3
 
-// z = 0;
-// let z = 1; Cannont access variable before it's declared.
+// // z = 0;
+// let z = 1; //Cannont access variable before it's declared.
 
 // var myFunc = () => {
 //     console.log('z = ' + z);
@@ -130,7 +130,7 @@
 // }
 
 // let obj2 = obj1
-// obj1.age = 40;
+// obj1.age = 40; //You could set obj2.age = 40 and it would have the same affect.
 // console.log(obj1.age, obj2.age)
 
 
@@ -423,9 +423,7 @@ var abby = Object.create(personProto,
 
 //ERIC'S BANK
 
-// function bankOfEric(initialBalance, name) {
-//     let balance = initialBalance;
-    
+// function bankOfEric(balance, name) {
 //     return {
 //         deposit: function(amount){
 //             balance += amount;
@@ -461,7 +459,7 @@ var abby = Object.create(personProto,
 //             console.log(`Good ${timeOfDay}, ladies and gentlemen. I'm ${this.name}, I'm ${this.age}, and I am a ${this.job}.`)
 //         }else if(style === "friendly"){
 //             console.log(`What's good?! I'm ${this.name}, I'm ${this.age}, and I am a ${this.job}. I hope you're having a great ${timeOfDay}!`)
-//         }
+//         }else{return("you didn't enter in any params");}
 //     }
 // }
 
@@ -472,28 +470,31 @@ var abby = Object.create(personProto,
 // }
 
 
-// emily.presentation = john.presentation
+// emily.presentation = john.presentation;
+// //to steal John's identity we could set emily.presentation = john.presentation.bind(john)
 
-// emily.presentation("formal", "morning")
+// emily.presentation("formal", "morning");
 
-// john.presentation("formal", "morning")
+// john.presentation("formal", "morning");
 
-// john.presentation.call(emily, 'friendly', 'afternoon')
-//The above is called method borrowing. We use it with the call method.
+// john.presentation.call(emily, 'friendly', 'afternoon');
+// //The above is called method borrowing. We use it with the call method.
 
-// john.presentation.apply(emily, ['friendly', 'evening'])
-//This would not work in our case because our function is not expecting an array as the input.
+// john.presentation.apply(emily, ['friendly', 'evening']);
+// //This would not work in our case because our function is not expecting an array as the input.
+// //BUT IT DOES WORK!!! WHAAAAAA...
 
-// let johnFriendly = john.presentation.bind(john, 'friendly')
-//Doesn't automatically call a function, instead it returns a function that binds the function to the first parameter. As well we can pass more parameters to preset the function. 
+// let johnFriendly = john.presentation.bind(john, 'friendly');
+// //Doesn't automatically call a function, instead it returns a function that binds the function to the first parameter. As well we can pass more parameters to preset the function. 
 
-//carrying/currying is when we have a function based on another function but has some preset parameters.
+// //carrying/currying is when we have a function based on another function but has some preset parameters.
 
-// johnFriendly('morning')
+// johnFriendly('morning');
 
-// let emilyFormal = john.presentation.bind(emily, "formal")
+// let emilyFormal = john.presentation.bind(emily, "formal");
 
-// emilyFormal("evening")
+// emilyFormal("evening");
+// //The above is known as "Partial Application" where we make a function that returns another function with less parameters.
 
 // let numsArr = [1990, 1988, 1999, 2000, 2005, 1959]
 
@@ -852,7 +853,6 @@ var abby = Object.create(personProto,
 /////////////////////////
 //MAKE SURE NUMBER OF ARGS IS TWO
 
-
 //MY ANSWER
 // const f = (...args) => {
 //     if(args.length === 2){
@@ -875,3 +875,22 @@ var abby = Object.create(personProto,
 
 // console.log(f2(2, 3))
 // console.log(f2(1, 2, 4))
+
+////////////////PRACTICE
+
+// const funcMaker = (a) => {
+//     const add = (a, b) =>{
+//         return a + b;
+//     };
+//     return function(b){
+//         return add(a, b);
+//     };
+// }
+
+// const add10 = funcMaker(10);
+// const add20 = funcMaker(20);
+
+// console.log(add10(5));
+// console.log(add20(5));
+
+//If you care, this concept of having a function with multiple parameters return a new function with fewer parameters is called “Partial Application” and it’s a functional programming technique. JavaScript’s “.bind” method is a common example of this.

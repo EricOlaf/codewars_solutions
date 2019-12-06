@@ -3,37 +3,27 @@
 //////////////////////////////
 
 // var x = 1;
-// //console.log('y = ' + y);
-// //error: y is not defined, shows that if we don't use var it doesn't get hoisted.
+// console.log('y = ' + y);//error: y is not defined, shows that if we don't use var it doesn't get hoisted.
 // y = x + 2;
-// console.log('y = ' + y);
-// // y = 3
+// console.log('y = ' + y);// y = 3
 
-// // z = 0;
-// let z = 1; //Cannont access variable before it's declared.
+// let z = 1; //Cannot access variable before it's declared.
 
 // var myFunc = () => {
-//     console.log('z = ' + z);
-//     // z = undefined, due to hoisting in the scope of this function.
-//     console.log('x = ' + x);
-//     // x = 1, finds the parent x because x lower in this scope isn't set with var but rather changes the value of the global x.
+//     console.log('z = ' + z);// z = undefined, due to hoisting in the scope of this function.
+//     console.log('x = ' + x);// x = 1, finds the parent x because x lower in this scope isn't set with var so no hoisting but rather changes the value of the global x once it runs.
 //     y = y + 3 + x;
-//     console.log('y = ' + y);
-//     //y = 7, this is due to y = 3 above and x = 1
+//     console.log('y = ' + y);//y = 7, this is due to y = 3 above and x = 1
 //     x = 5;
-//     var z = 10
+//     var z = 10;
+//     w = 100;//where w is not instantiated with var, let, const it is put on the global context we can avoid this error with useStrict.
 // }
 
 // myFunc();
-
-// console.log("y = " +y);
-// // y = 7
-// console.log('x = ' +x);
-// // x = 5
-// console.log('z = ' + z);
-// // z = 0
-
-// console.log(x[0])
+// console.log("y = " +y); // y = 7
+// console.log('x = ' +x);// x = 5
+// console.log('z = ' + z);// z = 1
+// console.log('w = ' + w);// w = 100
 
 //////////////////////////////
 //LEXICAL
@@ -496,6 +486,8 @@ var abby = Object.create(personProto,
 // emilyFormal("evening");
 // //The above is known as "Partial Application" where we make a function that returns another function with less parameters.
 
+//////////////////////////////////////////////
+
 // let numsArr = [1990, 1988, 1999, 2000, 2005, 1959]
 
 // function arrayCalc (arr, fn) {
@@ -524,22 +516,16 @@ var abby = Object.create(personProto,
 // var japanFullAge = arrayCalc(ages, isFullAge.bind(this, 20));
 // console.log(japanFullAge);
 
-// let num = '8'
+// let num = 'five'
 
 // console.log(typeof(+num))
-
+// //Makes the string above into a number.
 
 // setTimeout(()=>{
 //     console.log("Hit inside the timeout")
 // }, 2000)
 
-// console.log("Hit outside")
-
-// console.log(a, b, c)
-
-// var a = 1;
-// let b = 2;
-// const c = 3;
+// console.log("Hit outside");
 
 ////////////////////////////////////
 //Checking for an empty object
@@ -560,7 +546,7 @@ var abby = Object.create(personProto,
 ////////////////////////////////////
 //How to use reduce on an object
 ////////////////////////////////////
-
+//Not a very pratical purpose...
 //arr.reduce((a,b)=>a+b)
 
 // var initialValue = 0;

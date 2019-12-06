@@ -1180,3 +1180,28 @@
 
 // console.log(generateRange(2, 10, 2))
 
+///////////////////
+/*NEW PROBLEM*/
+///////////////////
+
+//ASI = automatic semicolon injection, object literals, square bracket syntax and hoisting.
+//We are putting the obj a into an array and looping over the array. This won't work because there is no semicolon after the object. JS thinks that we are trying to call a variable called a inside of the object, but you would have to write it with quotes, ['a']. So it hoists it as undefined. To fix this we need to add a semicolon.
+// const a = {
+//     a: 123
+// }
+
+// [a].forEach(function(x){
+//     console.log(x)
+// })
+
+// for(const k in a){
+//     console.log(a[k]);
+// }
+
+// const a = {
+//     a: 123
+// };
+
+// [a].forEach(function(x){
+//     console.log(x)
+// })

@@ -183,3 +183,26 @@
 // s1.start();
 // console.log(s1.currentState(), s2.currentState())
 // console.log(s1 === s2);
+
+///////////////////STEVE GRIFFITH #7
+/*NEW PROBLEM*/ 
+///////////////////FIX THE CODE
+
+//SIMPLE CLOSURE, NO PROBLEM
+function f1(a){
+    let b = 2;
+    setTimeout(()=>{
+        console.log(a, b)
+    }, 1000);
+}
+
+//THIS ONE HAS A PROBLEM...
+function f2(){
+    for(let i = 0; i < 5; i++){
+        setTimeout(()=>{
+            console.log(i);
+        }, 1000*i);
+    }
+}
+
+f2();

@@ -872,5 +872,3 @@ var abby = Object.create(personProto,
 // console.log(add20(5));
 
 //This concept of having a function with multiple parameters return a new function with fewer parameters is called “Partial Application” and it’s a functional programming technique. JavaScript’s “.bind” method is a common example of this.
-
-console.log("man" > "aanasdfadm");

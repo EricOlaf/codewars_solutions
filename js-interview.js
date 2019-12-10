@@ -146,3 +146,40 @@
 /*NEW PROBLEM*/ 
 ///////////////////SINGLETON
 
+//Uses a closure to make it so that no matter how many instances we make they all refer to the same instance object. If you change one object you change them all.
+
+// const Singleton = (function(){
+//     let objInstance = null;
+//     function createInstance(){
+//         let _isRunning = false;
+//         function start(){
+//             _isRunning = true;
+//         }
+//         function stop(){
+//             _isRunning = false;
+//         }
+//         function currentState(){
+//             return _isRunning;
+//         }
+//         return{
+//             start,
+//             stop,
+//             currentState
+//         };
+//     }
+//     return{
+//         getInstance:function(){
+//             if(!objInstance){
+//                 objInstance = createInstance();
+//             }
+//             return objInstance;
+//         }
+//     }
+// })()
+
+// let s1 = Singleton.getInstance();
+// let s2 = Singleton.getInstance();
+// console.log(s1.currentState(), s2.currentState())
+// s1.start();
+// console.log(s1.currentState(), s2.currentState())
+// console.log(s1 === s2);

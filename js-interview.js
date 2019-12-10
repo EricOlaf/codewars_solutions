@@ -188,21 +188,41 @@
 /*NEW PROBLEM*/ 
 ///////////////////FIX THE CODE
 
-//SIMPLE CLOSURE, NO PROBLEM
-function f1(a){
-    let b = 2;
-    setTimeout(()=>{
-        console.log(a, b)
-    }, 1000);
-}
+// //SIMPLE CLOSURE, NO PROBLEM
+// // function f1(a){
+// //     let b = 2;
+// //     setTimeout(()=>{
+// //         console.log(a, b)
+// //     }, 1000);
+// // }
 
-//THIS ONE HAS A PROBLEM...
-function f2(){
-    for(let i = 0; i < 5; i++){
-        setTimeout(()=>{
-            console.log(i);
-        }, 1000*i);
-    }
-}
+// //THIS ONE HAS A PROBLEM... SETTIMEOUT KNOWS IT CAN USE THE VARIABLE AFTER THE LOOP SO IT DOESN'T TAKE THE VALUE ALONG WITH IT. THE VARIABLE i IS SCOPED TO THE FUNCTION NOT THE LOOP.
+// function f2(){
+//     for(var i = 0; i < 5; i++){
+//         setTimeout(function(){
+//             console.log(i);
+//         }, 1000*i);
+//     }
+// }
 
-f2();
+// //SOLUTION #1
+// //THIS WORKS BECAUSE IT USES BLOCK SCOPING WITH LET WHICH MAKES THE SETTIMEOUT TAKE THE VARIABLE I WITH IT BECAUSE IT KNOWS IT CAN'T USE IT AFTER THE LOOP HAS FINISHED.
+// function f3(){
+//     for(let i = 0; i < 5; i++){
+//         setTimeout(function(){
+//             console.log(i);
+//         }, 1000*i);
+//     }
+// }
+
+// //SOLUTION #2
+// //THIS WORKS BECAUSE IT BINDS THE VARIABLE i TO THE SETTIMEOUT. YOU CAN BIND IT TO 'THIS' TOO.
+// function f4(){
+//     for(var i = 0; i < 5; i++){
+//         setTimeout( (function(x){
+//             console.log(x);
+//         }).bind(null, i), 1000 * i);
+//     }
+// }
+
+// f2();

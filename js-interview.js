@@ -141,3 +141,8 @@
 // [a].forEach(function(x){
 //     console.log(x)
 // })
+
+///////////////////STEVE GRIFFITH #6
+/*NEW PROBLEM*/ 
+///////////////////SINGLETON
+

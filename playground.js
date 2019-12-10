@@ -556,6 +556,8 @@ var abby = Object.create(personProto,
 
 // console.log(sum) // logs 6
 
+// const foodVar = ["fruit", 'notFruit', 'cheese', ch1 = 'y', ch2 = 'w']
+
 // const food = {
 //     good: {
 //         fruit: {},
@@ -569,7 +571,9 @@ var abby = Object.create(personProto,
 //     bad:{}
 // }
 
-// console.log(food.good.notFruit.good.pizza[1].w)
+// console.log(food.good.notFruit.good.pizza[1].w);// WORKS: provolone
+// console.log(food['good']['notFruit'].good.pizza[1]['y']);//WORKS: cheddar
+// console.log(food.good[foodVar[1]]['good'].pizza[1][foodVar[4]]);//WORKS: provolone
 
 // function pen(){
 //     let shh = 0;
@@ -629,30 +633,19 @@ var abby = Object.create(personProto,
 //     console.log(input.value)
 // }, 1000));
 
-
 // const input = document.querySelector('input')
 
-// const debounce = (fn, timeDebounce) => {
-//    let debTimer = null;
-//    return function(a){
-//        console.log(this);
-//        if(debTimer){
-//            clearTimeout(debTimer)
-//        }
-//        debTimer = setTimeout(()=>{fn(a)}, timeDebounce)
-//    } 
+// const debounce = (func) =>{
+//  let timer = null;
+//  return function(e){
+//     clearTimeout(timer);
+//     timer = setTimeout(()=>{func(e)}, 2000)
+//  }
 // }
 
-// input.addEventListener('keyup', debounce((e)=>{
-//     console.log(e)
-// }, 2000))
-
-// const keyFunc = () => {
-//     return(...e)=>{
-//         console.log(...e)
-//     }
-// }
-
+// input.addEventListener('keyup', debounce(()=>{
+//     console.log(input.value);
+// }));
 
 // input.addEventListener('keyup', (e)=>{keyFunc(e)})
 
@@ -811,7 +804,6 @@ var abby = Object.create(personProto,
 
 //MY ANSWER
 
-
 // const myFuncHey = (function(){
 //     const data=[1, 2, 3];
     
@@ -879,4 +871,6 @@ var abby = Object.create(personProto,
 // console.log(add10(5));
 // console.log(add20(5));
 
-//If you care, this concept of having a function with multiple parameters return a new function with fewer parameters is called “Partial Application” and it’s a functional programming technique. JavaScript’s “.bind” method is a common example of this.
+//This concept of having a function with multiple parameters return a new function with fewer parameters is called “Partial Application” and it’s a functional programming technique. JavaScript’s “.bind” method is a common example of this.
+
+console.log("man" > "aanasdfadm");

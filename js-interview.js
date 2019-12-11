@@ -227,6 +227,25 @@
 
 // f2();
 
-///////////////////STEVE GRIFFITH #7
+///////////////////STEVE GRIFFITH #8
 /*NEW PROBLEM*/ 
 ///////////////////FIX THE CODE
+//CREATE AN ARRAY THAT'S PREPOPULATED WITH 5 RANDOM NUMBERS.
+
+// //MY ANSWER
+// const arrMaker = (x) => {
+//     const arr = []
+//     for(let i = 0; i < x; i++){
+//         arr.push(Math.floor(Math.random() * 20));
+//     }
+//     return arr;
+// }
+// let a1 = arrMaker(5);
+// console.log('1', a1);
+
+// //STEVE'S ANSWERS, ARRAY.FROM() AND NEW ARRAY()
+// let a2 = Array.from({length: 5}, () => Math.floor(Math.random() * 20));
+// console.log('2', a2);
+
+// let a3 = new Array(5).fill(null).map(() => Math.floor(Math.random() * 20));
+// console.log('3', a3);

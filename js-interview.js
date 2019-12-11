@@ -276,3 +276,5 @@
 
 // console.log(color1());
 // //console.log('#'+ Math.random().toString(16))
+
+//SOME CHANGES

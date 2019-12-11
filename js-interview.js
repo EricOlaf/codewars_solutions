@@ -229,8 +229,7 @@
 
 ///////////////////STEVE GRIFFITH #8
 /*NEW PROBLEM*/ 
-///////////////////FIX THE CODE
-//CREATE AN ARRAY THAT'S PREPOPULATED WITH 5 RANDOM NUMBERS.
+///////////////////CREATE AN ARRAY THAT'S PREPOPULATED WITH 5 RANDOM NUMBERS.
 
 // //MY ANSWER
 // const arrMaker = (x) => {
@@ -249,3 +248,31 @@
 
 // let a3 = new Array(5).fill(null).map(() => Math.floor(Math.random() * 20));
 // console.log('3', a3);
+
+///////////////////STEVE GRIFFITH #9
+/*NEW PROBLEM*/ 
+///////////////////VAR VS LET HOISTING
+
+// //WHAT WILL THE OUTCOME BE?
+// function f(){
+//     //area = undefined;
+//     //name; not defined, not assigned a value.
+//     console.log('var', area);
+//     console.log('let', name);
+//     //name = "Abby"// will throw a reference error as well. Assign let and const at the top of your scope.
+//     let name = "Eric";
+//     var area = "Software Engineer";
+// };
+// f();
+// //VAR WILL BE UNDEFINED DUE TO HOISTING.
+// //LET WILL BE HOISTED AND GET A REFERENCE ERROR DUE TO TEMPORAL DEAD ZONE.
+
+///////////////////STEVE GRIFFITH #10
+/*NEW PROBLEM*/ 
+///////////////////GENERATE A RANDOM HEX COLOR, 6 NUMS, IN ONE LINE.
+// //HINT: TO USE A HEX NUMBER WITH LETTERS PASS IN 16 AS THE RADIX TO toString().
+// //MY ANSWER!!! ENDED UP BEING THE SAME AS STEVES'
+// const color1 = () =>'#'+ Math.random().toString(16).substring(2, 8);
+
+// console.log(color1());
+// //console.log('#'+ Math.random().toString(16))

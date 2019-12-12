@@ -277,7 +277,7 @@
 // console.log(color1());
 // //console.log('#'+ Math.random().toString(16))
 
-///////////////////STEVE GRIFFITH #10
+///////////////////STEVE GRIFFITH #11
 /*NEW PROBLEM*/ 
 ///////////////////MAP AND PARSEINT
 // //WHY ARE WE GETTING THIS WEIRD RESULT?
@@ -290,7 +290,7 @@
 // let ans2 = ['1', '7', '11'].map(x=>parseInt(x, 10));
 // console.log(ans2); //returns [1, NaN, 3];
 
-///////////////////STEVE GRIFFITH #11
+///////////////////STEVE GRIFFITH #12
 /*NEW PROBLEM*/ 
 ///////////////////DOT NOTATION VS SQUARE BRACKET
 //WHAT'S INSIDE OF SQUARE BRACKETS IS READ FIRST, WHILE DOT READS LEFT FROM RIGHT.

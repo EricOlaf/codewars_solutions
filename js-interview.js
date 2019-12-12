@@ -277,4 +277,15 @@
 // console.log(color1());
 // //console.log('#'+ Math.random().toString(16))
 
-//SOME CHANGES
+///////////////////STEVE GRIFFITH #10
+/*NEW PROBLEM*/ 
+///////////////////MAP AND PARSEINT
+//WHY ARE WE GETTING THIS WEIRD RESULT?
+
+//WHEN USING THE MAP FUNCTION BELOW WE ARE PASSING IN THE INDEX AS THE RADIX (THE BASE FOR THE NUMBER, DEFAULT IS BASE 10, BUT THIS IS CHANGED WITH EACH VALUE).
+let ans = ['1', '7', '11'].map(parseInt);
+console.log(ans); //returns [1, NaN, 3]; 'O' INDEX = BASE 10, '1'= BASE 1, '2'=BASE 2 OR BINARY.
+
+//MY ANSWER
+let ans2 = ['1', '7', '11'].map(x=>parseInt(x, 10));
+console.log(ans2); //returns [1, NaN, 3];

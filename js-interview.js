@@ -280,12 +280,38 @@
 ///////////////////STEVE GRIFFITH #10
 /*NEW PROBLEM*/ 
 ///////////////////MAP AND PARSEINT
-//WHY ARE WE GETTING THIS WEIRD RESULT?
+// //WHY ARE WE GETTING THIS WEIRD RESULT?
 
-//WHEN USING THE MAP FUNCTION BELOW WE ARE PASSING IN THE INDEX AS THE RADIX (THE BASE FOR THE NUMBER, DEFAULT IS BASE 10, BUT THIS IS CHANGED WITH EACH VALUE).
-let ans = ['1', '7', '11'].map(parseInt);
-console.log(ans); //returns [1, NaN, 3]; 'O' INDEX = BASE 10, '1'= BASE 1, '2'=BASE 2 OR BINARY.
+// //WHEN USING THE MAP FUNCTION BELOW WE ARE PASSING IN THE INDEX AS THE RADIX (THE BASE FOR THE NUMBER, DEFAULT IS BASE 10, BUT THIS IS CHANGED WITH EACH VALUE).
+// let ans = ['1', '7', '11'].map(parseInt);
+// console.log(ans); //returns [1, NaN, 3]; 'O' INDEX = BASE 10, '1'= BASE 1, '2'=BASE 2 OR BINARY.
 
-//MY ANSWER
-let ans2 = ['1', '7', '11'].map(x=>parseInt(x, 10));
-console.log(ans2); //returns [1, NaN, 3];
+// //MY ANSWER
+// let ans2 = ['1', '7', '11'].map(x=>parseInt(x, 10));
+// console.log(ans2); //returns [1, NaN, 3];
+
+///////////////////STEVE GRIFFITH #11
+/*NEW PROBLEM*/ 
+///////////////////DOT NOTATION VS SQUARE BRACKET
+//WHAT'S INSIDE OF SQUARE BRACKETS IS READ FIRST, WHILE DOT READS LEFT FROM RIGHT.
+
+// let sam = {
+//     castiel: "mary"
+// }
+// let dean = {
+//     john: "crowley",
+//     mary: "chuck"
+// }
+
+// console.log(dean[sam.castiel]);
+// console.log(dean.sam.castiel);
+// console.log(dean[sam['castiel']]);
+// console.log(dean[sam[castiel]]);
+
+/*
+GUESSES/ANSWERS: 
+1. 'chuck'
+2. TypeError: Cannot read property 'castiel' of undefined; this is looking for a sam property inside of dean
+3. 'chuck'
+4. ReferenceError: castiel is not defined; because castiel isn't in "".
+*/

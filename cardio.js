@@ -36,6 +36,7 @@
 
 //CHALLENGE 5: RETURN THE MAX CHARACTER IN THE STRING
 
+//ANSWER WITH AN OBJECT AND A FOR IN LOOP
 // const maxChar = (str) => {
 //     let myObj = {};
 //     let total = 0;
@@ -58,23 +59,29 @@
 //     return ans;
 // }
 
+//ANSWER WITH AN OBJECT AND REDUCE
+// const maxChar = (str) => {
+//     let charObj = {};
+//     let total = 0;
+//     return str.split("").reduce((ans, ltr)=>{
+//         //setting up charObj
+//         if(charObj[ltr]){
+//             charObj[ltr]++ 
+//         }else{
+//             charObj[ltr] = 1;
+//         }
+//         //logic to find most occuring num
+//         let num = charObj[ltr];
+//         if(num > total){
+//             total = num;
+//             return ltr
+//         }else if(num === total){
+//             return `${ans}, ${ltr}`
+//         }return ans
+//     }, "")
+// }
 
-console.log("final ANSWER: ", maxChar("javascriptjptt"))
-
-
-// return Object.keys(myObj).reduce((ans, letter)=>{
-    //     console.log(ans, letter);
-    //     if(myObj[letter] > total){
-    //         total = myObj[letter];
-    //         console.log("first hit")
-    //         return ans = `${letter}`;
-    //     }
-    //     else if(myObj[letter] === total){
-    //         console.log("second hit")
-    //         return ans +", " + letter;
-    //     }
-    //         return ans;
-    // }, "")
+// console.log("final ANSWER: ", maxChar("javascript"))
 
 //CHALLENGE 6: 
 

@@ -83,6 +83,33 @@
 
 // console.log("final ANSWER: ", maxChar("javascript"))
 
-//CHALLENGE 6: 
+//CHALLENGE 6: FIZZBUZZ
 
-//const revStr = () => {}
+// const fB = () => {
+//     let ans = "";
+//     const addWord = (word) => {
+//         ans += word +'\n'
+//     }
+//     for(let i = 1; i <= 100; i++){
+//         switch(true){
+//             case i%15 === 0:
+//                 addWord("FIZZ-BUZZ");
+//                 break;
+//             case i%5 === 0:
+//                 addWord("buzz");
+//                 break;
+//             case i%3 === 0:
+//                 addWord("fizz");
+//                 break;
+//             default:
+//                 addWord(i);
+//         }
+//     }
+//     return ans;
+// }
+
+// const fB = () =>{
+//     for(let i=1;i<101;i++)console.log((i%3?'':'fizz')+(i%5?'':'buzz')||i)
+// }
+
+// fB();

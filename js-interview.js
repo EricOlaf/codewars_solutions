@@ -315,3 +315,25 @@ GUESSES/ANSWERS:
 3. 'chuck'
 4. ReferenceError: castiel is not defined; because castiel isn't in "".
 */
+
+///////////////////STEVE GRIFFITH #13
+/*NEW PROBLEM*/ 
+///////////////////USING "THIS" IN OBJECT METHODS
+//WHAT WILL THE RETURN STATMENTS BE???
+
+const circle = {
+    radius: 10,
+    circumfrence: function(){
+        return(2 * Math.PI * this.radius);
+    },
+    diameter(){
+        return( this.radius * 2);
+    },
+    area: ()=>{
+        return(Math.PI * this.radius * this.radius)
+    }
+}
+
+console.log(circle.circumfrence());//62.83
+console.log(circle.diameter());//20
+console.log(circle.area());//NaN

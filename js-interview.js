@@ -321,19 +321,24 @@ GUESSES/ANSWERS:
 ///////////////////USING "THIS" IN OBJECT METHODS
 //WHAT WILL THE RETURN STATMENTS BE???
 
-const circle = {
-    radius: 10,
-    circumfrence: function(){
-        return(2 * Math.PI * this.radius);
-    },
-    diameter(){
-        return( this.radius * 2);
-    },
-    area: ()=>{
-        return(Math.PI * this.radius * this.radius)
-    }
-}
 
-console.log(circle.circumfrence());//62.83
-console.log(circle.diameter());//20
-console.log(circle.area());//NaN
+// const circle = {
+//     radius: 10,
+//     circumfrence: function(){
+//         //console.log(this);
+//         return(2 * Math.PI * this.radius);
+//     },
+//     diameter(){
+//         //console.log(this);
+//         return( this.radius * 2); 
+//     },
+//     area: ()=>{
+//         //console.log(this);
+//         return(Math.PI * this.radius * this.radius)
+//     }
+// }
+
+// console.log(circle.circumfrence());//62.83
+// console.log(circle.diameter());//20 shorthand synrtax
+// console.log(circle.area());//NaN arrow, lexical scoping
+// //In lexical scoping inner functions use creation context. The context of the circle object is the window so it goes to the window to find the variable radius.

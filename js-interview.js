@@ -381,9 +381,9 @@ GUESSES/ANSWERS:
 ///////////////////STEVE GRIFFITH #16
 /*NEW PROBLEM*/ 
 ///////////////////CALCULATE THE BIGGEST DIFFERENCE
+//HINT: max and min only take in numbers not an array of numbers.
+// const diff = (arr) => {
+//    return Math.max(...arr) - Math.min(...arr);
+// }
 
-const diff = (arr) => {
-   return Math.max(arr) - Math.min(arr);
-}
-
-console.log([10, 5, 7, 4, 2, 8, 4]);
+// console.log(diff([10, 5, 7, 4, 2, 8, 4]));

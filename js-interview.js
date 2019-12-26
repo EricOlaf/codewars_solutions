@@ -359,6 +359,6 @@ GUESSES/ANSWERS:
 //     return(!isNaN(num) && parseInt(num) === num);
 // }
 
-console.log(isInt(3.5));
-console.log(isInt(42));
-console.log(isInt(1.0000000));
+// console.log(isInt(3.5));
+// console.log(isInt(42));
+// console.log(isInt(1.0000000));

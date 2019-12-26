@@ -345,7 +345,7 @@ GUESSES/ANSWERS:
 
 ///////////////////STEVE GRIFFITH #14
 /*NEW PROBLEM*/ 
-///////////////////USING "THIS" IN OBJECT METHODS
+///////////////////IS THIS NUMBER AN INTEGER?
 //WRITE A FUNCTION TO DETERMINE IF A NUMBER IS AN INTEGER.
 
 //MY ANSWER
@@ -362,3 +362,28 @@ GUESSES/ANSWERS:
 // console.log(isInt(3.5));
 // console.log(isInt(42));
 // console.log(isInt(1.0000000));
+
+///////////////////STEVE GRIFFITH #15
+/*NEW PROBLEM*/ 
+///////////////////CASE INSENSITIVE ANAGRAM
+//(AN ANGRAM HAS TWO DIFFERENT WORDS THAT HAVE THE SAME LETTERS WITH A DIFFERENT ORDER)
+
+// const isAnagram = (s1, s2) => {
+//     const s1Sorted = s1.split("").sort().join("").toLowerCase();
+//     const s2Sorted = s2.split("").sort().join("").toLowerCase();
+    
+//     return s1Sorted === s2Sorted;
+// }
+
+// console.log(isAnagram("hello", "jello"));
+// console.log(isAnagram("hello", "loleh"));
+
+///////////////////STEVE GRIFFITH #16
+/*NEW PROBLEM*/ 
+///////////////////CALCULATE THE BIGGEST DIFFERENCE
+
+const diff = (arr) => {
+   return Math.max(arr) - Math.min(arr);
+}
+
+console.log([10, 5, 7, 4, 2, 8, 4]);

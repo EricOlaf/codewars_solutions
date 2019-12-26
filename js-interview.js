@@ -342,3 +342,23 @@ GUESSES/ANSWERS:
 // console.log(circle.diameter());//20 shorthand synrtax
 // console.log(circle.area());//NaN arrow, lexical scoping
 // //In lexical scoping inner functions use creation context. The context of the circle object is the window so it goes to the window to find the variable radius.
+
+///////////////////STEVE GRIFFITH #14
+/*NEW PROBLEM*/ 
+///////////////////USING "THIS" IN OBJECT METHODS
+//WRITE A FUNCTION TO DETERMINE IF A NUMBER IS AN INTEGER.
+
+//MY ANSWER
+// const isInt = (num) => {
+//     const numArr = num.toString().split(".");
+//     return numArr.length < 2;
+// }
+
+//STEVE'S ANSWER
+// const isInt = (num) => {
+//     return(!isNaN(num) && parseInt(num) === num);
+// }
+
+console.log(isInt(3.5));
+console.log(isInt(42));
+console.log(isInt(1.0000000));

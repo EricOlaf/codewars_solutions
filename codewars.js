@@ -56,7 +56,7 @@
 
 //Math.max and Math.min take in numbers and not arrays, that's why we use the spread operator!
 
-//When using a ternary you write return first then the condition. If you want two options you go with ? :, but if you want only and if you use a &&.
+//When using a ternary you write return first then the condition. If you want two options(if, else) you go with ? :, but if you want only an if statement you use a &&.
 
 // console.log(sumOfDifferences([]), `problem []`)
 // //0

@@ -387,3 +387,33 @@ GUESSES/ANSWERS:
 // }
 
 // console.log(diff([10, 5, 7, 4, 2, 8, 4]));
+
+///////////////////STEVE GRIFFITH #17
+/*NEW PROBLEM*/ 
+///////////////////PALINDROME(WORD SPELT THE SAME BACKWARDS)
+
+// let pal = w =>
+//     w.toLowerCase()=== w.split("").reverse().join("").toLowerCase();
+
+// console.log(pal("RADar"));
+// console.log(pal("eric"));
+
+///////////////////STEVE GRIFFITH #18
+/*NEW PROBLEM*/ 
+///////////////////SCOPING
+
+// (function f1() {
+// var a = 1, b = 2;
+// var x = y = 2;
+// })();
+// (function f2() {
+// let j = 1, k = 1;
+// let r = s = 3;
+// })();
+
+// console.log(window); // y = 2, s = 3 This is because neither variables were initialized with a keyword. This makes the computer search for the parent scope until it hits the parent scope where it isn't found so it creates it with var.
+
+///////////////////STEVE GRIFFITH #19
+/*NEW PROBLEM*/ 
+///////////////////SCRIPT TO DETERMINE THE BRIGHTNESS OF THE BACKGROUND
+

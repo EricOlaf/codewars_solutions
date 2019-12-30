@@ -477,16 +477,56 @@ hello = holle
 /*NEW PROBLEM*/ 
 ///////////////////WHAT WILL THE OUTPUT BE?
 
-let obj = {
-    'a' : 'three',
-    b : "five",
-    'c' : "five",
-    a : 3,
-    'b' : "four",
-    "c" : 'fem',
-    "a" : "tre",
-    "b": 'fyra',
-    c : 5
-}
+// let obj = {
+//     'a' : 'three',
+//     b : "five",
+//     'c' : "five",
+//     a : 3,
+//     'b' : "four",
+//     "c" : 'fem',
+//     "a" : "tre",
+//     "b": 'fyra',
+//     c : 5
+// }
 
-console.log(obj);
+// console.log(obj);// { a: 'tre', b: 'fyra', c: 5 }
+// //In objects every property is saved as a string so they are all overwritten by the final value.
+
+///////////////////STEVE GRIFFITH #22
+/*NEW PROBLEM*/ 
+///////////////////WHAT WILL THE OUTPUT BE?
+
+// let box = {};
+// let bag = {
+//   prop: "bag",
+//   can: "box"
+// };
+// let can = {
+//   prop: "can",
+//   bag: "box"
+// };
+// box[bag] = "Monday"; //box{'[object Object]': 'Monday'}
+// box[can] = "Tuesday";//box{'[object Object]': 'Tuesday'} overwrites the above.
+
+// console.log(box);
+
+///////////////////STEVE GRIFFITH #23
+/*NEW PROBLEM*/ 
+///////////////////WHAT WILL THE OUTPUT BE?
+
+let obj = { a: 1 };
+let objb = { a: 1 };
+
+if ({ a: 1 } === { a: 1 }) {
+  console.log("Monday");
+} else if ({ a: 1 } == { a: 1 }) {
+  console.log("Tuesday");
+} else if (obj == { a: 1 }) {
+  console.log("Wednesday");
+} else if (obj == objb) {
+  console.log("Thursday");
+} else if (Object.is(obj, objb)) {
+  console.log("Friday");
+} else {
+  console.log("Saturday");
+}

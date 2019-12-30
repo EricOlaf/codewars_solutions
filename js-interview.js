@@ -416,7 +416,7 @@ GUESSES/ANSWERS:
 ///////////////////STEVE GRIFFITH #19
 /*NEW PROBLEM*/ 
 ///////////////////SCRIPT TO DETERMINE THE BRIGHTNESS OF THE BACKGROUND
-// //USES SOME BITWISE FUNCTIONALITY THAT I'M NOT FAMILIAR WITH.
+// //USES SOME BITWISE FUNCTIONALITY THAT I'M NOT FAMILIAR WITH. ALL STEVE'S ANSWER.
 
 // /**
 //  * Write a script to determine the brightness of the 
@@ -444,3 +444,49 @@ GUESSES/ANSWERS:
 // log(textColor('#F0E68C')); //khaki
 // log(textColor('#990000')); //rebeccapurple
 // log(textColor('#6495ED')); //cornflowerblue
+
+///////////////////STEVE GRIFFITH #20
+/*NEW PROBLEM*/ 
+///////////////////FLIP THE VOWELS
+/*
+EG:
+cottage = cettago
+hello = holle
+*/
+
+// let flip = w => {
+//     let vow = ['a', 'e', 'i', 'o', 'u'];
+//     let letters = [], letInd = [];
+//     w = w.toLowerCase().split("");
+//     w.forEach((l,i)=>{
+//         if(vow.includes(l)){
+//             letters.push(l);
+//             letInd.push(i);
+//     }});
+//     letRev = letters.reverse();
+//     letInd.forEach((ind, i)=>{
+//         w.splice(ind, 1, letRev[i]);
+//     })
+//     return w.join("");
+// };
+
+// console.log(flip('Eric'));
+// console.log(flip('javascript'));
+
+///////////////////STEVE GRIFFITH #21
+/*NEW PROBLEM*/ 
+///////////////////WHAT WILL THE OUTPUT BE?
+
+let obj = {
+    'a' : 'three',
+    b : "five",
+    'c' : "five",
+    a : 3,
+    'b' : "four",
+    "c" : 'fem',
+    "a" : "tre",
+    "b": 'fyra',
+    c : 5
+}
+
+console.log(obj);

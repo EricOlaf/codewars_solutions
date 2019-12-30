@@ -514,19 +514,21 @@ hello = holle
 /*NEW PROBLEM*/ 
 ///////////////////WHAT WILL THE OUTPUT BE?
 
-let obj = { a: 1 };
-let objb = { a: 1 };
+// let obj = { a: 1 };
+// let objb = { a: 1 };
 
-if ({ a: 1 } === { a: 1 }) {
-  console.log("Monday");
-} else if ({ a: 1 } == { a: 1 }) {
-  console.log("Tuesday");
-} else if (obj == { a: 1 }) {
-  console.log("Wednesday");
-} else if (obj == objb) {
-  console.log("Thursday");
-} else if (Object.is(obj, objb)) {
-  console.log("Friday");
-} else {
-  console.log("Saturday");
-}
+// if ({ a: 1 } === { a: 1 }) {
+//   console.log("Monday");
+// } else if ({ a: 1 } == { a: 1 }) {
+//   console.log("Tuesday");
+// } else if (obj == { a: 1 }) {
+//   console.log("Wednesday");
+// } else if (obj == objb) {
+//   console.log("Thursday");
+// } else if (Object.is(obj, objb)) {
+//   console.log("Friday");
+// } else {
+//   console.log("Saturday");
+// }
+
+//Objects are reference pointers and don't compare values like primitives.

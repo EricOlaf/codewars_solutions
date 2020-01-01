@@ -532,3 +532,43 @@ hello = holle
 // }
 
 //Objects are reference pointers and don't compare values like primitives.
+
+///////////////////STEVE GRIFFITH #23
+/*NEW PROBLEM*/ 
+///////////////////WHAT WILL THE OUTPUT BE?
+
+// const numbers = [1, 2, 3];
+// numbers[10] = 11;
+
+// for (let i = 0; i < numbers.length; i++) {
+//   console.log(i, numbers[i]);
+// }//1-11
+// numbers.forEach((num, idx) => {
+//   console.log(idx, num);
+// });//1-11
+// console.log(numbers);
+
+//ANSWER==>
+/*
+for loop =>
+0 1
+1 2
+2 3
+3 undefined
+4 undefined
+5 undefined
+6 undefined
+7 undefined
+8 undefined
+9 undefined
+10 11
+
+forEach =>
+0 1
+1 2
+2 3
+10 11
+
+numbers array =>
+[ 1, 2, 3, <7 empty items>, 11 ]
+*/

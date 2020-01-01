@@ -532,6 +532,7 @@ hello = holle
 // }
 
 //Objects are reference pointers and don't compare values like primitives.
+//Ans is Saturday
 
 ///////////////////STEVE GRIFFITH #24
 /*NEW PROBLEM*/ 
@@ -548,6 +549,7 @@ hello = holle
 // });//1-11
 // console.log(numbers);
 
+//HINT: JS will add in undefined into all of the indexes that are not filled.
 //ANSWER==>
 /*
 for loop =>
@@ -597,3 +599,17 @@ numbers array =>
 //     cb3(castiel, cb1, cb2);
 //     cb3(crowley, cb1, cb2);
 //   })(ftw, wtf, cb);
+
+///////////////////STEVE GRIFFITH #26
+/*NEW PROBLEM*/ 
+///////////////////EXTENDING PROTOTYPES
+
+// let myStr = "Hello world!"
+// String.prototype.flip = function(){
+//     return this.split("").reverse().join("");
+// }
+
+// console.log(myStr.flip());
+
+
+

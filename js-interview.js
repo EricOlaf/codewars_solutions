@@ -533,7 +533,7 @@ hello = holle
 
 //Objects are reference pointers and don't compare values like primitives.
 
-///////////////////STEVE GRIFFITH #23
+///////////////////STEVE GRIFFITH #24
 /*NEW PROBLEM*/ 
 ///////////////////WHAT WILL THE OUTPUT BE?
 
@@ -572,3 +572,28 @@ forEach =>
 numbers array =>
 [ 1, 2, 3, <7 empty items>, 11 ]
 */
+
+///////////////////STEVE GRIFFITH #25
+/*NEW PROBLEM*/ 
+///////////////////CALLBACKS
+
+// let ftw = function(name) {
+//     console.log("Depending on the season,", name, "is a good guy");
+//   };
+//   let wtf = function(name) {
+//     console.warn("Depending on the season,", name, "is a bad guy");
+//   };
+//   const cb = (obj, cb1, cb2) => {
+//     if(obj.isGood){
+//         cb1(obj.name);
+//     }else{
+//         cb2(obj.name);
+//     }
+// }
+//   let app = (function(cb1, cb2, cb3) {
+//     const castiel = { name: "Castiel", isGood: true };
+//     const crowley = { name: "Crowley", isGood: false };
+   
+//     cb3(castiel, cb1, cb2);
+//     cb3(crowley, cb1, cb2);
+//   })(ftw, wtf, cb);

@@ -162,15 +162,51 @@
 // ex. 'elbow' === 'below'
 // ex. 'Dormitory' === 'dirty room##'
 
-const ana = (a, b) =>{
-    //omitting the plus in the regex gave me just the letters and not the whole word.
-    const srt = e => e.toLowerCase().match(/[a-z]/g).sort().join("");
-    return srt(a) === srt(b);
-};
+// const ana = (a, b) =>{
+//     //omitting the plus in the regex gave me just the letters and not the whole word. If I put an i after the g it makes it case insensitive.
+//     const srt = e => e.toLowerCase().match(/[a-z]/g).sort().join("");
+//     return srt(a) === srt(b);
+// };
 
-console.log(ana('Dormitory', 'dirty room##'));
+// console.log(ana('Dormitory', 'dirty room##'));
 
 //CHALLENGE #5 : LETTER CHANGES
 // Change every letter of the string to the one that follows it and capitalize the vowels
 // Z should turn to A
 // ex. 'hello there' === 'Ifmmp UIfsf'
+
+// const chg = s => {
+//     const ltrArr = 'abcdefghijklmnopqrstuvwxyz'.split("");
+//     const vow = 'aeiou'.split("");
+
+//     return s.toLowerCase().split("").map((e)=>{
+//         const arrInd = ltrArr.findIndex(el=> el === e);
+//         if(e === 'z'){
+//             e = 'a';
+//         }else if(ltrArr.includes(e)){
+//             e = ltrArr[arrInd + 1];
+//         }
+//         if(vow.includes(e)){
+//             e = e.toUpperCase();
+//         }
+//         return e;
+//     }).join("");
+// }
+
+//BRAD'S ANSWER =====>
+
+function letterChanges(str) {
+    let newStr = str.toLowerCase().replace(/[a-z]/gi, char => {
+      if (char === 'z' || char === 'Z') {
+        return 'a';
+      } else {
+        return String.fromCharCode(char.charCodeAt() + 1);
+      }
+    });
+  
+    newStr = newStr.replace(/a|e|i|o|u/gi, vowel => vowel.toUpperCase());
+  
+    return newStr;
+  }
+
+console.log(letterChanges('z1z hello THEre!!!'));

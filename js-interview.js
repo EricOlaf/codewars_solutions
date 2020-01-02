@@ -610,6 +610,3 @@ numbers array =>
 // }
 
 // console.log(myStr.flip());
-
-
-

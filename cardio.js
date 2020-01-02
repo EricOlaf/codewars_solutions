@@ -74,14 +74,14 @@
 //         let num = charObj[ltr];
 //         if(num > total){
 //             total = num;
-//             return ltr
+//             return ltr;
 //         }else if(num === total){
-//             return `${ans}, ${ltr}`
-//         }return ans
+//             return `${ans}, ${ltr}`;
+//         }return ans;
 //     }, "")
 // }
 
-// console.log("final ANSWER: ", maxChar("javascript"))
+// console.log("final ANSWER: ", maxChar("javascriptt"))
 
 //CHALLENGE 6: FIZZBUZZ
 
@@ -113,3 +113,33 @@
 // }
 
 // fB();
+
+////////////////////////////////////////////////////
+/*CARDIO SESSION 2*/
+////////////////////////////////////////////////////
+
+//CHALLENGE #1 : LONGEST WORD, 
+//RETURN THE LONGEST WORD OR THE LONGEST WORDS IN A STRING IN AN ARRAY(IF MULTIPLE).
+const strFunc = str => {
+    let lngWrd = 0;
+    return str.split(" ").reduce((ans, wrd)=>{
+        const ln = wrd.length
+        if(ln > lngWrd){
+            lngWrd = ln;
+            return wrd;
+        }else if(ln === lngWrd){
+            return(`${ans}, ${wrd}`);
+        }
+    }, "")
+}
+console.log(strFunc("My name is Eric. howdy party dudes"))
+
+
+
+//CHALLENGE #2
+
+
+//CHALLENGE #3
+
+
+//CHALLENGE #4

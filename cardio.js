@@ -120,26 +120,37 @@
 
 //CHALLENGE #1 : LONGEST WORD, 
 //RETURN THE LONGEST WORD OR THE LONGEST WORDS IN A STRING IN AN ARRAY(IF MULTIPLE).
-const strFunc = str => {
-    let lngWrd = 0;
-    return str.split(" ").reduce((ans, wrd)=>{
-        const ln = wrd.length
-        if(ln > lngWrd){
-            lngWrd = ln;
-            return wrd;
-        }else if(ln === lngWrd){
-            return(`${ans}, ${wrd}`);
-        }
-    }, "")
+// const strFunc = str => {
+//     let lngWrd = 0;
+//     return str.toLowerCase().match(/[a-z0-9]+/g).reduce((ans, wrd)=>{
+//         const ln = wrd.length
+//         if(ln > lngWrd){
+//             lngWrd = ln;
+//             return wrd;
+//         }else if(ln === lngWrd){
+//             return(`${ans}, ${wrd}`);
+//         }
+//     }, "")
+// }
+// console.log(strFunc("My name is Eric. Howdy party dudes."))
+
+
+
+//CHALLENGE #2 : ARRAY CHUNKING
+// Split an array into chunked arrays of a specific length
+const chunk = (arr, num) => {
+    let chArr = [];
+    for(let i = 0; i < arr.length; i+=num){
+        chArr.push([arr.slice(i, (i+num))]);
+    }
+    return chArr;
 }
-console.log(strFunc("My name is Eric. howdy party dudes"))
+console.log(chunk([1,2,3,4,5,6,7], 3));
 
-
-
-//CHALLENGE #2
-
-
-//CHALLENGE #3
+//CHALLENGE #3 : ANAGRAM
+// Return true if anagram and false if not
+// ex. 'elbow' === 'below'
+// ex. 'Dormitory' === 'dirty room##'
 
 
 //CHALLENGE #4

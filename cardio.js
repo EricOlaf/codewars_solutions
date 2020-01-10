@@ -195,18 +195,30 @@
 
 //BRAD'S ANSWER =====>
 
-function letterChanges(str) {
-    let newStr = str.toLowerCase().replace(/[a-z]/gi, char => {
-      if (char === 'z' || char === 'Z') {
-        return 'a';
-      } else {
-        return String.fromCharCode(char.charCodeAt() + 1);
-      }
-    });
+// function letterChanges(str) {
+//     let newStr = str.toLowerCase().replace(/[a-z]/gi, char => {
+//       if (char === 'z' || char === 'Z') {
+//         return 'a';
+//       } else {
+//         return String.fromCharCode(char.charCodeAt() + 1);
+//       }
+//     });
   
-    newStr = newStr.replace(/a|e|i|o|u/gi, vowel => vowel.toUpperCase());
+//     newStr = newStr.replace(/a|e|i|o|u/gi, vowel => vowel.toUpperCase());
   
-    return newStr;
-  }
+//     return newStr;
+//   }
 
-console.log(letterChanges('z1z hello THEre!!!'));
+// console.log(letterChanges('z1z hello THEre!!!'));
+
+////////////////////////////////////////////////////
+/*CARDIO SESSION 3*/
+////////////////////////////////////////////////////
+
+//CHALLENGE #1 : 
+
+//CHALLENGE #2 : 
+
+//CHALLENGE #3 : 
+
+//CHALLENGE #4 : 

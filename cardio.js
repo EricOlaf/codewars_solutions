@@ -239,5 +239,8 @@
 //CHALLENGE #3 : SEEK AND DESTROY
 //TAKE IN AN ARRAY AND UNNUMBERED PARAMETERS. TAKE OUT THE UNNUMBERED PARAMS FROM THE ARRAY AND RETURN IT.
 //([2, 3, 4, 6, 6, 'hello'], 2, 6) ==> [3, 4, 'hello']
+const sAndD = (arr, ...args) => arr.filter(e => !args.includes(e))
+//When only wanting to return some values, don't use map use filter!!!
+console.log(sAndD([2, 3, 4, 6, 6, 'hello'], 2, 6));
 
 //CHALLENGE #4 : 

@@ -215,10 +215,29 @@
 /*CARDIO SESSION 3*/
 ////////////////////////////////////////////////////
 
-//CHALLENGE #1 : 
+//CHALLENGE #1 : ADD ALL NUMBERS PASSED IN AS PARAMETERS
 
-//CHALLENGE #2 : 
+// const addAll = (...args) => args.reduce((a, b)=> a+b, 0);
 
-//CHALLENGE #3 : 
+// console.log(addAll(12, 10, 22, 4));
+//CHALLENGE #2 : SUM ALL PRIMES
+
+// const sumPrime = num => {
+//   let arr = [];
+//   let primes = 0;
+//   for(let i = 2; i <= num; i++){
+//     if(arr.find(e=> i%e === 0)){
+//       //do nothing
+//     }else{primes += i;}
+//     arr.push(i);
+//   };
+//   return primes;
+// }
+
+// console.log(sumPrime(100));
+
+//CHALLENGE #3 : SEEK AND DESTROY
+//TAKE IN AN ARRAY AND UNNUMBERED PARAMETERS. TAKE OUT THE UNNUMBERED PARAMS FROM THE ARRAY AND RETURN IT.
+//([2, 3, 4, 6, 6, 'hello'], 2, 6) ==> [3, 4, 'hello']
 
 //CHALLENGE #4 : 

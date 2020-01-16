@@ -239,8 +239,74 @@
 //CHALLENGE #3 : SEEK AND DESTROY
 //TAKE IN AN ARRAY AND UNNUMBERED PARAMETERS. TAKE OUT THE UNNUMBERED PARAMS FROM THE ARRAY AND RETURN IT.
 //([2, 3, 4, 6, 6, 'hello'], 2, 6) ==> [3, 4, 'hello']
-const sAndD = (arr, ...args) => arr.filter(e => !args.includes(e))
-//When only wanting to return some values, don't use map use filter!!!
-console.log(sAndD([2, 3, 4, 6, 6, 'hello'], 2, 6));
+// const sAndD = (arr, ...args) => arr.filter(e => !args.includes(e))
+// //When only wanting to return some values, don't use map use filter!!!
+// console.log(sAndD([2, 3, 4, 6, 6, 'hello'], 2, 6));
 
-//CHALLENGE #4 : 
+//CHALLENGE #4 : SORT BY HEIGHT
+//KEEP THE -1 IN THEIR POSITIONS BUT MOVE THE REST OF THE NUMBERS TO ASCENDING POSITIONS.
+// const sortByHeight = (arr) => {
+//   let nums = []
+//   let newArr = arr.map(e=>{
+//     if(e === -1){
+//       return -1
+//     }else{
+//       nums.push(e);
+//     }
+//   })
+//   nums.sort((a,b)=> a-b);
+//   return newArr.map(e=>{
+//     if(e === -1){
+//       return -1
+//     } else {
+//       let x = nums.shift();
+//       return x;
+//     }
+//   })
+// }
+// console.log(sortByHeight([-1, 5, 2, -1, 3, 4, -1]))
+
+//CHALLENGE #5 : FIND THE MISSING LETTERS
+//RETURN THE MISSING LETTER NOT IN THE STRING
+
+//  const missLetters = arr => {
+//    let alpha = "abcdefghijklmnopqrstuvwxyz".split("");
+
+//   for(let i = 0; i < arr.length; i++){
+//     if(arr[i] !== alpha[i]){return alpha[i]}
+//   }
+//   return undefined;
+//  }
+
+//BRAD'S ANSWER
+
+// const missLetters = str => {
+// let compare = str.charCodeAt(0);
+// let missing;
+
+// str.split("").forEach((e, i)=>{
+//   if(str.charCodeAt(i) === compare){
+//     compare++
+//   }else{
+//     missing = String.fromCharCode(compare);
+//   }
+// })
+
+// return missing;
+// }
+
+//  console.log(missLetters("abcefgi"));
+
+//CHALLENGE #6 : EVEN AND ODD SUMS
+//RETURN AN ARRAY FOR THE TOTALS OF EVENS AND ODDS
+
+// const evenAndOdds = arr => {
+//   let evens = 0;
+//   let odds = 0;
+//   arr.forEach(e=>{
+//     e%2 === 0 ? evens += e : odds += e;
+//   })
+//   return[evens, odds];
+// }
+
+// console.log(evenAndOdds([3, 2, 5, 6, 1, 4]))

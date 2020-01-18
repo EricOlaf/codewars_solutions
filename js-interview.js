@@ -610,3 +610,43 @@ numbers array =>
 // }
 
 // console.log(myStr.flip());
+
+///////////////////STEVE GRIFFITH #27
+/*NEW PROBLEM*/ 
+///////////////////PROPERTIES OF NUMBERS
+
+// /**
+//  * What will the value of the three log statements be?
+//  */
+// let n1 = 111; //Primitive
+// let n2 = new Number(123); //new makes an object with n2 = 123 
+// let n3 = Number(123); //Primitive
+// n1.prop = true; //undefined
+// n2.prop = true; //works = true
+// n3.prop = true; //undefined
+// console.log(n1.prop);
+// console.log(n2.prop);
+// console.log(n3.prop);
+// //You cannot give primitives properties. It must be an object or derivitave of one, like a function.
+
+///////////////////STEVE GRIFFITH #28
+/*NEW PROBLEM*/ 
+///////////////////SCOPE
+
+/**
+ * Variable Scope
+ * What will be the output of the three log statements
+ * and in what order?
+ */
+(() => {
+    let one, two;
+    try {
+      throw new Error(321);
+    } catch (one) {
+      (one = 123), (two = 321);
+      console.log("first", one);//123
+    }
+    console.log("second", one);//undefined
+    console.log(two);//321
+  })();
+  

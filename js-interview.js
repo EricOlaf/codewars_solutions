@@ -638,15 +638,67 @@ numbers array =>
  * What will be the output of the three log statements
  * and in what order?
  */
-(() => {
-    let one, two;
-    try {
-      throw new Error(321);
-    } catch (one) {
-      (one = 123), (two = 321);
-      console.log("first", one);//123
-    }
-    console.log("second", one);//undefined
-    console.log(two);//321
-  })();
-  
+// (() => {
+//     let one, two;
+//     try {
+//       throw new Error(321);
+//     } catch (one) {
+//       (one = 123), (two = 321);
+//       console.log("first", one);//123
+//     }
+//     console.log("second", one);//undefined
+//     console.log(two);//321
+//   })();
+
+///////////////////STEVE GRIFFITH #29
+/*NEW PROBLEM*/ 
+///////////////////DOUBLE BANG
+
+/**
+ * What will the output of the following statements be?
+ */
+
+// let log = console.log;
+// log(!!true); //true
+// log(!!""); //false
+// log(!!1); //true
+// log(!!-1); //true
+// log(!!NaN); //false
+// log(!!undefined); //false
+// log(!!"false"); //true
+// log(!!null); //false
+
+//Essentially we are making the value a true boolean value with the double bang.
+
+///////////////////STEVE GRIFFITH #30
+/*NEW PROBLEM*/ 
+///////////////////USING COMMAS
+
+/**
+ * What will be the value stored in the variable n?
+ *
+ */
+
+// let n = ((x = 1), (y = 2), (z = 3));
+// console.log(n)//3 this is because we return the final statement.
+
+///////////////////STEVE GRIFFITH #31
+/*NEW PROBLEM*/ 
+///////////////////UNARY PLUS OPERATOR
+
+/**
+ * What will be the output of the following statements?
+ */
+
+// let log = console.log;
+// log(+"1"); //1
+// log(+true); //1
+// log(+false); //0
+// log(+""); //0
+// log(+"hello"); //NaN
+// log(+1); //1
+
+///////////////////STEVE GRIFFITH #32
+/*NEW PROBLEM*/ 
+///////////////////QUIRKY JAVASCRIPT
+

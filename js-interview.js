@@ -707,10 +707,20 @@ numbers array =>
  * What is the output of these three lines and why?
  */
 
-let first = (! + [] * []);
-let second = (! + [] + [] * []);
-let third = (! + [] + [] + ![]).length;
+// let first = (! + [] * []);
+//   // console.log(+[])//0
+//   // console.log(!+[])//true
+//   // console.log(true * [])//0
+// let second = (! + [] + [] * []);
+//   // console.log(!+[])//true
+//   // console.log([] * [])//0
+//   // console.log(true + 0)//1
+// let third = (! + [] + [] + ![]).length;
+// // console.log(![])//false
+// // console.log(! + [])//true
+// // console.log(true + [] + false);//truefalse
 
-console.log(first);
-console.log(second);
-console.log(third);
+
+// console.log(first); //0
+// console.log(second); //1
+// console.log(third); //9

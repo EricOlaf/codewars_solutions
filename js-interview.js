@@ -724,3 +724,19 @@ numbers array =>
 // console.log(first); //0
 // console.log(second); //1
 // console.log(third); //9
+
+///////////////////STEVE GRIFFITH #33
+/*NEW PROBLEM*/ 
+///////////////////ARRAY COMPARISONS
+
+/**
+ * Which of the following lines will return a true and
+ * which will return false?
+ */
+
+console.log(["a", "b"] == ["a", "b"]); //false
+console.log(["a", "b"] == ["a", "b"] + []); //true
+  //"a,b" == "a,b"
+console.log(["a", "b", "c"] == ["a", "b"] + []); //false
+console.log(["a", "b"] == ["b", "a"]); //false
+console.log(["a", "b"] == "a,b"); //true

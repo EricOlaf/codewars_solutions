@@ -702,3 +702,15 @@ numbers array =>
 /*NEW PROBLEM*/ 
 ///////////////////QUIRKY JAVASCRIPT
 
+/**
+ * Quirky operators and precedence in JavaScript
+ * What is the output of these three lines and why?
+ */
+
+let first = (! + [] * []);
+let second = (! + [] + [] * []);
+let third = (! + [] + [] + ![]).length;
+
+console.log(first);
+console.log(second);
+console.log(third);

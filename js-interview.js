@@ -734,9 +734,9 @@ numbers array =>
  * which will return false?
  */
 
-console.log(["a", "b"] == ["a", "b"]); //false
-console.log(["a", "b"] == ["a", "b"] + []); //true
-  //"a,b" == "a,b"
-console.log(["a", "b", "c"] == ["a", "b"] + []); //false
-console.log(["a", "b"] == ["b", "a"]); //false
-console.log(["a", "b"] == "a,b"); //true
+// console.log(["a", "b"] == ["a", "b"]); //false
+// console.log(["a", "b"] == ["a", "b"] + []); //true
+//   //"a,b" == "a,b"
+// console.log(["a", "b", "c"] == ["a", "b"] + []); //false
+// console.log(["a", "b"] == ["b", "a"]); //false
+// console.log(["a", "b"] == "a,b"); //true

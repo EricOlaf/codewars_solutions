@@ -881,3 +881,16 @@ var abby = Object.create(personProto,
 //         }, 3000)})(i);
 //     }
 
+// const myFib = (n) => {
+// const myArr = [0, 1]
+// for(let i = 2; i < n; i++){
+//     myArr.push(myArr[i-1] + myArr[i-2]);
+// }
+
+// return (n >= 2 ? myArr : n === 1 ? [0] : []);
+// }
+
+// console.log(myFib(5));
+// console.log(myFib(2));
+// console.log(myFib(1));
+// console.log(myFib(0));

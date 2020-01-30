@@ -894,3 +894,32 @@ var abby = Object.create(personProto,
 // console.log(myFib(2));
 // console.log(myFib(1));
 // console.log(myFib(0));
+
+// const mask = num => {
+//     const numArr = num.toString().split("");
+//     const startNum = numArr.length -4;
+//     return numArr
+//         .map((x, i) => {
+//         if(i < startNum){
+//             return 'x'
+//         }else{
+//             return x
+//         }
+//     }).join("")
+// }
+
+// const mask = (str, maskChar = "#") =>
+//   str.slice(-4).padStart(str.length, maskChar)
+
+// // console.log(mask("2345234"));
+// // console.log(mask("2345239727523945674"));
+// function myNum(str){
+// str.slice(-4);
+// return str.length
+// }
+// const fullNumber = '2034399002125581';
+
+// console.log(myNum(fullNumber));
+// // const last4Digits = fullNumber.slice(-4);
+
+// // console.log(last4Digits);

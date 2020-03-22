@@ -1205,3 +1205,22 @@
 // [a].forEach(function(x){
 //     console.log(x)
 // })
+
+//FIND ALL OCCURENCES OF THE LETTER IN THE STRING AND RETURN THE NUMBER
+//Another good answer could have been done with filter.
+
+//MY ANSWER
+// const strCount = (str, ltr) =>
+//   str
+//   .split("")
+//   .reduce((acc, el)=>{
+//     if(el === ltr){
+//       acc++
+//     } return acc}, 0);
+
+// OTHER ANSWER
+// const strCount = (str, ltr) =>
+//     str.split(ltr).length - 1
+
+//SUM UP TWO PPG KEYS IN NBA PLAYER OBJECTS
+// const sumPPG = (pOne, pTwo, key='ppg')=> pOne[key] + pTwo[key]

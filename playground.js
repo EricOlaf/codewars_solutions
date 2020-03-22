@@ -940,3 +940,5 @@ var abby = Object.create(personProto,
 // const strCount = (str, ltr) =>
 //     str.split(ltr).length - 1
 
+//SUM UP TWO PPG KEYS IN NBA PLAYER OBJECTS
+// const sumPPG = (pOne, pTwo, key='ppg')=> pOne[key] + pTwo[key]

@@ -1206,6 +1206,10 @@
 //     console.log(x)
 // })
 
+///////////////////
+/*NEW PROBLEM*/
+///////////////////
+
 //FIND ALL OCCURENCES OF THE LETTER IN THE STRING AND RETURN THE NUMBER
 //Another good answer could have been done with filter.
 
@@ -1222,5 +1226,26 @@
 // const strCount = (str, ltr) =>
 //     str.split(ltr).length - 1
 
+///////////////////
+/*NEW PROBLEM*/
+///////////////////
+
 //SUM UP TWO PPG KEYS IN NBA PLAYER OBJECTS
 // const sumPPG = (pOne, pTwo, key='ppg')=> pOne[key] + pTwo[key]
+
+///////////////////
+/*NEW PROBLEM*/
+///////////////////
+
+//////
+// a >>= 1;
+//This is a right shift operator where we shift the binary number the amount of bits(digits) to the right as the specified number.
+
+// function testit(n) {
+//     var s = 0;
+//     while (n) {
+//       s += n & 1;
+//       n >>= 1;
+//     }
+//     return s;
+// }

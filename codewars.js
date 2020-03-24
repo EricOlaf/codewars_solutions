@@ -1253,3 +1253,20 @@
 ///////////////////
 /*NEW PROBLEM*/
 ///////////////////
+
+function top3(products, amounts, prices) {
+    let total = [];
+    products.forEach((el, ind)=>{
+        let totalPrice = prices[ind] * amounts[ind];
+        total.push([totalPrice, el])
+    })
+    total.sort((a, b)=>{
+        return b[0] - a[0];
+    })
+    let final = total.map(el=> el.pop());
+    return final.slice(0, 3);
+  }
+
+  console.log(top3(["Computer", "Cell Phones", "Vacuum Cleaner"], [3, 24, 8], [199, 299, 399]))
+
+  console.log(top3(["Cell Phones", "Vacuum Cleaner", "Computer", "Autos", "Gold", "Fishing Rods", "Lego", " Speakers"], [5, 25, 2, 7, 10, 3, 2, 24], [51, 225, 22, 47, 510, 83, 82, 124]))

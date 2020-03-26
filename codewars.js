@@ -1295,7 +1295,11 @@
 //   }
 
 //MY NEW ANSWER
-const findAll = (a, n) => a.reduce((acc, x, i)=>{
-    if(x === n){acc.push(i)}
-    return acc;
-  },[])
+// const findAll = (a, n) => a.reduce((acc, x, i)=>{
+//     if(x === n){acc.push(i)}
+//     return acc;
+//   },[])
+
+//MY NEW NEW ANSWER
+const findAll = (arr, n) => arr
+  .reduce((acc, x, i)=> x === n ? [...acc, i] : acc,[])

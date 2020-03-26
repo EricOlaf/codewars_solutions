@@ -1301,5 +1301,16 @@
 //   },[])
 
 //MY NEW NEW ANSWER
-const findAll = (arr, n) => arr
-  .reduce((acc, x, i)=> x === n ? [...acc, i] : acc,[])
+// const findAll = (arr, n) => arr
+//   .reduce((acc, x, i)=> x === n ? [...acc, i] : acc,[])
+
+///////////////////
+/*NEW PROBLEM*/
+///////////////////
+//From an array of ages find the oldest, youngest, and the difference and return them in an array.
+
+//MY ANSWER
+// const differenceInAges = a => [Math.min(...a), Math.max(...a), (Math.max(...a) - Math.min(...a))]
+
+//ANOTHER ANSWER
+// const differenceInAges = a => (min = Math.min(...a),max = Math.max(...a),[min,max,max-min])

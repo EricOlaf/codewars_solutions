@@ -1288,11 +1288,14 @@
 
 
 //MY ANSWER
-const findAll = (a, n) => {
-    const newArr = [];
-    a.forEach((x,i)=>{if(x===n){newArr.push(i)}});
-    return newArr
-  }
+// const findAll = (a, n) => {
+//     const newArr = [];
+//     a.forEach((x,i)=>{if(x===n){newArr.push(i)}});
+//     return newArr
+//   }
 
 //MY NEW ANSWER
-
+const findAll = (a, n) => a.reduce((acc, x, i)=>{
+    if(x === n){acc.push(i)}
+    return acc;
+  },[])

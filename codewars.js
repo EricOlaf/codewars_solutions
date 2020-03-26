@@ -1280,3 +1280,19 @@
 //   console.log(top3(["Computer", "Cell Phones", "Vacuum Cleaner"], [3, 24, 8], [199, 299, 399]))
 
 //   console.log(top3(["Cell Phones", "Vacuum Cleaner", "Computer", "Autos", "Gold", "Fishing Rods", "Lego", " Speakers"], [5, 25, 2, 7, 10, 3, 2, 24], [51, 225, 22, 47, 510, 83, 82, 124]))
+
+///////////////////
+/*NEW PROBLEM*/
+///////////////////
+//Find all occurences of n and return an array of their index.
+
+
+//MY ANSWER
+const findAll = (a, n) => {
+    const newArr = [];
+    a.forEach((x,i)=>{if(x===n){newArr.push(i)}});
+    return newArr
+  }
+
+//MY NEW ANSWER
+

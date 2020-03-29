@@ -1314,3 +1314,21 @@
 
 //ANOTHER ANSWER
 // const differenceInAges = a => (min = Math.min(...a),max = Math.max(...a),[min,max,max-min])
+
+///////////////////
+/*NEW PROBLEM*/
+///////////////////
+//Genetic crossover at a certain given point.
+
+// const crossover = (c1, c2, i) => {
+//     c1 = c1.split("");
+//     c2 = c2.split("");
+//     console.log(c1, c2)
+//     let t1 = c1.splice(i), t2 = c2.splice(i);
+//     c1+=t2;
+//     c2+=t1;
+//     console.log(c1)
+//     // return [c1, c2]
+// };
+
+// console.log(crossover('010', '101', 1))

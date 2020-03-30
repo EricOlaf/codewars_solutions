@@ -1325,10 +1325,19 @@
 //     c2 = c2.split("");
 //     console.log(c1, c2)
 //     let t1 = c1.splice(i), t2 = c2.splice(i);
-//     c1+=t2;
-//     c2+=t1;
-//     console.log(c1)
-//     // return [c1, c2]
+//     c1 = c1.join('') + t2;
+//     c2 = [...c2, t1].join("") ;
+//     return [c1, c2]; 
 // };
+
+// const crossover = (c1, c2, i) => {
+//     let t1 = c1.slice(i, c1.length);
+//     let t2 = c2.slice(i, c2.length);
+//     c1 = c1.slice(0, i);
+//     c2 = c2.slice(0, i);
+//     let a1 = c1 + t2;
+//     let a2 = c2 + t1;
+//     return [a1, a2];
+// }
 
 // console.log(crossover('010', '101', 1))

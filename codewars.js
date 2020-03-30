@@ -1320,16 +1320,8 @@
 ///////////////////
 //Genetic crossover at a certain given point.
 
-// const crossover = (c1, c2, i) => {
-//     c1 = c1.split("");
-//     c2 = c2.split("");
-//     console.log(c1, c2)
-//     let t1 = c1.splice(i), t2 = c2.splice(i);
-//     c1 = c1.join('') + t2;
-//     c2 = [...c2, t1].join("") ;
-//     return [c1, c2]; 
-// };
 
+//MY ANSWER
 // const crossover = (c1, c2, i) => {
 //     let t1 = c1.slice(i, c1.length);
 //     let t2 = c2.slice(i, c2.length);
@@ -1339,5 +1331,13 @@
 //     let a2 = c2 + t1;
 //     return [a1, a2];
 // }
+
+//ANOTHER ANSWER
+// const crossover = (chromosome1, chromosome2, index) => {
+//     return [
+//       chromosome1.substring(0, index) + chromosome2.substring(index),
+//       chromosome2.substring(0, index) + chromosome1.substring(index)
+//     ]
+//   };
 
 // console.log(crossover('010', '101', 1))

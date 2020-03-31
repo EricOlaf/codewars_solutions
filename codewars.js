@@ -1357,3 +1357,6 @@
 //     })
 //     return times === 1;
 //   }
+
+//ANOTHER ANSWER
+// const one = (arr, fun) => arr.filter(fun).length === 1;

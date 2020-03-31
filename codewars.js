@@ -1341,3 +1341,19 @@
 //   };
 
 // console.log(crossover('010', '101', 1))
+
+///////////////////
+/*NEW PROBLEM*/
+///////////////////
+//RETURN TRUE IF THERE IS ONLY ONE TRUE THAT RETURNS WHEN EACH ITEM IN THE ARRAY IS RAN THROUGH THE GIVEN FUNCTION.
+
+//MY ANSWER
+// function one(arr, fun){
+//     let times = 0;
+//     arr.forEach(x=>{
+//       if(fun(x)){
+//         times++
+//       }
+//     })
+//     return times === 1;
+//   }

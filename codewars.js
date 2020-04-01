@@ -1367,9 +1367,9 @@
 //FIND THE MINIMUM OF EACH SUB ARRAY AND RETURN THE SUM OF MINIMUMS.
 
 //MY ANSWER
-const sumOfMinimums = arr => arr
-  .reduce((acc, el)=>
-    acc += Math.min(...el), 0);
+// const sumOfMinimums = arr => arr
+//   .reduce((acc, el)=>
+//     acc += Math.min(...el), 0);
 
 //ANOTHER ANSWER
 //COULDN'T FIND ONE BETTER :)

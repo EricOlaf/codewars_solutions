@@ -1373,3 +1373,39 @@
 
 //ANOTHER ANSWER
 //COULDN'T FIND ONE BETTER :)
+
+// Vanguard - Mutual fund vs Index Fund
+
+// Buy and sell
+
+// ETF
+
+// merrylledge.com 
+
+// Zell 
+
+///////////////////
+/*NEW PROBLEM*/
+///////////////////
+//DELETE ALL TEXT ON THAT LINE THAT COMES AFTER THE MARKER.
+
+//MY ANSWER
+function solution(input, markers) {
+    let arr = input.split("\n");
+
+    let ans1 = arr.map(x=>{
+        let ind = [];
+        markers.forEach(y=>{
+            let i = x.indexOf(y);
+            if( i !== -1) ind.push(i)
+        })
+        let min = Math.min(ind);
+        console.log(min);
+        if(min)return x.substring(0, min).trim();
+        return x.trim();
+    })
+
+    return ans1.join('\n');
+}
+
+console.log(solution("apples, pears # and bananas\ngrapes\nbananas !apples", ["#", "!"]))

@@ -1454,3 +1454,48 @@
 // }
 
 // console.log(balancedParens(2));
+
+///////////////////
+/*NEW PROBLEM*/
+///////////////////
+
+conversionRates = {
+    "Argentinian Peso": 10,
+    "Armenian Dram": 478,
+    "Bangladeshi Taka": 1010010,
+    "Croatian Kuna": 110, 
+    "Czech Koruna": 10101,
+    "Dominican Peso": 110000,
+    "Egyptian Pound": 18,
+    "Guatemalan Quetzal": 111,
+    "Haitian Gourde": 1000000,
+    "Indian Rupee": 63,
+    "Japanese Yen": 1101111,
+    "Kenyan Shilling": 1100110,
+    "Nicaraguan Cordoba": 11111,
+    "Norwegian Krone": 1000,
+    "Philippine Piso": 110010,
+    "Romanian Leu": 100,
+    "Samoan Tala": 11, 
+    "South Korean Won": 10000100011, 
+    "Thai Baht": 100000,
+    "Uzbekistani Som": 8333,
+    "Venezuelan Bolivar": 1010,
+    "Vietnamese Dong": 101100000101101
+  }
+
+function convertMyDollars(usd, currency) {
+    const vowels = ["A", "E", "I", "O", "U", "Y"],
+        s = currency[0].toUpperCase(),
+        c = conversionRates[currency];
+    let moneyFinal;
+    
+    !vowels.includes(s) ?
+        moneyFinal = parseInt(c, 2) * usd :
+        moneyFinal = usd * c;
+
+    return `You now have ${moneyFinal} of ${currency}.`;
+}
+
+console.log(convertMyDollars(7, "Armenian Dram"))
+console.log(convertMyDollars(25, "Bangladeshi Taka"))

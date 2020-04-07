@@ -1503,3 +1503,23 @@
 ///////////////////
 /*NEW PROBLEM*/
 ///////////////////
+
+// function moreZeros(s){
+//   const s2 = s.split("");
+//   const final = [];
+//   const s3 = s2.map(x=> x.charCodeAt(0).toString(2));
+//   s3.forEach((a, i) => {
+//     let count = 0;
+//     a.split("")
+//     .forEach(b=>{
+//         b === "0" ? count++ : count--;
+//     })
+//     if(count > 0){
+//         final.push(s2[i])
+//     }
+// })
+//   return [...new Set(final)];
+// }
+
+// console.log(moreZeros('abcdeaaa'))
+// console.log(moreZeros('Great job!'))

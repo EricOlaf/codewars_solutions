@@ -1523,3 +1523,26 @@
 
 // console.log(moreZeros('abcdeaaa'))
 // console.log(moreZeros('Great job!'))
+
+///////////////////
+/*NEW PROBLEM*/
+///////////////////
+
+//NOT FINISHED
+function next(n) {
+    const s2 = n.toString().split("");
+    let nums = '';//1
+    s2.forEach((x, i)=>{
+        if( i === s2.length -1 && i !== 0){
+            i++;
+        }
+        i++;
+        nums += x;
+        nums = parseInt(nums);
+        while(nums % i !== 0){nums++}
+        nums.toString();
+    })
+    return parseInt(nums);
+  }
+
+  console.log(next(10));

@@ -923,3 +923,51 @@ var abby = Object.create(personProto,
 // // const last4Digits = fullNumber.slice(-4);
 
 // // console.log(last4Digits);
+
+
+// function inchesToCm(inches) {
+//         return inches * 2.54;
+// }
+
+// // console.log(inches)
+
+// const lengthInches = 3;
+// const lengthCm = inchesToCm(lengthInches);
+// console.log(lengthCm);
+
+// let fullNameMJ = getFullName('Michael', 'Jordan');
+
+//    console.log(fullNameMJ); 
+
+// const getFullName = function (firstName, lastName) {
+//         return `${firstName} MiddleName ${lastName}`;
+//     };
+ 
+// const getFullName = (firstName, lastName) => {
+//     let fullName = `${firstName} MiddleName ${lastName}`;
+//     if(fullName === "Karl Malone"){return "Mailman"}
+//     else{return "Air Jordan"}
+// }
+
+// const vOne = 'One'
+// let vTwo = 'Two'
+
+// vTwo = 2;
+// vOne = '1';
+
+// console.log(vOne, vTwo);
+
+const myCoolArr = [1,2,3,4];
+
+myCoolArr.push(5,6,7,8,9,892137592745);
+
+// myCoolArr = [6,7,8,9];
+
+console.log(myCoolArr);
+
+
+
+
+
+
+

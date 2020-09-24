@@ -8,7 +8,7 @@
 // //     let ans = ""
 // //     for(let i = 0; i < str.length; i++){
 // //         if(str[i] !== " "){
-// //             ans += str[i] 
+// //             ans += str[i]
 // //         }
 // //     }
 // //     return ans
@@ -40,10 +40,9 @@
 //     return total;
 // }
 
-
 /*COOL ANSWER!!!*/
 
-// const sumOfDifferences = arr => 
+// const sumOfDifferences = arr =>
 //     arr
 //         .sort((a, b) => b - a)
 //         .map((a, i) => a - arr[i + 1] || 0)
@@ -140,7 +139,7 @@
 
 //     let lettersArray = "abcdefghijklmnopqrstuvwxyz".split("");
 //     let total = 0;
-    
+
 //     if (letters.length < 1){return "z"};
 
 //     for( let i = 0; i < letters.length; i++ ){
@@ -158,7 +157,7 @@
 //     }
 
 //     return "not working";
-       
+
 // }
 
 // console.log(addLetters("a", "b"))
@@ -176,7 +175,7 @@
 //     let ans = ""
 //     for(let i = 0; i < str.length; i++){
 //         if(str[i] !== " "){
-//             ans += str[i] 
+//             ans += str[i]
 //         }
 //     }
 //     return ans
@@ -189,19 +188,17 @@
 
 // function noSpace(x){return x.split(' ').join('')}
 
-
 // ///////////////////
 // /*NEW PROBLEM*/
 // ///////////////////
-
 
 // function calculate(str) {
 //     const newStr = str.split("")
 //     let sum = 0;
 //     let currentNum = 1;
-    
+
 //     newStr.forEach((s)=>{
-    
+
 //         if (isNaN(parseInt(s))){
 //             if( s === "p"){
 //                 currentNum = 1
@@ -215,15 +212,15 @@
 //     })
 //     return sum;
 // }
-    
+
 //     console.log(calculate("1plus2plus3plus4"))
 
- /*COOL ANSWER!!!*/
- 
+/*COOL ANSWER!!!*/
+
 //  function calculate(str) {
 //     return eval(str.split("plus").join("+").split("minus").join("-")).toString();
 //   }
-  
+
 //   console.log(calculate("1plus2plus3plus4"))
 
 //   console.log(eval("2+2"))
@@ -233,7 +230,6 @@
 // ///////////////////
 // /*NEW PROBLEM*/
 // ///////////////////
-
 
 // function well(x){
 //     let g = 0;
@@ -261,7 +257,7 @@
 
 //const well = x => {
 //   const good_count = x.filter(x => x == 'good').length;
-//   return good_count < 1 ? 'Fail!' : 
+//   return good_count < 1 ? 'Fail!' :
 //          good_count < 3 ? 'Publish!' : 'I smell a series!';
 // }
 
@@ -300,7 +296,7 @@
 //     })
 //     return finalArr
 // }
-  
+
 //   console.log(firstNSmallest([1,2,3,1,2],3))
 
 //   function firstNSmallest(array, n){
@@ -351,7 +347,7 @@
 //     let lettersObj = {};
 //     let strArr = string.split("");
 //     let maxNumOfLetters = 0;
-    
+
 //     strArr.forEach((a)=>{
 //         if(lettersObj.hasOwnProperty(a)){
 //             lettersObj[a]++
@@ -360,7 +356,7 @@
 //             lettersObj[a] = 1
 //         }
 //     })
-    
+
 //     for(key in lettersObj){
 //         if(lettersObj[key] === 1 ){
 //             return false;
@@ -390,7 +386,6 @@
 
 //   console.log(hasSubpattern('ab12a1b2'))
 
-
 ///////////////////
 /*NEW PROBLEM*/
 ///////////////////
@@ -404,7 +399,7 @@
 //         myObj[s[i]] = 1;
 //       }
 //   }
- 
+
 //   for(let i = 0; i < s.length; i++){
 //     if(myObj[s[i]] === 1){
 //         return s[i];
@@ -422,7 +417,7 @@
 /*NEW PROBLEM*/
 ///////////////////
 
-// evens in ascending order and than odds in descending 
+// evens in ascending order and than odds in descending
 // function menFromBoys(arr){
 //     let men = [], boys = [];
 //     arr.forEach(x=>{
@@ -662,13 +657,13 @@
 // function largestPower(n){
 //     const logFunc = () => Math.log(n)/Math.log(3)
 //     switch(true){
-//     case n ===1: 
+//     case n ===1:
 //         return -1;
 //     case n <= 3:
 //         return 0;
 //     case 3**logFunc().toFixed(5) === n:
 //         return(Math.floor(logFunc()) -1)
-//     default: 
+//     default:
 //         return Math.floor(logFunc());
 //     }
 // }
@@ -702,18 +697,18 @@
 ///////////////////
 
 // function distinctDigitYear(year) {
-//     let newArr = []  
+//     let newArr = []
 //     for(let i = year; newArr.length < 4; i++){
 //         let yStr = i + ""
 //         if(!newArr.includes(yStr[0])){
 //             newArr.push(yStr[0])
 //             console.log("push 0 " + newArr + " " + i)
 //             if(!newArr.includes(yStr[1])){
-                
+
 //                 newArr.push(yStr[1])
 //                 console.log("push 1 " + newArr + " " + i)
 //                 if(!newArr.includes(yStr[2])){
-                    
+
 //                     newArr.push(yStr[2])
 //                     console.log("push 2 " + newArr + " " + i)
 //                     if(!newArr.includes(yStr[3])){
@@ -721,7 +716,7 @@
 //                         return i
 //                     }
 //                 }
-//             }  
+//             }
 //         }
 //         newArr = [];
 //     }
@@ -729,9 +724,8 @@
 
 // function distinctDigitYear(year) {
 //     do{year++}while(new Set(year.toString()).size < 4);
-//     return year;  
+//     return year;
 //   }
-
 
 //The Set object lets you store unique values of any type, whether primitive values or object references.
 
@@ -739,7 +733,6 @@
 // for(i of newSet){
 //     console.log(i)
 // }
-
 
 ///////////////////
 /*NEW PROBLEM*/
@@ -771,7 +764,7 @@
 ///////////////////
 
 // function inviteMoreWomen(L) {
-//     let num = L.length 
+//     let num = L.length
 //     return(L.filter(e=> e === -1).length/num < 0.5 )
 // }
 
@@ -836,7 +829,6 @@
 //     return setup
 // })()
 
-
 // const timeSeconds = 2000;
 
 // const input = document.querySelector(".debounce");
@@ -849,14 +841,12 @@
 //             cb(e)
 //         }, timeSeconds)
 //     }
-    
+
 // }
 
 // input.addEventListener('keyup', debounce(e=>console.log(input.value)))
 
 // dbController()
-
-
 
 ///////////////////
 /*NEW PROBLEM*/
@@ -921,7 +911,7 @@
 //     for(let i = 0; i < arr.length - 1; i++){
 //         if(arr[i] !== arr[i+1] - 1 ){
 //             return arr[i+1]
-//         }    
+//         }
 //     }
 //     // arr.forEach((e, i, arr)=>{
 //     //     if(e !== arr[i+1]-1){
@@ -1016,11 +1006,11 @@
 //     const letterObj = {};
 //     arr.forEach(letter => {
 //         console.log(letter)
-//         let objVal = letterObj[letter]; 
+//         let objVal = letterObj[letter];
 //         if(letterObj.hasOwnProperty(letter)){
 //             objVal++;
 //         }else{
-//             objVal = 1; 
+//             objVal = 1;
 //         }
 //         console.log(objVal)
 //     });
@@ -1029,7 +1019,7 @@
 //         const objVal = letterObj.objKey;
 //         if(objVal > maxNumOccurence){
 //           ans = objKey;
-//           maxNumOccurence = objVal;  
+//           maxNumOccurence = objVal;
 //         }else if(objVal === maxNumOccurence){
 //             ans += `, ${obj}`;
 //         }
@@ -1059,7 +1049,6 @@
 //     return ans;
 // }
 
-
 // const maxLetter = arr =>{
 //     let max = 0;
 //     const myObj = {};
@@ -1080,7 +1069,6 @@
 
 // console.log(maxLetter(['a', 'b', 'c', 'a']))
 // console.log(maxLetter(['a', 'b', 'c', 'c', 'a']))
- 
 
 // Hey Kekoa,
 //  I want to thank you for taking the time to interview/get to know me. It was a pleasure talking with you and the team. Our conversation made me even more excited to potentially work at TradeSation. If you have time please check out:
@@ -1286,7 +1274,6 @@
 ///////////////////
 //Find all occurences of n and return an array of their index.
 
-
 //MY ANSWER
 // const findAll = (a, n) => {
 //     const newArr = [];
@@ -1319,7 +1306,6 @@
 /*NEW PROBLEM*/
 ///////////////////
 //Genetic crossover at a certain given point.
-
 
 //MY ANSWER
 // const crossover = (c1, c2, i) => {
@@ -1380,9 +1366,9 @@
 
 // ETF
 
-// merrylledge.com 
+// merrylledge.com
 
-// Zell 
+// Zell
 
 ///////////////////
 /*NEW PROBLEM*/
@@ -1463,7 +1449,7 @@
 //     "Argentinian Peso": 10,
 //     "Armenian Dram": 478,
 //     "Bangladeshi Taka": 1010010,
-//     "Croatian Kuna": 110, 
+//     "Croatian Kuna": 110,
 //     "Czech Koruna": 10101,
 //     "Dominican Peso": 110000,
 //     "Egyptian Pound": 18,
@@ -1476,8 +1462,8 @@
 //     "Norwegian Krone": 1000,
 //     "Philippine Piso": 110010,
 //     "Romanian Leu": 100,
-//     "Samoan Tala": 11, 
-//     "South Korean Won": 10000100011, 
+//     "Samoan Tala": 11,
+//     "South Korean Won": 10000100011,
 //     "Thai Baht": 100000,
 //     "Uzbekistani Som": 8333,
 //     "Venezuelan Bolivar": 1010,
@@ -1529,23 +1515,26 @@
 ///////////////////
 
 //NOT FINISHED
-function next(n) {
-    const s2 = n.toString().split("");
-    let nums = '';//1
-    s2.forEach((x, i)=>{
-        if( i === s2.length -1 && i !== 0){
-            i++;
-        }
-        i++;
-        nums += x;
-        nums = parseInt(nums);
-        while(nums % i !== 0){nums++}
-        nums.toString();
-    })
-    return parseInt(nums);
-  }
+// function next(n) {
+//     const s2 = n.toString().split("");
+//     let nums = '';//1
+//     s2.forEach((x, i)=>{
+//         if( i === s2.length -1 && i !== 0){
+//             i++;
+//         }
+//         i++;
+//         nums += x;
+//         nums = parseInt(nums);
+//         while(nums % i !== 0){nums++}
+//         nums.toString();
+//     })
+//     return parseInt(nums);
+//   }
 
-  console.log(next(10));
+//   console.log(next(10));
 
+///////////////////
+/*NEW PROBLEM*/
+///////////////////
 
-  
+const sakuraFall = v => (v >= 0 ? 400 / v : 0);

@@ -1542,3 +1542,47 @@ const sakuraFall = v => (v >= 0 ? 400 / v : 0);
 ///////////////////
 /*NEW PROBLEM*/
 ///////////////////
+//Make a polyfill for obectIs
+
+const coolestObjectIs = (x, y) => {
+  function shallowEqual(object1, object2) {
+    const keys1 = Object.keys(object1);
+    const keys2 = Object.keys(object2);
+
+    if (keys1.length !== keys2.length) {
+      return false;
+    }
+
+    for (let key of keys1) {
+      if (object1[key] !== object2[key]) {
+        return false;
+      }
+    }
+    console.log(object1, object2);
+    return true;
+  }
+  console.log("test = 0", x === 0);
+  if (x === 0) {
+    return 1 / x === 1 / y;
+  }
+  if (typeof x === "object") {
+    shallowEqual(x, y);
+  }
+  return x + "" === y + "";
+};
+
+console.log("TRUE===========");
+console.log(coolestObjectIs(NaN, NaN));
+console.log(coolestObjectIs(-0, -0));
+console.log(coolestObjectIs(true, true));
+console.log(coolestObjectIs(3, 3));
+console.log(coolestObjectIs({ prop: "string" }, { prop: "string" }));
+
+console.log("FALSE==========");
+console.log(coolestObjectIs(NaN, null));
+console.log(coolestObjectIs(0, -0));
+console.log(coolestObjectIs("0", "-0"));
+console.log(coolestObjectIs(true, "me"));
+console.log(coolestObjectIs(3, true));
+console.log(coolestObjectIs({ prop: "string" }, { prop: "string2" }));
+console.log(coolestObjectIs({ prop: "string" }, "hey"));

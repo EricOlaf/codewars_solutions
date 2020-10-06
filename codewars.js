@@ -1592,17 +1592,24 @@
 ///////////////////
 //Different neighbors
 
-const solve = str => {
-  const ans = str
-    .split("")
-    .reduce(
-      (a, b) =>
-        a.x[a.x.length - 1] === b ? { ...a, y: a.y + 1 } : { ...a, x: a.x + b },
-      { x: "0", y: 0 }
-    );
-  return ans.y;
-};
+// const solve = str => {
+//   const ans = str
+//     .split("")
+//     .reduce(
+//       (a, b) =>
+//         a.x[a.x.length - 1] === b ? { ...a, y: a.y + 1 } : { ...a, x: a.x + b },
+//       { x: "0", y: 0 }
+//     );
+//   return ans.y;
+// };
 
-console.log(solve("RRGGBB"));
-console.log(solve("RGBRGB"));
-console.log(solve("BGRBBGGBRRR"));
+// console.log(solve("RRGGBB"));
+// console.log(solve("RGBRGB"));
+// console.log(solve("BGRBBGGBRRR"));
+
+///////////////////
+/*NEW PROBLEM*/
+///////////////////
+//Mirror function
+
+const mirror = data => {};

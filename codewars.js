@@ -1612,4 +1612,28 @@
 ///////////////////
 //Mirror function
 
-const mirror = data => {};
+// const mirror = data => {
+//   data.sort((a, b) => a - b);
+//   const highNum = data.pop();
+//   return [...data, highNum, ...data.reverse()];
+// };
+
+// console.log(mirror([1, 3, 2]));
+
+///////////////////
+/*NEW PROBLEM*/
+///////////////////
+//consecutive pairs
+
+// const pairs = arr => {
+//   let numPairs = 0;
+//   for (let i = 0; i < arr.length; i += 2) {
+//     if (Math.abs(arr[i] - arr[i + 1]) === 1) {
+//       numPairs++;
+//     }
+//   }
+//   return numPairs;
+// };
+// console.log(pairs([1, 2, 5, 8, -4, -3, 7, 6, 5]));
+// console.log(pairs([21, 20, 22, 40, 39, -56, 30, -55, 95, 94]));
+// console.log(pairs([81, 44, 80, 26, 12, 27, -34, 37, -35]));

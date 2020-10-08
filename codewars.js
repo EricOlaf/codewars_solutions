@@ -1662,9 +1662,10 @@
 //   return false;
 // };
 
+//OTHERS ANSWERS
+// solve=(a,b)=>new RegExp('^'+a.replace('*','.*')+'$').test(b)
+
 // console.log(solve("code*s", "codewars"));
 // console.log(solve("codewar*s", "codewars"));
 // console.log(solve("*s", "codewars"));
 // console.log(solve("aa", "aaa"));
-
-console.log("".split(""));

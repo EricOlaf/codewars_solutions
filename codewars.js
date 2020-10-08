@@ -1642,3 +1642,29 @@
 /*NEW PROBLEM*/
 ///////////////////
 //String Matching
+
+// const solve = (a, b) => {
+//   console.log(a,b)
+//   if(!a.split("").includes('*')){
+//     return a === b;
+//   }
+//   let a2 = a.split("*");
+
+//   let b2 = b.split(a2[0]);
+//   let b3 = '';
+//    a2[1] = a2[1] || '';
+//   if(b2[1]){
+//     b3 = b2[1].split(a2[1])[0];
+//   }
+//   if (a2[0] + b3 + a2[1] === b) {
+//     return true;
+//   }
+//   return false;
+// };
+
+// console.log(solve("code*s", "codewars"));
+// console.log(solve("codewar*s", "codewars"));
+// console.log(solve("*s", "codewars"));
+// console.log(solve("aa", "aaa"));
+
+console.log("".split(""));

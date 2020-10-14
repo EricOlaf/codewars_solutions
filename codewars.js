@@ -1673,4 +1673,12 @@
 ///////////////////
 /*NEW PROBLEM*/
 ///////////////////
-const fix = p => {};
+const fix = p =>
+  !p
+    ? p
+    : p
+        .split(". ")
+        .map(x => x[0].toUpperCase() + x.slice(1))
+        .join(". ");
+
+console.log(fix("hello. my name is inigo montoya."));

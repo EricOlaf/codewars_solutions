@@ -1669,3 +1669,8 @@
 // console.log(solve("codewar*s", "codewars"));
 // console.log(solve("*s", "codewars"));
 // console.log(solve("aa", "aaa"));
+
+///////////////////
+/*NEW PROBLEM*/
+///////////////////
+const fix = p => {};

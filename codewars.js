@@ -1687,3 +1687,18 @@
 /*NEW PROBLEM*/
 ///////////////////
 //Least Larger
+
+const leastLarger = (a, i) => {
+  const target = a[i];
+  let diff = Infinity;
+  let ans = -1;
+  a.forEach(e => {
+    if (e > target && e - target < diff) {
+      ans = e;
+      diff = e - target;
+    }
+  });
+  return ans === -1 ? -1 : a.indexOf(ans);
+};
+
+console.log(leastLarger([4, 1, 3, 5, 6], 0));

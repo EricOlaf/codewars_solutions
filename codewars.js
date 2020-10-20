@@ -1688,17 +1688,32 @@
 ///////////////////
 //Least Larger
 
-const leastLarger = (a, i) => {
-  const target = a[i];
-  let diff = Infinity;
-  let ans = -1;
-  a.forEach(e => {
-    if (e > target && e - target < diff) {
-      ans = e;
-      diff = e - target;
-    }
-  });
-  return ans === -1 ? -1 : a.indexOf(ans);
-};
+// const leastLarger = (a, i) => {
+//   const target = a[i];
+//   let diff = Infinity;
+//   let ans = null;
+//   a.forEach(e => {
+//     if (e > target && e - target < diff) {
+//       ans = e;
+//       diff = e - target;
+//     }
+//   });
+//   return ans === null ? -1 : a.indexOf(ans);
+// };
 
-console.log(leastLarger([4, 1, 3, 5, 6], 0));
+// console.log(leastLarger([4, 1, 3, 5, 6], 0));
+// console.log(leastLarger([4, 1, 3, 5, 6], 4));
+
+// ANOTHER ANSWER
+
+// function leastLarger(a, i) {
+//     const targetVal = a[i]
+//     const largerVals = a.filter(num => num > targetVal)
+//     const leastLargeVal = Math.min(...largerVals)
+
+//     return a.findIndex(num => num === leastLargeVal)
+// }
+
+///////////////////
+/*NEW PROBLEM*/
+///////////////////

@@ -1719,16 +1719,21 @@
 ///////////////////
 
 const repeats = arr => {
-  let total = {};
+  let obj = {};
   arr.forEach(x => {
-    if (total[x]) {
-      total[x] += 1;
-    }
-    {
-      total[x] = 1;
+    if (obj[x]) {
+      obj[x] += 1;
+    } else {
+      obj[x] = 1;
     }
   });
-  return total;
+  let final = 0;
+  for (key in obj) {
+    if (obj[key] === 1) {
+      final += parseInt(key);
+    }
+  }
+  return final;
 };
 
 console.log(repeats([4, 5, 7, 5, 4, 8]));

@@ -1718,22 +1718,32 @@
 /*NEW PROBLEM*/
 ///////////////////
 
-const repeats = arr => {
-  let obj = {};
-  arr.forEach(x => {
-    if (obj[x]) {
-      obj[x] += 1;
-    } else {
-      obj[x] = 1;
-    }
-  });
-  let final = 0;
-  for (key in obj) {
-    if (obj[key] === 1) {
-      final += parseInt(key);
-    }
-  }
-  return final;
-};
+// const repeats = arr => {
+//   let obj = {};
+//   arr.forEach(x => {
+//     if (obj[x]) {
+//       obj[x] += 1;
+//     } else {
+//       obj[x] = 1;
+//     }
+//   });
+//   let final = 0;
+//   for (key in obj) {
+//     if (obj[key] === 1) {
+//       final += parseInt(key);
+//     }
+//   }
+//   return final;
+// };
 
-console.log(repeats([4, 5, 7, 5, 4, 8]));
+// console.log(repeats([4, 5, 7, 5, 4, 8]));
+
+// ANOTHER ANSWER
+
+// function repeats(arr){
+//     return arr.filter(v => arr.indexOf(v) === arr.lastIndexOf(v)).reduce((a,b) => a + b, 0);
+//   };
+
+///////////////////
+/*NEW PROBLEM*/
+///////////////////

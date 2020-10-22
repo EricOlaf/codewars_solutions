@@ -1717,3 +1717,18 @@
 ///////////////////
 /*NEW PROBLEM*/
 ///////////////////
+
+const repeats = arr => {
+  let total = {};
+  arr.forEach(x => {
+    if (total[x]) {
+      total[x] += 1;
+    }
+    {
+      total[x] = 1;
+    }
+  });
+  return total;
+};
+
+console.log(repeats([4, 5, 7, 5, 4, 8]));

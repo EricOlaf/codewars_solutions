@@ -1747,7 +1747,7 @@
 ///////////////////
 /*NEW PROBLEM*/
 ///////////////////
-//
+//Square each number in the array and add it to the total. Use Reduce!
 
 // ANOTHER ANSWER
 

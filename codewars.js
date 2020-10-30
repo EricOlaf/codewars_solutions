@@ -1771,3 +1771,4 @@ const flip = (d, a) => {
 console.log(flip("R", [3, 2, 1, 2]));
 
 // ANOTHER ANSWER
+const flip = (d, a) => a.sort((x, y) => (d === "R" ? x - y : y - x));

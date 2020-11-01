@@ -1749,10 +1749,10 @@
 ///////////////////
 //Square each number in the array and add it to the total. Use Reduce!
 
-const squareSum = a => a.reduce((t, x) => (t += x * x));
+// const squareSum = a => a.reduce((t, x) => (t += x * x));
 
-console.log(squareSum([1, 2]));
-console.log(squareSum([0, 3, 4, 5]));
+// console.log(squareSum([1, 2]));
+// console.log(squareSum([0, 3, 4, 5]));
 
 // ANOTHER ANSWER
 

@@ -1777,6 +1777,7 @@
 /*NEW PROBLEM*/
 ///////////////////
 //HARD PROBLEM!!!
+//REDO
 
 // const kochCurve = n => {
 //     const single = [60, -120, 60]
@@ -1789,14 +1790,23 @@
 //     }
 // }
 
-function kochCurve(n) {
-  let x = [];
-  while (n--) {
-    console.log("n= ", n, " 1) x ===>\n", x);
-    x = [...x, 60, ...x, -120, ...x, 60, ...x];
-    console.log("2) x ===>\n", x);
-  }
-  return x;
-}
+// function kochCurve(n) {
+//   let x = [];
+//   while (n--) {
+//     console.log("n= ", n, " 1) x ===>\n", x);
+//     x = [...x, 60, ...x, -120, ...x, 60, ...x];
+//     console.log("2) x ===>\n", x);
+//   }
+//   return x;
+// }
 
-console.log(kochCurve(0));
+// console.log(kochCurve(2));
+
+///////////////////
+/*NEW PROBLEM*/
+///////////////////
+//Total sum of two arrays
+
+const arrayPlusArray = (a, b) => {
+  return [...a, ...b].reduce((t, x) => (t += x));
+};

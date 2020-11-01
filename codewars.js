@@ -1761,14 +1761,42 @@ console.log(squareSum([0, 3, 4, 5]));
 ///////////////////
 //
 
-const flip = (d, a) => {
-  if (d === "R") {
-    return a.sort((a, b) => a - b);
+// const flip = (d, a) => {
+//   if (d === "R") {
+//     return a.sort((a, b) => a - b);
+//   }
+//   return a.sort((a, b) => b - a);
+// };
+
+// console.log(flip("R", [3, 2, 1, 2]));
+
+// // ANOTHER ANSWER
+// const flip = (d, a) => a.sort((x, y) => (d === "R" ? x - y : y - x));
+
+///////////////////
+/*NEW PROBLEM*/
+///////////////////
+//HARD PROBLEM!!!
+
+// const kochCurve = n => {
+//     const single = [60, -120, 60]
+//     const ans = []
+//     if(n === 0){
+//         return []
+//     }
+//     for(let i = 0; i <= n; i++){
+//         ans =
+//     }
+// }
+
+function kochCurve(n) {
+  let x = [];
+  while (n--) {
+    console.log("n= ", n, " 1) x ===>\n", x);
+    x = [...x, 60, ...x, -120, ...x, 60, ...x];
+    console.log("2) x ===>\n", x);
   }
-  return a.sort((a, b) => b - a);
-};
+  return x;
+}
 
-console.log(flip("R", [3, 2, 1, 2]));
-
-// ANOTHER ANSWER
-const flip = (d, a) => a.sort((x, y) => (d === "R" ? x - y : y - x));
+console.log(kochCurve(0));

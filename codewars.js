@@ -1825,4 +1825,4 @@ const oddOrEven = arr => {
   return x % 2 ? "odd" : "even";
 };
 
-console.log(oddOrEven([0]));
+console.log(oddOrEven([1, 2, 3]));

@@ -1814,3 +1814,15 @@
 ///////////////////
 /*NEW PROBLEM*/
 ///////////////////
+
+const oddOrEven = arr => {
+  if (arr.length === 0) {
+    return "even";
+  } else if (arr.length === 1 && arr[0] === 0) {
+    return "even";
+  }
+  const x = arr.reduce((a, b) => a + b);
+  return x % 2 ? "odd" : "even";
+};
+
+console.log(oddOrEven([0]));

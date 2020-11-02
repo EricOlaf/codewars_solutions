@@ -1807,6 +1807,10 @@
 ///////////////////
 //Total sum of two arrays
 
-const arrayPlusArray = (a, b) => [...a, ...b].reduce((t, x) => (t += x));
+// const arrayPlusArray = (a, b) => [...a, ...b].reduce((t, x) => (t += x));
 
-console.log(arrayPlusArray([1, 2, 3], [4, 5, 6]));
+// console.log(arrayPlusArray([1, 2, 3], [4, 5, 6]));
+
+///////////////////
+/*NEW PROBLEM*/
+///////////////////

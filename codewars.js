@@ -1837,3 +1837,17 @@
 // };
 
 // fizzBuzz();
+
+///////////////////
+/*NEW PROBLEM*/
+///////////////////
+
+const kochCurve = n => {
+  let x = [];
+  while (n--) {
+    x = [...x, 60, ...x, -120, ...x, 60, ...x];
+  }
+  return x;
+};
+
+console.log(kochCurve(1));

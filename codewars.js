@@ -1850,4 +1850,4 @@ const kochCurve = n => {
   return x;
 };
 
-console.log(kochCurve(1));
+console.log(kochCurve(2));

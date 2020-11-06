@@ -1857,4 +1857,23 @@
 ///////////////////
 //Alpabet symetry
 
-const solve = arr => {};
+const solve = arr => {
+  const al = "abcdefghijklmnopqrstuvwxyz".split("");
+  const ans = [];
+  for (let i = 0; i < arr.length; i++) {
+    const numAns = arr[i]
+      .toLowerCase()
+      .split("")
+      .reduce((t, x, j) => {
+        console.log(al[j], x);
+        if (al[j] === x) {
+          t++;
+        }
+        return t;
+      }, 0);
+    ans.push(numAns);
+  }
+  return ans;
+};
+
+console.log(solve(["abode", "ABd"]));

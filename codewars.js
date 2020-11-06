@@ -1851,3 +1851,10 @@
 // };
 
 // console.log(kochCurve(2));
+
+///////////////////
+/*NEW PROBLEM*/
+///////////////////
+//Alpabet symetry
+
+const solve = arr => {};

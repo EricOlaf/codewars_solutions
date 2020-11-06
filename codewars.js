@@ -1876,23 +1876,23 @@
 //   return ans;
 // };
 
-const solve = arr => {
-  const al = "abcdefghijklmnopqrstuvwxyz".split("");
-  const ans = [];
-  arr.forEach(word => {
-    const numAns = word
-      .toLowerCase()
-      .split("")
-      .reduce((t, x, j) => {
-        console.log(al[j], x);
-        if (al[j] === x) {
-          t++;
-        }
-        return t;
-      }, 0);
-    ans.push(numAns);
-  });
-  return ans;
-};
+// const solve = arr => {
+//   const al = "abcdefghijklmnopqrstuvwxyz".split("");
+//   const ans = [];
+//   arr.forEach(word => {
+//     const numAns = word
+//       .toLowerCase()
+//       .split("")
+//       .reduce((t, x, j) => {
+//         console.log(al[j], x);
+//         if (al[j] === x) {
+//           t++;
+//         }
+//         return t;
+//       }, 0);
+//     ans.push(numAns);
+//   });
+//   return ans;
+// };
 
-console.log(solve(["abode", "ABd"]));
+// console.log(solve(["abode", "ABd"]));

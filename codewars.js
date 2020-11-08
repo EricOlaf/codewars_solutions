@@ -1904,7 +1904,7 @@
 
 const fizzBuzz = () => {
   for (let i = 0; i < 101; ) {
-    console.log((i++ % 3 ? "" : "fizz") + (i % 5 ? "" : "BUZZ") || i);
+    console.log((++i % 3 ? "" : "fizz") + (i % 5 ? "" : "BUZZ") || i);
   }
 };
 

@@ -1907,3 +1907,5 @@ const fizzBuzz = () => {
     console.log((i++ % 3 ? "" : "fizz") + (i % 5 ? "" : "BUZZ") || i);
   }
 };
+
+fizzBuzz();

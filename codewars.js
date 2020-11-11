@@ -1914,9 +1914,13 @@
 /*NEW PROBLEM*/
 ///////////////////
 
-const minValue = arr => {
-  const arr2 = new Set(arr);
-  return [...arr2].sort((a, b) => a - b);
-};
+// const minValue = arr => {
+//   const arr2 = new Set(arr);
+//   return [...arr2].sort((a, b) => a - b);
+// };
+
+//EVEN SHORTER
+const minValue = arr =>
+  parseInt([...new Set(arr)].sort((a, b) => a - b).join(""));
 
 console.log(minValue([1, 3, 1]));

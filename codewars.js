@@ -1932,13 +1932,15 @@
 
 const productArray = nums => {
   return nums.map((x, i) => {
-    nums.reduce((t, num, j) => {
+    return nums.reduce((t, num, j) => {
+      console.log({ x, i, t, num, j });
       if (i !== j) {
         return (t += num);
+      } else {
+        return t;
       }
-      return t;
-    });
+    }, 0);
   });
 };
 
-console.log(productArray(12, 20));
+console.log(productArray([12, 20]));

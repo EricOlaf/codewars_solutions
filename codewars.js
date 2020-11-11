@@ -1916,6 +1916,7 @@
 
 const minValue = arr => {
   const arr2 = new Set(arr);
+  Array.from(arr2);
   return arr2.sort((a, b) => a - b);
 };
 

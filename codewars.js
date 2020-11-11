@@ -1920,7 +1920,7 @@
 // };
 
 //EVEN SHORTER
-const minValue = arr =>
-  parseInt([...new Set(arr)].sort((a, b) => a - b).join(""));
+// const minValue = arr =>
+//   parseInt([...new Set(arr)].sort((a, b) => a - b).join(""));
 
-console.log(minValue([1, 3, 1]));
+// console.log(minValue([1, 3, 1]));

@@ -1924,3 +1924,21 @@
 //   parseInt([...new Set(arr)].sort((a, b) => a - b).join(""));
 
 // console.log(minValue([1, 3, 1]));
+
+///////////////////
+/*NEW PROBLEM*/
+///////////////////
+//PRODUCT OF ALL NUMBERS BESIDES ARR[I].
+
+const productArray = nums => {
+  return nums.map((x, i) => {
+    nums.reduce((t, num, j) => {
+      if (i !== j) {
+        return (t += num);
+      }
+      return t;
+    });
+  });
+};
+
+console.log(productArray(12, 20));

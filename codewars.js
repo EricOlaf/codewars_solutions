@@ -1935,11 +1935,11 @@ const productArray = nums => {
     return nums.reduce((t, num, j) => {
       //   console.log({ x, i, t, num, j });
       if (i !== j) {
-        return (t += num);
+        return (t *= num);
       } else {
         return t;
       }
-    }, 0);
+    }, 1);
   });
 };
 

@@ -1930,18 +1930,8 @@
 ///////////////////
 //PRODUCT OF ALL NUMBERS BESIDES ARR[I].
 
-const productArray = nums => {
-  return nums.map((x, i) => {
-    return nums.reduce((t, num, j) => {
-      //   console.log({ x, i, t, num, j });
-      if (i !== j) {
-        return (t *= num);
-      } else {
-        return t;
-      }
-    }, 1);
-  });
-};
+const productArray = a =>
+  a.map((x, i) => a.reduce((t, n, j) => (i !== j ? (t *= n) : t), 1));
 
 // console.log(productArray([12, 20]));
 console.log(productArray([3, 27, 4, 2]));

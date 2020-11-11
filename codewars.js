@@ -1914,4 +1914,9 @@
 /*NEW PROBLEM*/
 ///////////////////
 
-const minValue = arr => {};
+const minValue = arr => {
+  const arr2 = new Set(arr);
+  return arr2.sort((a, b) => a - b);
+};
+
+console.log(minValue([1, 3, 1]));

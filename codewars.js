@@ -1933,7 +1933,7 @@
 const productArray = nums => {
   return nums.map((x, i) => {
     return nums.reduce((t, num, j) => {
-      console.log({ x, i, t, num, j });
+      //   console.log({ x, i, t, num, j });
       if (i !== j) {
         return (t += num);
       } else {
@@ -1943,4 +1943,5 @@ const productArray = nums => {
   });
 };
 
-console.log(productArray([12, 20]));
+// console.log(productArray([12, 20]));
+console.log(productArray([3, 27, 4, 2]));

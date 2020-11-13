@@ -1956,6 +1956,7 @@
 //   return n === end.join("") ? "Automorphic" : "Not!!";
 // };
 
+//ANOTHER ANSWER THAT IS SHORTER
 const automorphic = n => (`${n ** 2}`.endsWith(n) ? `Automorphic` : `Not!!`);
 
 console.log(automorphic(6));

@@ -1939,3 +1939,17 @@
 ///////////////////
 /*NEW PROBLEM*/
 ///////////////////
+//Is the num automorphic??
+
+// const auromorphic = n => {
+//   return n == (n*n).toString().split().splice(-n.length) ?
+// }
+
+const automorphic = n => {
+  const sq = n * n;
+  const end = sq.split().splice(-n.length);
+  return { sq, end };
+};
+
+console.log(automorphic(6));
+console.log(automorphic(2));

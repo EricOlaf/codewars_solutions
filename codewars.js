@@ -1947,9 +1947,15 @@
 
 const automorphic = n => {
   const sq = n * n;
-  const end = sq.split().splice(-n.length);
-  return { sq, end };
+  n = n.toString();
+  const end = sq
+    .toString()
+    .split("")
+    .slice(-n.length);
+
+  return n === end.join("") ? "Automorphic" : "Not!!";
 };
 
 console.log(automorphic(6));
-console.log(automorphic(2));
+console.log(automorphic(1));
+console.log(automorphic(22));

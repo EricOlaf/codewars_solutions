@@ -1945,16 +1945,18 @@
 //   return n == (n*n).toString().split().splice(-n.length) ?
 // }
 
-const automorphic = n => {
-  const sq = n * n;
-  n = n.toString();
-  const end = sq
-    .toString()
-    .split("")
-    .slice(-n.length);
+// const automorphic = n => {
+//   const sq = n * n;
+//   n = n.toString();
+//   const end = sq
+//     .toString()
+//     .split("")
+//     .slice(-n.length);
 
-  return n === end.join("") ? "Automorphic" : "Not!!";
-};
+//   return n === end.join("") ? "Automorphic" : "Not!!";
+// };
+
+const automorphic = n => (`${n ** 2}`.endsWith(n) ? `Automorphic` : `Not!!`);
 
 console.log(automorphic(6));
 console.log(automorphic(1));

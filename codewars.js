@@ -1957,8 +1957,12 @@
 // };
 
 //ANOTHER ANSWER THAT IS SHORTER
-const automorphic = n => (`${n ** 2}`.endsWith(n) ? `Automorphic` : `Not!!`);
+// const automorphic = n => (`${n ** 2}`.endsWith(n) ? `Automorphic` : `Not!!`);
 
-console.log(automorphic(6));
-console.log(automorphic(1));
-console.log(automorphic(22));
+// console.log(automorphic(6));
+// console.log(automorphic(1));
+// console.log(automorphic(22));
+
+///////////////////
+/*NEW PROBLEM*/
+///////////////////

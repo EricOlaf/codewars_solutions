@@ -1966,3 +1966,18 @@
 ///////////////////
 /*NEW PROBLEM*/
 ///////////////////
+
+const arrayLeaders = nums => {
+  return nums.reverse().reduce(
+    (t, x) => {
+      if (x > t) {
+        t.arr.shift(x);
+      }
+      t.sum += x;
+      return t;
+    },
+    { sum: 0, arr: [] }
+  );
+};
+
+console.log(arrayLeaders([16, 17, 4, 3, 5, 2]));

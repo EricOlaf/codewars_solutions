@@ -1970,7 +1970,7 @@
 const arrayLeaders = nums => {
   return nums.reverse().reduce(
     (t, x) => {
-      if (x > t) {
+      if (x > t.sum) {
         console.log("hit");
         t.arr.shift(x);
       }

@@ -1968,17 +1968,18 @@
 ///////////////////
 
 const arrayLeaders = nums => {
-  return nums.reverse().reduce(
+  const obj = nums.reverse().reduce(
     (t, x) => {
       if (x > t.sum) {
         console.log(x);
-        t.arr.shift(x);
+        t.arr.unshift(x);
       }
       t.sum += x;
       return t;
     },
     { sum: 0, arr: [] }
   );
+  return obj.arr;
 };
 
 console.log(arrayLeaders([16, 17, 4, 3, 5, 2]));

@@ -1989,23 +1989,39 @@
 ///////////////////
 //REVERSED PARENTHESIS
 
-const solve = s => {
-  s = s.split("");
-  let count = 0;
-  let errors = 0;
-  if (s.length % 2) {
-    return -1;
+// const solve = s => {
+//   s = s.split("");
+//   let count = 0;
+//   let errors = 0;
+//   if (s.length % 2) {
+//     return -1;
+//   }
+//   s.forEach(p => {
+//     if (p == "(") {
+//       count += 1;
+//     } else {
+//       count -= 1;
+//     }
+//     if (count < 0) {
+//       errors += 1;
+//     }
+//   });
+// };
+
+function solve(s) {
+  if (s.length % 2) return -1;
+  var t = 0,
+    d = 0;
+  for (let c of s) {
+    if (c === "(") d++;
+    else if (d) d--;
+    else {
+      t++;
+      d++;
+    }
   }
-  s.forEach(p => {
-    if (p == "(") {
-      count += 1;
-    } else {
-      count -= 1;
-    }
-    if (count < 0) {
-      errors += 1;
-    }
-  });
-};
+  return t + d / 2;
+}
 
 console.log(solve("(()"));
+console.log(solve("())((("));

@@ -1991,11 +1991,21 @@
 
 const solve = s => {
   s = s.split("");
+  let count = 0;
+  let errors = 0;
   if (s.length % 2) {
     return -1;
   }
-  // let count = 0;
-  // s.split("").forEach()
+  s.forEach(p => {
+    if (p == "(") {
+      count += 1;
+    } else {
+      count -= 1;
+    }
+    if (count < 0) {
+      errors += 1;
+    }
+  });
 };
 
 console.log(solve("(()"));

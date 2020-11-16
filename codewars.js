@@ -1967,19 +1967,35 @@
 /*NEW PROBLEM*/
 ///////////////////
 
-const arrayLeaders = nums => {
-  const obj = nums.reverse().reduce(
-    (t, x) => {
-      if (x > t.sum) {
-        console.log(x);
-        t.arr.unshift(x);
-      }
-      t.sum += x;
-      return t;
-    },
-    { sum: 0, arr: [] }
-  );
-  return obj.arr;
+// const arrayLeaders = nums => {
+//   const obj = nums.reverse().reduce(
+//     (t, x) => {
+//       if (x > t.sum) {
+//         console.log(x);
+//         t.arr.unshift(x);
+//       }
+//       t.sum += x;
+//       return t;
+//     },
+//     { sum: 0, arr: [] }
+//   );
+//   return obj.arr;
+// };
+
+// console.log(arrayLeaders([16, 17, 4, 3, 5, 2]));
+
+///////////////////
+/*NEW PROBLEM*/
+///////////////////
+//REVERSED PARENTHESIS
+
+const solve = s => {
+  s = s.split("");
+  if (s.length % 2) {
+    return -1;
+  }
+  // let count = 0;
+  // s.split("").forEach()
 };
 
-console.log(arrayLeaders([16, 17, 4, 3, 5, 2]));
+console.log(solve("(()"));

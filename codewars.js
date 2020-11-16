@@ -2008,20 +2008,24 @@
 //   });
 // };
 
-function solve(s) {
-  if (s.length % 2) return -1;
-  var t = 0,
-    d = 0;
-  for (let c of s) {
-    if (c === "(") d++;
-    else if (d) d--;
-    else {
-      t++;
-      d++;
-    }
-  }
-  return t + d / 2;
-}
+// function solve(s) {
+//   if (s.length % 2) return -1;
+//   var t = 0,
+//     d = 0;
+//   for (let c of s) {
+//     if (c === "(") d++;
+//     else if (d) d--;
+//     else {
+//       t++;
+//       d++;
+//     }
+//   }
+//   return t + d / 2;
+// }
 
-console.log(solve("(()"));
-console.log(solve("())((("));
+// console.log(solve("(()"));
+// console.log(solve("())((("));
+
+///////////////////
+/*NEW PROBLEM*/
+///////////////////

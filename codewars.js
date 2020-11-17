@@ -2035,3 +2035,5 @@ const fb = () => {
     console.log((++i % 3 ? "" : "fizz") + (i % 5 ? "" : "BUZZ") || i);
   }
 };
+
+fb();

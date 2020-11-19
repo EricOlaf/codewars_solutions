@@ -2036,3 +2036,12 @@
 //   }
 // };
 // fb();
+
+///////////////////
+/*NEW PROBLEM*/
+///////////////////
+//Reverse the words
+
+const reverseWords = s => {
+  return s;
+};

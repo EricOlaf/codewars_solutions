@@ -2043,7 +2043,7 @@
 //Reverse the words
 
 const reverseWords = s => {
-  return s;
+  return s.split(" ").reverse();
 };
 
 console.log(reverseWords("yoda doesn't speak like this"));

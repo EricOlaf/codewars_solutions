@@ -2042,8 +2042,17 @@
 ///////////////////
 //Reverse the words
 
-const reverseWords = s => {
-  return s.split(" ").reverse();
-};
+// const reverseWords = s => {
+//   return s
+//     .split(" ")
+//     .reverse()
+//     .join(" ");
+// };
 
-console.log(reverseWords("yoda doesn't speak like this"));
+// const reverseWords = s =>
+//   s
+//     .split(" ")
+//     .reverse()
+//     .join(" ");
+
+// console.log(reverseWords("yoda doesn't speak like this"));

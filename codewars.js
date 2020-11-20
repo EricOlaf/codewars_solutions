@@ -2063,7 +2063,6 @@
 
 const minSum = arr => {
   arr.sort((a, b) => a - b);
-  console.log(arr);
   let ans = 0;
   while (arr.length > 0) {
     ans += arr.pop() * arr.shift();
@@ -2072,3 +2071,4 @@ const minSum = arr => {
 };
 
 console.log(minSum([5, 4, 2, 3]));
+console.log(minSum([12, 6, 10, 26, 3, 24]));

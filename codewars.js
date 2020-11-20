@@ -2087,7 +2087,6 @@ const distributionOf = g => {
   while (g.length > 0) {
     let first = g[0],
       last = g[g.length - 1];
-    console.log(first, last);
     if (first > last) {
       if (change) {
         ans[0] += first;
@@ -2095,33 +2094,31 @@ const distributionOf = g => {
         ans[1] += first;
       }
       g.shift();
-      console.log(ans);
-    } else if(first > last) {
+    } else if (first < last) {
       if (change) {
         ans[0] += last;
       } else {
         ans[1] += last;
       }
       g.pop();
-      console.log(ans);
-    }else{
-        let fisrtNext = g[1], lastNext = g[g.length - 2];
-        if (firstNext > lastNext) {
-            if (change) {
-              ans[0] += last;
-            } else {
-              ans[1] += last;
-            }
-            g.shift();
-            console.log(ans);
-          } else {
-            if (change) {
-              ans[0] += first;
-            } else {
-              ans[1] += first;
-            }
-            g.pop();
-            console.log(ans);
+    } else {
+      let firstNext = g[1],
+        lastNext = g[g.length - 2];
+      if (firstNext > lastNext) {
+        if (change) {
+          ans[0] += last;
+        } else {
+          ans[1] += last;
+        }
+        g.pop();
+      } else {
+        if (change) {
+          ans[0] += first;
+        } else {
+          ans[1] += first;
+        }
+        g.shift();
+      }
     }
     change = !change;
   }

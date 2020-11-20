@@ -2075,3 +2075,31 @@
 
 // console.log(minSum([5, 4, 2, 3]));
 // console.log(minSum([12, 6, 10, 26, 3, 24]));
+
+///////////////////
+/*NEW PROBLEM*/
+///////////////////
+//Two Programmers and gold
+
+const distributionOf = g => {
+  const ans = [];
+  let change = true;
+  while (g.length > 0) {
+    let first = g[0],
+      last = g[g.length - 1];
+    if (first > last) {
+      if (change) {
+        ans[0] += first;
+      } else {
+        ans[1] += first;
+      }
+    } else {
+      if (change) {
+        ans[0] += last;
+      } else {
+        ans[1] += last;
+      }
+    }
+    change = !change;
+  }
+};

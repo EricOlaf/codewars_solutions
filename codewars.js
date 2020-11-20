@@ -2070,3 +2070,5 @@ const minSum = arr => {
   }
   return ans;
 };
+
+console.log(minSum([5, 4, 2, 3]));

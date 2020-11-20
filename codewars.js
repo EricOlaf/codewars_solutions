@@ -2081,48 +2081,63 @@
 ///////////////////
 //Two Programmers and gold
 
-const distributionOf = g => {
-  const ans = [0, 0];
-  let change = true;
-  while (g.length > 0) {
-    let first = g[0],
-      last = g[g.length - 1];
-    if (first > last) {
-      if (change) {
-        ans[0] += first;
-      } else {
-        ans[1] += first;
-      }
-      g.shift();
-    } else if (first < last) {
-      if (change) {
-        ans[0] += last;
-      } else {
-        ans[1] += last;
-      }
-      g.pop();
-    } else {
-      let firstNext = g[1],
-        lastNext = g[g.length - 2];
-      if (firstNext > lastNext) {
-        if (change) {
-          ans[0] += last;
-        } else {
-          ans[1] += last;
-        }
-        g.pop();
-      } else {
-        if (change) {
-          ans[0] += first;
-        } else {
-          ans[1] += first;
-        }
-        g.shift();
-      }
+// const distributionOf = g => {
+//   const ans = [0, 0];
+//   let change = true;
+//   while (g.length > 0) {
+//     let first = g[0],
+//       last = g[g.length - 1];
+//     if (first > last) {
+//       if (change) {
+//         ans[0] += first;
+//       } else {
+//         ans[1] += first;
+//       }
+//       g.shift();
+//     } else if (first < last) {
+//       if (change) {
+//         ans[0] += last;
+//       } else {
+//         ans[1] += last;
+//       }
+//       g.pop();
+//     } else {
+//       let firstNext = g[1],
+//         lastNext = g[g.length - 2];
+//       if (firstNext > lastNext) {
+//         if (change) {
+//           ans[0] += last;
+//         } else {
+//           ans[1] += last;
+//         }
+//         g.pop();
+//       } else {
+//         if (change) {
+//           ans[0] += first;
+//         } else {
+//           ans[1] += first;
+//         }
+//         g.shift();
+//       }
+//     }
+//     change = !change;
+//   }
+//   return ans;
+// };
+
+function distributionOf(gold) {
+  let pot = [...gold];
+  console.log({ pot });
+  for (let i = 1; i < gold.length; i++) {
+    for (let j = 0; j < gold.length - i; j++) {
+      pot[j] = Math.max(gold[j] - pot[j + 1], gold[j + i] - pot[j]);
     }
-    change = !change;
   }
-  return ans;
-};
+  let sum = gold.reduce((x, y) => x + y, 0);
+  let a = (sum + pot[0]) / 2;
+  console.log({ sum });
+  console.log({ a });
+  return [a, sum - a];
+}
 
 console.log(distributionOf([4, 7, 2, 9, 5, 2]));

@@ -2125,19 +2125,16 @@
 //   return ans;
 // };
 
-function distributionOf(gold) {
-  let pot = [...gold];
-  console.log({ pot });
-  for (let i = 1; i < gold.length; i++) {
-    for (let j = 0; j < gold.length - i; j++) {
-      pot[j] = Math.max(gold[j] - pot[j + 1], gold[j + i] - pot[j]);
-    }
-  }
-  let sum = gold.reduce((x, y) => x + y, 0);
-  let a = (sum + pot[0]) / 2;
-  console.log({ sum });
-  console.log({ a });
-  return [a, sum - a];
-}
+// function distributionOf(gold) {
+//   let pot = [...gold];
+//   for (let i = 1; i < gold.length; i++) {
+//     for (let j = 0; j < gold.length - i; j++) {
+//       pot[j] = Math.max(gold[j] - pot[j + 1], gold[j + i] - pot[j]);
+//     }
+//   }
+//   let sum = gold.reduce((x, y) => x + y, 0);
+//   let a = (sum + pot[0]) / 2;
+//   return [a, sum - a];
+// }
 
-console.log(distributionOf([4, 7, 2, 9, 5, 2]));
+// console.log(distributionOf([4, 7, 2, 9, 5, 2]));

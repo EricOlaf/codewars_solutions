@@ -2056,3 +2056,17 @@
 //     .join(" ");
 
 // console.log(reverseWords("yoda doesn't speak like this"));
+
+///////////////////
+/*NEW PROBLEM*/
+///////////////////
+
+const minSum = arr => {
+  arr.sort((a, b) => a - b);
+  console.log(arr);
+  let ans = 0;
+  while (arr.length > 0) {
+    ans += arr.pop() * arr.shift();
+  }
+  return ans;
+};

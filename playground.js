@@ -970,3 +970,7 @@ const bank = deposit => {
 const ericAccount = bank(100);
 
 console.log(ericAccount.total());
+console.log(ericAccount.addFunds(100));
+console.log(ericAccount.subtractFunds(50));
+// console.log(ericAccount.total());
+// console.log(ericAccount.total());

@@ -960,10 +960,13 @@ const bank = deposit => {
     },
     lottery: num => {
       return (amount *= num);
+    },
+    total: () => {
+      return amount;
     }
   };
 };
 
 const ericAccount = bank(100);
 
-eric;
+console.log(ericAccount.total());

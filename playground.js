@@ -70,7 +70,6 @@
 
 // console.log(ans)
 
-
 // let str1 = "((()))", str2 = "(", str3 = "())", str4 ="))((", str5=")()"
 
 // function parFinder(str) {
@@ -98,9 +97,9 @@
 //             parCounter++;
 //         } else{
 //             parCounter--;
-//         } 
+//         }
 //         if(parCounter < 0) {
-//             penalty++; 
+//             penalty++;
 //             parCounter++;
 //         }
 //         console.log(parCounter)
@@ -122,7 +121,6 @@
 // let obj2 = obj1
 // obj1.age = 40; //You could set obj2.age = 40 and it would have the same affect.
 // console.log(obj1.age, obj2.age)
-
 
 // object inheriting from a variable
 //They are different and show that when an obj inherits from a variable it apparently doesn't just point to it.
@@ -171,7 +169,6 @@
 // let ages = arrayCalc(years, calcAge);
 // console.log(ages);
 
-
 // function isFullAge(el) {
 //     return el >= 21;
 // }
@@ -181,11 +178,11 @@
 
 // function maxHeartRate(el) {
 //     if(el >= 18 && el <= 81) {
-//         return Math.round(206.9 - (0.67 * el)) 
+//         return Math.round(206.9 - (0.67 * el))
 //     }else {
 //         return -1;
 //     }
-    
+
 // }
 
 // let rates = arrayCalc(ages, maxHeartRate);
@@ -216,12 +213,11 @@
 // teacherQuestion("Abby");
 
 // let designerQuestion = intQuestion('designer');
-// designerQuestion("Eric"); 
+// designerQuestion("Eric");
 // designerQuestion("Brandon");
 
 // intQuestion("nada")("Sean");
 //The above way is another way to call a function right after the wrapper function has been called.
-
 
 ////////////////////////////////////////////////////////////
 // Lecture: Immediately invoked function expression (IIFE)
@@ -245,19 +241,17 @@
 //What's in () cannot be a statement, so essentially we trick the computer into thinking it's a function expression, otherwise a anonomyous function declaration would throw an error.
 
 ////////////////////////////////////////////////////////////
-// OBJECTS - 
+// OBJECTS -
 ////////////////////////////////////////////////////////////
-
 
 // var obj1 = {
 //     func1: function() {
 //         return this
-        
+
 //     }
 // }
 
 // console.log(obj1.func1())
-
 
 // var john = {
 //     name : "john",
@@ -339,7 +333,6 @@ var abby = Object.create(personProto,
     });
 */
 
-
 // //PRIMITIVES
 // var a = 23;
 // var b = a;
@@ -348,7 +341,7 @@ var abby = Object.create(personProto,
 // // a = 12 while b = 23
 
 // //OBJECTS
-// var obj1 = { 
+// var obj1 = {
 //     name: 'Eric',
 //     age: 25
 // }
@@ -370,7 +363,6 @@ var abby = Object.create(personProto,
 // }
 // change(age, obj)
 // console.log(age, obj)
-
 
 ////////////////////////////////////////////////////////////
 //CLOSURES
@@ -426,7 +418,6 @@ var abby = Object.create(personProto,
 //     }
 // }
 
-
 // let ericAccount = bankOfEric(5, "Eric");
 // ericAccount.deposit(20)
 // let abbyAccount = bankOfEric(10000000, "Abby")
@@ -459,7 +450,6 @@ var abby = Object.create(personProto,
 //     job : "programmer"
 // }
 
-
 // emily.presentation = john.presentation;
 // //to steal John's identity we could set emily.presentation = john.presentation.bind(john)
 
@@ -475,7 +465,7 @@ var abby = Object.create(personProto,
 // //BUT IT DOES WORK!!! WHAAAAAA...
 
 // let johnFriendly = john.presentation.bind(john, 'friendly');
-// //Doesn't automatically call a function, instead it returns a function that binds the function to the first parameter. As well we can pass more parameters to preset the function. 
+// //Doesn't automatically call a function, instead it returns a function that binds the function to the first parameter. As well we can pass more parameters to preset the function.
 
 // //carrying/currying is when we have a function based on another function but has some preset parameters.
 
@@ -504,7 +494,6 @@ var abby = Object.create(personProto,
 
 // let ages = arrayCalc(numsArr, calcAge);
 // console.log(ages);
-
 
 // function isFullAge(limit, el) {
 //     return el >= limit;
@@ -586,7 +575,6 @@ var abby = Object.create(personProto,
 // pen1()
 // console.log(pen1())
 
-
 // let pen2 = pen()
 // pen2()
 // pen2()
@@ -612,7 +600,6 @@ var abby = Object.create(personProto,
 //DEBOUNCE!!!
 ////////////////////////////////////
 //Know this for interview questions!
-
 
 //Cache the dom🤘🏻
 // var input = document.querySelector("input")
@@ -649,35 +636,33 @@ var abby = Object.create(personProto,
 
 // input.addEventListener('keyup', (e)=>{keyFunc(e)})
 
-
-// var button = document.querySelector("button"); 
-// function debounce (func, delay){ 
-//     let debounceTimer 
+// var button = document.querySelector("button");
+// function debounce (func, delay){
+//     let debounceTimer
 //     console.log('outer '+ this)
-//     return function(a) { 
+//     return function(a) {
 //         console.log("inner " + this)
 //         console.log("args " + arguments)
 //         console.log(a)
 //         const context = this
-//         const args = arguments 
-//             clearTimeout(debounceTimer) 
-//                 debounceTimer 
-//             = setTimeout(() => func.apply(context, args), delay) 
-//     } 
-// }  
-// button.addEventListener('click', debounce(function() { 
+//         const args = arguments
+//             clearTimeout(debounceTimer)
+//                 debounceTimer
+//             = setTimeout(() => func.apply(context, args), delay)
+//     }
+// }
+// button.addEventListener('click', debounce(function() {
 //     console.log("evList " + this)
-//         alert("Hello\nNo matter how many times you" + 
-//             "click the debounce button, I get " + 
-//             "executed once every 3 seconds!!") 
-//                         }, 3000)); 
-
+//         alert("Hello\nNo matter how many times you" +
+//             "click the debounce button, I get " +
+//             "executed once every 3 seconds!!")
+//                         }, 3000));
 
 ///////////////////
 /*NEW PROBLEM TIC-TAC-TOE*/
 ///////////////////
 
-// Setup the HTML and CSS to accomodate a basic game. Use semantic HTML, CSS3 variables, grid. 
+// Setup the HTML and CSS to accomodate a basic game. Use semantic HTML, CSS3 variables, grid.
 
 // 1. cache the dom.
 
@@ -685,7 +670,7 @@ var abby = Object.create(personProto,
 
 // 3. be able to reflect the changes a user makes. Player 1 and 2
 
-// 4. be 
+// 4. be
 
 ///////////////////
 /*CALL BACKS/PROMISES/ASYNC AWAIT*/
@@ -759,7 +744,7 @@ var abby = Object.create(personProto,
 // console.log(myObj[1]); WORKS
 // console.log(myObj["2"]); WORKS
 // console.log(myObj["three"]); POSSIBLE WITH QUOTES
-// console.log(myObj["four"]); 
+// console.log(myObj["four"]);
 // console.log(myObj["five5"]);
 
 // let num = 0;
@@ -806,7 +791,7 @@ var abby = Object.create(personProto,
 
 // const myFuncHey = (function(){
 //     const data=[1, 2, 3];
-    
+
 //    function add(){
 //         let num = 0;
 //         console.log("add")
@@ -872,7 +857,7 @@ var abby = Object.create(personProto,
 // console.log(add20(5));
 
 //This concept of having a function with multiple parameters return a new function with fewer parameters is called “Partial Application” and it’s a functional programming technique. JavaScript’s “.bind” method is a common example of this.
-  
+
 // const arr = [1, 2, 3, 4];
 
 //     for(var i = 0; i < arr.length; i++){
@@ -924,7 +909,6 @@ var abby = Object.create(personProto,
 
 // // console.log(last4Digits);
 
-
 // function inchesToCm(inches) {
 //         return inches * 2.54;
 // }
@@ -937,12 +921,12 @@ var abby = Object.create(personProto,
 
 // let fullNameMJ = getFullName('Michael', 'Jordan');
 
-//    console.log(fullNameMJ); 
+//    console.log(fullNameMJ);
 
 // const getFullName = function (firstName, lastName) {
 //         return `${firstName} MiddleName ${lastName}`;
 //     };
- 
+
 // const getFullName = (firstName, lastName) => {
 //     let fullName = `${firstName} MiddleName ${lastName}`;
 //     if(fullName === "Karl Malone"){return "Mailman"}
@@ -957,17 +941,10 @@ var abby = Object.create(personProto,
 
 // console.log(vOne, vTwo);
 
-const myCoolArr = [1,2,3,4];
+// const myCoolArr = [1,2,3,4];
 
-myCoolArr.push(5,6,7,8,9,892137592745);
+// myCoolArr.push(5,6,7,8,9,892137592745);
 
 // myCoolArr = [6,7,8,9];
 
-console.log(myCoolArr);
-
-
-
-
-
-
-
+// console.log(myCoolArr);

@@ -948,3 +948,22 @@ var abby = Object.create(personProto,
 // myCoolArr = [6,7,8,9];
 
 // console.log(myCoolArr);
+
+const bank = deposit => {
+  let amount = deposit;
+  return {
+    addFunds: num => {
+      return (amount += num);
+    },
+    subtractFunds: num => {
+      return (amount -= num);
+    },
+    lottery: num => {
+      return (amount *= num);
+    }
+  };
+};
+
+const ericAccount = bank(100);
+
+eric;

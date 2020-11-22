@@ -963,6 +963,9 @@ const bank = deposit => {
     },
     total: () => {
       return amount;
+    },
+    bankRobbery: () => {
+      return (amount = 0);
     }
   };
 };
@@ -972,5 +975,5 @@ const ericAccount = bank(100);
 console.log(ericAccount.total());
 console.log(ericAccount.addFunds(100));
 console.log(ericAccount.subtractFunds(50));
-console.log(ericAccount.lottery());
+console.log(ericAccount.lottery(1000));
 // console.log(ericAccount.total());

@@ -949,35 +949,37 @@ var abby = Object.create(personProto,
 
 // console.log(myCoolArr);
 
-const bank = deposit => {
-  let amount = deposit || 0;
-  return {
-    addFunds: num => {
-      return (amount += num);
-    },
-    subtractFunds: num => {
-      return (amount -= num);
-    },
-    lottery: num => {
-      return (amount *= num);
-    },
-    total: () => {
-      return amount;
-    },
-    bankRobbery: () => {
-      return (amount = 0);
-    }
-  };
-};
+//PRACTICING CLOSURES, BANK APP
 
-const ericAccount = bank(100);
+// const bank = deposit => {
+//   let amount = deposit || 0;
+//   return {
+//     addFunds: num => {
+//       return (amount += num);
+//     },
+//     subtractFunds: num => {
+//       return (amount -= num);
+//     },
+//     lottery: num => {
+//       return (amount *= num);
+//     },
+//     total: () => {
+//       return amount;
+//     },
+//     bankRobbery: () => {
+//       return (amount = 0);
+//     }
+//   };
+// };
 
-console.log(ericAccount.total());
-console.log(ericAccount.addFunds(100));
-console.log(ericAccount.subtractFunds(50));
-console.log(ericAccount.lottery(1000));
+// const ericAccount = bank(100);
+
+// console.log(ericAccount.total());
+// console.log(ericAccount.addFunds(100));
+// console.log(ericAccount.subtractFunds(50));
+// console.log(ericAccount.lottery(1000));
 // console.log(ericAccount.bankRobbery());
 // console.log(ericAccount.total());
 
-const abbyAccount = bank(500);
-console.log(abbyAccount.addFunds(1000));
+// const abbyAccount = bank(500);
+// console.log(abbyAccount.addFunds(1000));

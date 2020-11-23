@@ -1,6 +1,6 @@
-
 ///////////////////STEVE GRIFFITH #1
-/*NEW PROBLEM*/ 
+/*NEW PROBLEM*/
+
 ///////////////////ASYNC TIMING
 
 // console.log('a');
@@ -22,7 +22,8 @@
 //a, e, b, d, c
 
 ///////////////////STEVE GRIFFITH #2
-/*NEW PROBLEM*/ 
+/*NEW PROBLEM*/
+
 ///////////////////HOW ASYNC WORKS AND THE EVENT LOOP
 
 // let num = 0;
@@ -39,7 +40,8 @@
 //Output will be 1, 2
 
 ///////////////////STEVE GRIFFITH #3
-/*NEW PROBLEM*/ 
+/*NEW PROBLEM*/
+
 ///////////////////REVEALING MODULE PATTERN
 
 //TURN THE CODE BELOW INTO A REVEALING MODULE PATTERN!
@@ -64,7 +66,7 @@
 
 // const myFuncHey = (function(){
 //     const data=[1, 2, 3];
-    
+
 //    function add(){
 //         let num = 0;
 //         console.log("add")
@@ -87,7 +89,8 @@
 // myFuncHey.render();
 
 ///////////////////STEVE GRIFFITH #4
-/*NEW PROBLEM*/ 
+/*NEW PROBLEM*/
+
 ///////////////////
 
 //Make sure the number of params is two.
@@ -117,7 +120,8 @@
 // console.log(f2(1, 2, 4))
 
 ///////////////////STEVE GRIFFITH #5
-/*NEW PROBLEM*/ 
+/*NEW PROBLEM*/
+
 ///////////////////
 
 //ASI = automatic semicolon injection, object literals, square bracket syntax and hoisting.
@@ -143,7 +147,8 @@
 // })
 
 ///////////////////STEVE GRIFFITH #6
-/*NEW PROBLEM*/ 
+/*NEW PROBLEM*/
+
 ///////////////////SINGLETON
 
 //Uses a closure to make it so that no matter how many instances we make they all refer to the same instance object. If you change one object you change them all.
@@ -185,7 +190,8 @@
 // console.log(s1 === s2);
 
 ///////////////////STEVE GRIFFITH #7
-/*NEW PROBLEM*/ 
+/*NEW PROBLEM*/
+
 ///////////////////FIX THE CODE
 
 // //SIMPLE CLOSURE, NO PROBLEM
@@ -228,7 +234,8 @@
 // f2();
 
 ///////////////////STEVE GRIFFITH #8
-/*NEW PROBLEM*/ 
+/*NEW PROBLEM*/
+
 ///////////////////CREATE AN ARRAY THAT'S PREPOPULATED WITH 5 RANDOM NUMBERS.
 
 // //MY ANSWER
@@ -250,7 +257,8 @@
 // console.log('3', a3);
 
 ///////////////////STEVE GRIFFITH #9
-/*NEW PROBLEM*/ 
+/*NEW PROBLEM*/
+
 ///////////////////VAR VS LET HOISTING
 
 // //WHAT WILL THE OUTCOME BE?
@@ -268,7 +276,8 @@
 // //LET WILL BE HOISTED AND GET A REFERENCE ERROR DUE TO TEMPORAL DEAD ZONE.
 
 ///////////////////STEVE GRIFFITH #10
-/*NEW PROBLEM*/ 
+/*NEW PROBLEM*/
+
 ///////////////////GENERATE A RANDOM HEX COLOR, 6 NUMS, IN ONE LINE.
 // //HINT: TO USE A HEX NUMBER WITH LETTERS PASS IN 16 AS THE RADIX TO toString().
 // //MY ANSWER!!! ENDED UP BEING THE SAME AS STEVES'
@@ -278,7 +287,8 @@
 // //console.log('#'+ Math.random().toString(16))
 
 ///////////////////STEVE GRIFFITH #11
-/*NEW PROBLEM*/ 
+/*NEW PROBLEM*/
+
 ///////////////////MAP AND PARSEINT
 // //WHY ARE WE GETTING THIS WEIRD RESULT?
 
@@ -291,7 +301,8 @@
 // console.log(ans2); //returns [1, NaN, 3];
 
 ///////////////////STEVE GRIFFITH #12
-/*NEW PROBLEM*/ 
+/*NEW PROBLEM*/
+
 ///////////////////DOT NOTATION VS SQUARE BRACKET
 //WHAT'S INSIDE OF SQUARE BRACKETS IS READ FIRST, WHILE DOT READS LEFT FROM RIGHT.
 
@@ -317,10 +328,10 @@ GUESSES/ANSWERS:
 */
 
 ///////////////////STEVE GRIFFITH #13
-/*NEW PROBLEM*/ 
+/*NEW PROBLEM*/
+
 ///////////////////USING "THIS" IN OBJECT METHODS
 //WHAT WILL THE RETURN STATMENTS BE???
-
 
 // const circle = {
 //     radius: 10,
@@ -330,7 +341,7 @@ GUESSES/ANSWERS:
 //     },
 //     diameter(){
 //         //console.log(this);
-//         return( this.radius * 2); 
+//         return( this.radius * 2);
 //     },
 //     area: ()=>{
 //         //console.log(this);
@@ -344,7 +355,8 @@ GUESSES/ANSWERS:
 // //In lexical scoping inner functions use creation context. The context of the circle object is the window so it goes to the window to find the variable radius.
 
 ///////////////////STEVE GRIFFITH #14
-/*NEW PROBLEM*/ 
+/*NEW PROBLEM*/
+
 ///////////////////IS THIS NUMBER AN INTEGER?
 //WRITE A FUNCTION TO DETERMINE IF A NUMBER IS AN INTEGER.
 
@@ -364,14 +376,15 @@ GUESSES/ANSWERS:
 // console.log(isInt(1.0000000));
 
 ///////////////////STEVE GRIFFITH #15
-/*NEW PROBLEM*/ 
+/*NEW PROBLEM*/
+
 ///////////////////CASE INSENSITIVE ANAGRAM
 //(AN ANGRAM HAS TWO DIFFERENT WORDS THAT HAVE THE SAME LETTERS WITH A DIFFERENT ORDER)
 
 // const isAnagram = (s1, s2) => {
 //     const s1Sorted = s1.split("").sort().join("").toLowerCase();
 //     const s2Sorted = s2.split("").sort().join("").toLowerCase();
-    
+
 //     return s1Sorted === s2Sorted;
 // }
 
@@ -379,7 +392,8 @@ GUESSES/ANSWERS:
 // console.log(isAnagram("hello", "loleh"));
 
 ///////////////////STEVE GRIFFITH #16
-/*NEW PROBLEM*/ 
+/*NEW PROBLEM*/
+
 ///////////////////CALCULATE THE BIGGEST DIFFERENCE
 //HINT: max and min only take in numbers not an array of numbers.
 // const diff = (arr) => {
@@ -389,7 +403,8 @@ GUESSES/ANSWERS:
 // console.log(diff([10, 5, 7, 4, 2, 8, 4]));
 
 ///////////////////STEVE GRIFFITH #17
-/*NEW PROBLEM*/ 
+/*NEW PROBLEM*/
+
 ///////////////////PALINDROME(WORD SPELT THE SAME BACKWARDS)
 
 // let pal = w =>
@@ -399,7 +414,8 @@ GUESSES/ANSWERS:
 // console.log(pal("eric"));
 
 ///////////////////STEVE GRIFFITH #18
-/*NEW PROBLEM*/ 
+/*NEW PROBLEM*/
+
 ///////////////////SCOPING
 
 // (function f1() {
@@ -414,13 +430,14 @@ GUESSES/ANSWERS:
 // console.log(window); // y = 2, s = 3 This is because neither variables were initialized with a keyword. This makes the computer search for the parent scope until it hits the parent scope where it isn't found so it creates it with var.
 
 ///////////////////STEVE GRIFFITH #19
-/*NEW PROBLEM*/ 
+/*NEW PROBLEM*/
+
 ///////////////////SCRIPT TO DETERMINE THE BRIGHTNESS OF THE BACKGROUND
 // //USES SOME BITWISE FUNCTIONALITY THAT I'M NOT FAMILIAR WITH. ALL STEVE'S ANSWER.
 
 // /**
-//  * Write a script to determine the brightness of the 
-//  * background colour and set the text colour as 
+//  * Write a script to determine the brightness of the
+//  * background colour and set the text colour as
 //  * either white or black.
 //  * 3 6 1
 //  */
@@ -446,7 +463,8 @@ GUESSES/ANSWERS:
 // log(textColor('#6495ED')); //cornflowerblue
 
 ///////////////////STEVE GRIFFITH #20
-/*NEW PROBLEM*/ 
+/*NEW PROBLEM*/
+
 ///////////////////FLIP THE VOWELS
 /*
 EG:
@@ -474,7 +492,8 @@ hello = holle
 // console.log(flip('javascript'));
 
 ///////////////////STEVE GRIFFITH #21
-/*NEW PROBLEM*/ 
+/*NEW PROBLEM*/
+
 ///////////////////WHAT WILL THE OUTPUT BE?
 
 // let obj = {
@@ -493,7 +512,8 @@ hello = holle
 // //In objects every property is saved as a string so they are all overwritten by the final value.
 
 ///////////////////STEVE GRIFFITH #22
-/*NEW PROBLEM*/ 
+/*NEW PROBLEM*/
+
 ///////////////////WHAT WILL THE OUTPUT BE?
 
 // let box = {};
@@ -511,7 +531,8 @@ hello = holle
 // console.log(box);
 
 ///////////////////STEVE GRIFFITH #23
-/*NEW PROBLEM*/ 
+/*NEW PROBLEM*/
+
 ///////////////////WHAT WILL THE OUTPUT BE?
 
 // let obj = { a: 1 };
@@ -535,7 +556,8 @@ hello = holle
 //Ans is Saturday
 
 ///////////////////STEVE GRIFFITH #24
-/*NEW PROBLEM*/ 
+/*NEW PROBLEM*/
+
 ///////////////////WHAT WILL THE OUTPUT BE?
 
 // const numbers = [1, 2, 3];
@@ -576,7 +598,8 @@ numbers array =>
 */
 
 ///////////////////STEVE GRIFFITH #25
-/*NEW PROBLEM*/ 
+/*NEW PROBLEM*/
+
 ///////////////////CALLBACKS
 
 // let ftw = function(name) {
@@ -595,13 +618,14 @@ numbers array =>
 //   let app = (function(cb1, cb2, cb3) {
 //     const castiel = { name: "Castiel", isGood: true };
 //     const crowley = { name: "Crowley", isGood: false };
-   
+
 //     cb3(castiel, cb1, cb2);
 //     cb3(crowley, cb1, cb2);
 //   })(ftw, wtf, cb);
 
 ///////////////////STEVE GRIFFITH #26
-/*NEW PROBLEM*/ 
+/*NEW PROBLEM*/
+
 ///////////////////EXTENDING PROTOTYPES
 
 // let myStr = "Hello world!"
@@ -612,14 +636,15 @@ numbers array =>
 // console.log(myStr.flip());
 
 ///////////////////STEVE GRIFFITH #27
-/*NEW PROBLEM*/ 
+/*NEW PROBLEM*/
+
 ///////////////////PROPERTIES OF NUMBERS
 
 // /**
 //  * What will the value of the three log statements be?
 //  */
 // let n1 = 111; //Primitive
-// let n2 = new Number(123); //new makes an object with n2 = 123 
+// let n2 = new Number(123); //new makes an object with n2 = 123
 // let n3 = Number(123); //Primitive
 // n1.prop = true; //undefined
 // n2.prop = true; //works = true
@@ -630,7 +655,8 @@ numbers array =>
 // //You cannot give primitives properties. It must be an object or derivitave of one, like a function.
 
 ///////////////////STEVE GRIFFITH #28
-/*NEW PROBLEM*/ 
+/*NEW PROBLEM*/
+
 ///////////////////SCOPE
 
 /**
@@ -651,7 +677,8 @@ numbers array =>
 //   })();
 
 ///////////////////STEVE GRIFFITH #29
-/*NEW PROBLEM*/ 
+/*NEW PROBLEM*/
+
 ///////////////////DOUBLE BANG
 
 /**
@@ -671,7 +698,8 @@ numbers array =>
 //Essentially we are making the value a true boolean value with the double bang.
 
 ///////////////////STEVE GRIFFITH #30
-/*NEW PROBLEM*/ 
+/*NEW PROBLEM*/
+
 ///////////////////USING COMMAS
 
 /**
@@ -683,7 +711,8 @@ numbers array =>
 // console.log(n)//3 this is because we return the final statement.
 
 ///////////////////STEVE GRIFFITH #31
-/*NEW PROBLEM*/ 
+/*NEW PROBLEM*/
+
 ///////////////////UNARY PLUS OPERATOR
 
 /**
@@ -699,7 +728,8 @@ numbers array =>
 // log(+1); //1
 
 ///////////////////STEVE GRIFFITH #32
-/*NEW PROBLEM*/ 
+/*NEW PROBLEM*/
+
 ///////////////////QUIRKY JAVASCRIPT
 
 /**
@@ -720,13 +750,13 @@ numbers array =>
 // // console.log(! + [])//true
 // // console.log(true + [] + false);//truefalse
 
-
 // console.log(first); //0
 // console.log(second); //1
 // console.log(third); //9
 
 ///////////////////STEVE GRIFFITH #33
-/*NEW PROBLEM*/ 
+/*NEW PROBLEM*/
+
 ///////////////////ARRAY COMPARISONS
 
 /**

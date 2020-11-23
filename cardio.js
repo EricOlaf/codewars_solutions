@@ -4,7 +4,6 @@
 // const revStr = (str) => str.split("").reduce((revWord, letter)=> letter+revWord, "");
 // console.log(revStr("Hello"))
 
-
 //CHALLENGE 2: VALIDATE A PALINDROME
 
 // const isPal = (str) => {
@@ -13,7 +12,6 @@
 // }
 // console.log(isPal('madam'));
 
-
 //CHALLENGE 3: REVERSE AN INTERGER
 
 // const revInt = (int) =>
@@ -21,10 +19,9 @@
 
 // console.log(revInt(-123456));
 
-
 //CHALLENGE 4: CAPITALIZE THE FIRST LETTER OF EACH WORD IN A SENTENCE
 
-// const capSent = (sent) => 
+// const capSent = (sent) =>
 //     sent
 //         .toLowerCase()
 //         .split(" ")
@@ -32,7 +29,6 @@
 //         .join(" ");
 
 // console.log(capSent("I REALLY love coding!"));
-
 
 //CHALLENGE 5: RETURN THE MAX CHARACTER IN THE STRING
 
@@ -66,7 +62,7 @@
 //     return str.split("").reduce((ans, ltr)=>{
 //         //setting up charObj
 //         if(charObj[ltr]){
-//             charObj[ltr]++ 
+//             charObj[ltr]++
 //         }else{
 //             charObj[ltr] = 1;
 //         }
@@ -118,7 +114,7 @@
 /*CARDIO SESSION 2*/
 ////////////////////////////////////////////////////
 
-//CHALLENGE #1 : LONGEST WORD, 
+//CHALLENGE #1 : LONGEST WORD,
 //RETURN THE LONGEST WORD OR THE LONGEST WORDS IN A STRING IN AN ARRAY(IF MULTIPLE).
 // const strFunc = str => {
 //     let lngWrd = 0;
@@ -133,8 +129,6 @@
 //     }, "")
 // }
 // console.log(strFunc("My name is Eric. Howdy party dudes."))
-
-
 
 //CHALLENGE #2 : ARRAY CHUNKING
 // Split an array into chunked arrays of a specific length
@@ -203,9 +197,9 @@
 //         return String.fromCharCode(char.charCodeAt() + 1);
 //       }
 //     });
-  
+
 //     newStr = newStr.replace(/a|e|i|o|u/gi, vowel => vowel.toUpperCase());
-  
+
 //     return newStr;
 //   }
 
@@ -310,3 +304,19 @@
 // }
 
 // console.log(evenAndOdds([3, 2, 5, 6, 1, 4]))
+
+//CARDIO SESSION 1
+//VERIFY PALINDROME
+
+const verifyPalindrome = s => {
+  return (
+    s ===
+    s
+      .split("")
+      .reverse()
+      .join("")
+  );
+};
+
+console.log(verifyPalindrome("dog"));
+console.log(verifyPalindrome("racecar"));

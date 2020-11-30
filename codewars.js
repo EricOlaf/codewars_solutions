@@ -2159,11 +2159,16 @@ const balanceNum = n => {
       total -= parseInt(el);
     });
   }
-  if (nLength % 2 === 0) {
+  if (nLength < 3) {
+    return "Balanced";
+  } else if (nLength % 2 === 0) {
     add(nArr.splice(0, nLength / 2));
     sub(nArr);
+  } else {
+    add(nArr.splice(0, (nLength - 1) / 2));
+    sub(nArr.splice(1));
   }
   return total === 0 ? "Balanced" : "Not Balanced";
 };
 
-console.log(balanceNum(1234));
+console.log(balanceNum(12321));

@@ -2147,7 +2147,7 @@ const balanceNum = n => {
   const nArr = (n + "").split("");
 
   const nLength = nArr.length;
-  return nArr;
+  return nLength;
 };
 
 console.log(balanceNum(123));

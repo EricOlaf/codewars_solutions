@@ -2145,9 +2145,18 @@
 
 const balanceNum = n => {
   const nArr = (n + "").split("");
-
+  let left = 0;
+  let right = 0;
   const nLength = nArr.length;
-  return nLength;
+  function add(total, arr) {
+    arr.forEach(el => {
+      total += parseInt(el);
+    });
+  }
+  if (nLength % 2 === 0) {
+    add(left, nArr.splice(0, nLength / 2));
+    add(left, nArr);
+  }
 };
 
 console.log(balanceNum(123));

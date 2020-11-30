@@ -2138,3 +2138,14 @@
 // }
 
 // console.log(distributionOf([4, 7, 2, 9, 5, 2]));
+
+///////////////////
+/*NEW PROBLEM*/
+///////////////////
+
+const balanceNum = n => {
+  const nArr = n.split("");
+  return nArr;
+};
+
+console.log(balanceNum(123));

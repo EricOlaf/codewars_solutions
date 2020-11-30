@@ -2163,7 +2163,7 @@ const balanceNum = n => {
     add(nArr.splice(0, nLength / 2));
     sub(nArr);
   }
-  return { total };
+  return total === 0 ? "Balanced" : "Not Balanced";
 };
 
 console.log(balanceNum(1234));

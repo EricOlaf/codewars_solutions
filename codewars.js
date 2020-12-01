@@ -2190,14 +2190,14 @@
 //   return ans < 0 ? 0 : ans;
 // };
 
-const checkExam = (a1, a2) => {
-  const ans = a1.reduce((t, el, i) => {
-    return !a2[i] ? t : el === a2[i] ? (t += 4) : (t -= 1);
-  }, 0);
-  return ans < 0 ? 0 : ans;
-};
+// const checkExam = (a1, a2) => {
+//   const ans = a1.reduce((t, el, i) => {
+//     return !a2[i] ? t : el === a2[i] ? (t += 4) : (t -= 1);
+//   }, 0);
+//   return ans < 0 ? 0 : ans;
+// };
 
-console.log(checkExam(["a", "a", "b", "b"], ["a", "c", "b", "d"]));
-console.log(checkExam(["a", "a", "c", "b"], ["a", "a", "b", ""]));
-console.log(checkExam(["a", "a", "b", "c"], ["a", "a", "b", "c"]));
-console.log(checkExam(["b", "c", "b", "a"], ["", "a", "a", "c"]));
+// console.log(checkExam(["a", "a", "b", "b"], ["a", "c", "b", "d"]));
+// console.log(checkExam(["a", "a", "c", "b"], ["a", "a", "b", ""]));
+// console.log(checkExam(["a", "a", "b", "c"], ["a", "a", "b", "c"]));
+// console.log(checkExam(["b", "c", "b", "a"], ["", "a", "a", "c"]));

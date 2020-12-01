@@ -2190,3 +2190,4 @@ const checkExam = (a1, a2) => {
 };
 
 console.log(checkExam(["a", "a", "b", "b"], ["a", "c", "b", "d"]));
+console.log(checkExam(["a", "a", "c", "b"], ["a", "a", "b", ""]));

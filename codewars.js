@@ -2188,3 +2188,5 @@ const checkExam = (a1, a2) => {
     }
   }, 0);
 };
+
+console.log(checkExam(["a", "a", "b", "b"], ["a", "c", "b", "d"]));

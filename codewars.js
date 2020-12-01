@@ -2177,15 +2177,22 @@
 /*NEW PROBLEM*/
 ///////////////////
 
+// const checkExam = (a1, a2) => {
+//   const ans = a1.reduce((t, el, i) => {
+//     if (!a2[i]) {
+//       return t;
+//     } else if (el === a2[i]) {
+//       return (t += 4);
+//     } else {
+//       return (t -= 1);
+//     }
+//   }, 0);
+//   return ans < 0 ? 0 : ans;
+// };
+
 const checkExam = (a1, a2) => {
   const ans = a1.reduce((t, el, i) => {
-    if (!a2[i]) {
-      return t;
-    } else if (el === a2[i]) {
-      return (t += 4);
-    } else {
-      return (t -= 1);
-    }
+    return !a2[i] ? t : el === a2[i] ? (t += 4) : (t -= 1);
   }, 0);
   return ans < 0 ? 0 : ans;
 };

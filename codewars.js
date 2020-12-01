@@ -2178,7 +2178,7 @@
 ///////////////////
 
 const checkExam = (a1, a2) => {
-  return a1.reduce((t, el, i) => {
+  const ans = a1.reduce((t, el, i) => {
     if (!a2[i]) {
       return t;
     } else if (el === a2[i]) {
@@ -2187,6 +2187,7 @@ const checkExam = (a1, a2) => {
       return (t -= 1);
     }
   }, 0);
+  return ans < 0 ? 0 : ans;
 };
 
 console.log(checkExam(["a", "a", "b", "b"], ["a", "c", "b", "d"]));

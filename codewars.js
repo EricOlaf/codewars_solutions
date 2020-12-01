@@ -2143,32 +2143,48 @@
 /*NEW PROBLEM*/
 ///////////////////
 
-const balanceNum = n => {
-  const nArr = (n + "").split("");
-  let total = 0;
-  const nLength = nArr.length;
-  function add(arr) {
-    arr.forEach(el => {
-      console.log("hit");
-      total += parseInt(el);
-    });
-  }
-  function sub(arr) {
-    arr.forEach(el => {
-      console.log("hit");
-      total -= parseInt(el);
-    });
-  }
-  if (nLength < 3) {
-    return "Balanced";
-  } else if (nLength % 2 === 0) {
-    add(nArr.splice(0, nLength / 2));
-    sub(nArr);
-  } else {
-    add(nArr.splice(0, (nLength - 1) / 2));
-    sub(nArr.splice(1));
-  }
-  return total === 0 ? "Balanced" : "Not Balanced";
-};
+// const balanceNum = n => {
+//   const nArr = (n + "").split("");
+//   let total = 0;
+//   const nLength = nArr.length;
+//   function add(arr) {
+//     arr.forEach(el => {
+//       console.log("hit");
+//       total += parseInt(el);
+//     });
+//   }
+//   function sub(arr) {
+//     arr.forEach(el => {
+//       console.log("hit");
+//       total -= parseInt(el);
+//     });
+//   }
+//   if (nLength < 3) {
+//     return "Balanced";
+//   } else if (nLength % 2 === 0) {
+//     add(nArr.splice(0, nLength / 2));
+//     sub(nArr);
+//   } else {
+//     add(nArr.splice(0, (nLength - 1) / 2));
+//     sub(nArr.splice(1));
+//   }
+//   return total === 0 ? "Balanced" : "Not Balanced";
+// };
 
-console.log(balanceNum(12321));
+// console.log(balanceNum(12321));
+
+///////////////////
+/*NEW PROBLEM*/
+///////////////////
+
+const checkExam = (a1, a2) => {
+  return a1.reduce((t, el, i) => {
+    if (!a2[i]) {
+      return t;
+    } else if (el === a2[i]) {
+      return (t += 4);
+    } else {
+      return (t -= 1);
+    }
+  }, 0);
+};

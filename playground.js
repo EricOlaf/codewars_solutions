@@ -983,3 +983,15 @@ var abby = Object.create(personProto,
 
 // const abbyAccount = bank(500);
 // console.log(abbyAccount.addFunds(1000));
+
+const parens = s => {
+  let counter = 0,
+    ans = 0;
+  s.split("").forEach(x => {
+    if (x === "(") {
+      counter++;
+    }
+  });
+};
+
+console.log(parens("(()"));

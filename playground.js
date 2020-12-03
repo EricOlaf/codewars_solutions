@@ -990,8 +990,15 @@ const parens = s => {
   s.split("").forEach(x => {
     if (x === "(") {
       counter++;
+    } else {
+      counter--;
+    }
+    if (counter < 0) {
+      mark++;
+      counter = 0;
     }
   });
+  return ans + counter;
 };
 
 console.log(parens("(()"));

@@ -994,7 +994,7 @@ const parens = s => {
       counter--;
     }
     if (counter < 0) {
-      mark++;
+      ans++;
       counter = 0;
     }
   });

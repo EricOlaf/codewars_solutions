@@ -1002,3 +1002,4 @@ const parens = s => {
 };
 
 console.log(parens("(()"));
+console.log(parens("(())"));

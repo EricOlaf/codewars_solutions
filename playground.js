@@ -1003,5 +1003,5 @@ const parens = s => {
 
 console.log(parens("(()")); //1
 console.log(parens("(())")); //0
-console.log(parens("()()(()))")); //0
+console.log(parens("()()(()))")); //1
 console.log(parens("))(())(")); //3

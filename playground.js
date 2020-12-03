@@ -984,24 +984,27 @@ var abby = Object.create(personProto,
 // const abbyAccount = bank(500);
 // console.log(abbyAccount.addFunds(1000));
 
-const parens = s => {
-  let counter = 0,
-    ans = 0;
-  s.split("").forEach(x => {
-    if (x === "(") {
-      counter++;
-    } else {
-      counter--;
-    }
-    if (counter < 0) {
-      ans++;
-      counter = 0;
-    }
-  });
-  return ans + counter;
-};
+//////////////////////
+//NEW PLAYGROUND
+//////////////////////
+// const parens = s => {
+//   let counter = 0,
+//     ans = 0;
+//   s.split("").forEach(x => {
+//     if (x === "(") {
+//       counter++;
+//     } else {
+//       counter--;
+//     }
+//     if (counter < 0) {
+//       ans++;
+//       counter = 0;
+//     }
+//   });
+//   return ans + counter;
+// };
 
-console.log(parens("(()")); //1
-console.log(parens("(())")); //0
-console.log(parens("()()(()))")); //1
-console.log(parens("))(())(")); //3
+// console.log(parens("(()")); //1
+// console.log(parens("(())")); //0
+// console.log(parens("()()(()))")); //1
+// console.log(parens("))(())(")); //3

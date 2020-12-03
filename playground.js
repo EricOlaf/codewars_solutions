@@ -1001,5 +1001,7 @@ const parens = s => {
   return ans + counter;
 };
 
-console.log(parens("(()"));
-console.log(parens("(())"));
+console.log(parens("(()")); //1
+console.log(parens("(())")); //0
+console.log(parens("()()(()))")); //0
+console.log(parens("))(())(")); //3

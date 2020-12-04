@@ -2201,3 +2201,11 @@
 // console.log(checkExam(["a", "a", "c", "b"], ["a", "a", "b", ""]));
 // console.log(checkExam(["a", "a", "b", "c"], ["a", "a", "b", "c"]));
 // console.log(checkExam(["b", "c", "b", "a"], ["", "a", "a", "c"]));
+
+///////////////////
+/*NEW PROBLEM*/
+///////////////////
+
+const validSpacing = s => {
+  return s === s.trim();
+};

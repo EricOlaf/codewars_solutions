@@ -2209,3 +2209,6 @@
 const validSpacing = s => {
   return s === s.trim();
 };
+
+console.log(validSpacing("Hello world"));
+console.log(validSpacing("Hello world "));

@@ -2207,7 +2207,14 @@
 ///////////////////
 
 const validSpacing = s => {
-  return s === s.trim();
+  if (!s === s.trim()) {
+    return false;
+  }
+  sArr = s.split("  ");
+  if (sArr > 1) {
+    return false;
+  }
+  return true;
 };
 
 console.log(validSpacing("Hello world"));

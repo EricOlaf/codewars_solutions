@@ -2207,11 +2207,11 @@
 ///////////////////
 
 const validSpacing = s => {
-  if (!s === s.trim()) {
+  if (!(s === s.trim())) {
     return false;
   }
   sArr = s.split("  ");
-  if (sArr > 1) {
+  if (sArr.length > 1) {
     return false;
   }
   return true;
@@ -2221,3 +2221,4 @@ console.log(validSpacing("Hello world"));
 console.log(validSpacing("Hello world "));
 console.log(validSpacing(" Hello world"));
 console.log(validSpacing(" Hello world "));
+console.log(validSpacing("Hello  world"));

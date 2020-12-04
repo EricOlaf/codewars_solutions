@@ -2206,19 +2206,24 @@
 /*NEW PROBLEM*/
 ///////////////////
 
-const validSpacing = s => {
-  if (!(s === s.trim())) {
-    return false;
-  }
-  sArr = s.split("  ");
-  if (sArr.length > 1) {
-    return false;
-  }
-  return true;
-};
+// const validSpacing = s => {
+//   if (!(s === s.trim())) {
+//     return false;
+//   }
+//   sArr = s.split("  ");
+//   if (sArr.length > 1) {
+//     return false;
+//   }
+//   return true;
+// };
 
-console.log(validSpacing("Hello world"));
-console.log(validSpacing("Hello world "));
-console.log(validSpacing(" Hello world"));
-console.log(validSpacing(" Hello world "));
-console.log(validSpacing("Hello  world"));
+//ANOTHER ANSWER
+// function validSpacing(s) {
+//     return s.trim() == s && !s.includes("  ");
+//   }
+
+// console.log(validSpacing("Hello world"));
+// console.log(validSpacing("Hello world "));
+// console.log(validSpacing(" Hello world"));
+// console.log(validSpacing(" Hello world "));
+// console.log(validSpacing("Hello  world"));

@@ -2227,3 +2227,9 @@
 // console.log(validSpacing(" Hello world"));
 // console.log(validSpacing(" Hello world "));
 // console.log(validSpacing("Hello  world"));
+
+///////////////////
+/*NEW PROBLEM*/
+///////////////////
+
+const quaterOf = m => (m < 4 ? 1 : m < 7 ? 2 : m < 10 ? 3 : 4);

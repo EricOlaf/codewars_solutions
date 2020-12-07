@@ -2233,3 +2233,5 @@
 ///////////////////
 
 const quaterOf = m => (m < 4 ? 1 : m < 7 ? 2 : m < 10 ? 3 : 4);
+
+console.log(quaterOf(2));

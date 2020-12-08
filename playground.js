@@ -1008,3 +1008,10 @@ var abby = Object.create(personProto,
 // console.log(parens("(())")); //0
 // console.log(parens("()()(()))")); //1
 // console.log(parens("))(())(")); //3
+
+const revWords = str => {
+  return str
+    .split(" ")
+    .map(x => x.reverse())
+    .join();
+};

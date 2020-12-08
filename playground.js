@@ -1012,6 +1012,13 @@ var abby = Object.create(personProto,
 const revWords = str => {
   return str
     .split(" ")
-    .map(x => x.reverse())
-    .join();
+    .map(x =>
+      x
+        .split("")
+        .reverse()
+        .join("")
+    )
+    .join(" ");
 };
+
+console.log(revWords("Hello World"));

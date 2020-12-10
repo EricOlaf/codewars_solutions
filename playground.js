@@ -1025,3 +1025,11 @@ var abby = Object.create(personProto,
 // };
 
 // console.log(revWords("Hello World"));
+
+const index = (arr, n) => {
+  if (n > arr.length - 1) {
+    return -1;
+  }
+  const ans = arr[n] ^ n;
+  return ans;
+};

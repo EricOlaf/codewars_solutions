@@ -1030,6 +1030,8 @@ const index = (arr, n) => {
   if (n > arr.length - 1) {
     return -1;
   }
-  const ans = arr[n] ^ n;
+  const ans = Math.pow(arr[n], n);
   return ans;
 };
+
+console.log(index([1, 2, 3, 4], 2));

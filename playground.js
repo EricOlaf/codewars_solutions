@@ -1012,16 +1012,16 @@ var abby = Object.create(personProto,
 //////////////////////
 //NEW PLAYGROUND
 //////////////////////
-const revWords = str => {
-  return str
-    .split(" ")
-    .map(x =>
-      x
-        .split("")
-        .reverse()
-        .join("")
-    )
-    .join(" ");
-};
+// const revWords = str => {
+//   return str
+//     .split(" ")
+//     .map(x =>
+//       x
+//         .split("")
+//         .reverse()
+//         .join("")
+//     )
+//     .join(" ");
+// };
 
-console.log(revWords("Hello World"));
+// console.log(revWords("Hello World"));

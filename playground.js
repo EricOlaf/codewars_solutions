@@ -1034,6 +1034,10 @@ var abby = Object.create(personProto,
 //   return ans;
 // };
 
-const index = (arr, n) => (n > arr.length - 1 ? -1 : Math.pow(arr[n], n));
+// const index = (arr, n) => (n > arr.length - 1 ? -1 : Math.pow(arr[n], n));
 
-console.log(index([1, 2, 3, 4], 2));
+// console.log(index([1, 2, 3, 4], 2));
+
+//////////////////////
+//NEW PLAYGROUND
+//////////////////////

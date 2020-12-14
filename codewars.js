@@ -2238,3 +2238,7 @@
 // console.log(quaterOf(6));
 // console.log(quaterOf(7));
 // console.log(quaterOf(10));
+
+///////////////////
+/*NEW PROBLEM*/
+///////////////////

@@ -2243,7 +2243,7 @@
 /*NEW PROBLEM*/
 ///////////////////
 
-const newFunc = () => {
-  console.log("hello world");
-};
-newFunc();
+// const newFunc = () => {
+//   console.log("hello world");
+// };
+// newFunc();

@@ -2246,3 +2246,4 @@
 const newFunc = () => {
   console.log("hello world");
 };
+newFunc();

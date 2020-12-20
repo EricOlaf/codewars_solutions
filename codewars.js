@@ -2242,3 +2242,7 @@
 ///////////////////
 /*NEW PROBLEM*/
 ///////////////////
+
+const newFunc = () => {
+  console.log("hello world");
+};

@@ -2245,14 +2245,16 @@
 
 const formatMoney = money => {
   const m = money.toString().split(".");
+  let ans;
   if (m.length > 1) {
     if (m[1].length > 1) {
-      return `$${m[0]}.${m[1]}`;
+      ans = `$${m[0]}.${m[1]}`;
     } else {
-      return `$${m[0]}.${m[1]}0`;
+      ans = `$${m[0]}.${m[1]}0`;
     }
   }
-  return `$${m[0]}.00`;
+  ans = `$${m[0]}.00`;
+  return ans;
 };
 
 console.log(formatMoney(33.99));

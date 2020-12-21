@@ -2244,7 +2244,7 @@
 ///////////////////
 
 const formatMoney = money => {
-  const m = money.split(".");
+  const m = money.toString().split(".");
   if (m.length > 1) {
     if (m[1].length > 1) {
       return `$${m[0]}.${m[1]}`;

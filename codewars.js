@@ -2252,8 +2252,9 @@ const formatMoney = money => {
     } else {
       ans = `$${m[0]}.${m[1]}0`;
     }
+  } else {
+    ans = `$${m[0]}.00`;
   }
-  ans = `$${m[0]}.00`;
   return ans;
 };
 

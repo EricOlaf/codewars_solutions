@@ -2243,8 +2243,8 @@
 /*NEW PROBLEM*/
 ///////////////////
 
-const formatMoney = m => {
-  m = m.split(".");
+const formatMoney = money => {
+  const m = money.split(".");
   if (m.length > 1) {
     if (m[1].length > 1) {
       return `$${m[0]}.${m[1]}`;

@@ -2243,21 +2243,21 @@
 /*NEW PROBLEM*/
 ///////////////////
 
-const formatMoney = money => {
-  const m = money.toString().split(".");
-  let ans;
-  if (m.length > 1) {
-    if (m[1].length > 1) {
-      ans = `$${m[0]}.${m[1]}`;
-    } else {
-      ans = `$${m[0]}.${m[1]}0`;
-    }
-  } else {
-    ans = `$${m[0]}.00`;
-  }
-  return ans;
-};
+// const formatMoney = money => {
+//   const m = money.toString().split(".");
+//   let ans;
+//   if (m.length > 1) {
+//     if (m[1].length > 1) {
+//       ans = `$${m[0]}.${m[1]}`;
+//     } else {
+//       ans = `$${m[0]}.${m[1]}0`;
+//     }
+//   } else {
+//     ans = `$${m[0]}.00`;
+//   }
+//   return ans;
+// };
 
-console.log(formatMoney(33.99));
-console.log(formatMoney(33));
-console.log(formatMoney(33.1));
+// console.log(formatMoney(33.99));
+// console.log(formatMoney(33));
+// console.log(formatMoney(33.1));

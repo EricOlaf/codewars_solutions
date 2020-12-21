@@ -2243,7 +2243,16 @@
 /*NEW PROBLEM*/
 ///////////////////
 
-// const newFunc = () => {
-//   console.log("hello world");
-// };
-// newFunc();
+const formatMoney = m => {
+  m = m.split(".");
+  if (m.length > 1) {
+    if (m[1].length > 1) {
+      return `$${m[0]}.${m[1]}`;
+    } else {
+      return `$${m[0]}.${m[1]}0`;
+    }
+  }
+  return `$${m[0]}.00`;
+};
+
+console.log(formatMoney(33.99));

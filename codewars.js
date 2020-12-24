@@ -2274,9 +2274,9 @@
 //   return myArr;
 // };
 
-const arr = n => (n ? [...Array(n).keys()] : []);
+// const arr = n => (n ? [...Array(n).keys()] : []);
 
-const arr = (n = 0) => [...Array(n).keys()];
+// const arr = (n = 0) => [...Array(n).keys()];
 
-console.log(arr(3));
-console.log(arr(0));
+// console.log(arr(3));
+// console.log(arr(0));

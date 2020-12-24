@@ -2266,13 +2266,15 @@
 /*NEW PROBLEM*/
 ///////////////////
 
-const arr = n => {
-  let myArr = [];
-  for (let i = 0; i < n; i++) {
-    myArr.push(i);
-  }
-  return myArr;
-};
+// const arr = n => {
+//   let myArr = [];
+//   for (let i = 0; i < n; i++) {
+//     myArr.push(i);
+//   }
+//   return myArr;
+// };
+
+const arr = n => (n ? [...Array(n).keys()] : []);
 
 console.log(arr(3));
 console.log(arr(0));

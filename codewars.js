@@ -2265,3 +2265,11 @@
 ///////////////////
 /*NEW PROBLEM*/
 ///////////////////
+
+const arr = n => {
+  let myArr = [];
+  for (let i = 0; i < n; i++) {
+    MimeTypeArray.push(i);
+  }
+  return myArr;
+};

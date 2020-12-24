@@ -2273,3 +2273,5 @@ const arr = n => {
   }
   return myArr;
 };
+
+console.log(arr(3));

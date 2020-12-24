@@ -2275,3 +2275,4 @@ const arr = n => {
 };
 
 console.log(arr(3));
+console.log(arr(0));

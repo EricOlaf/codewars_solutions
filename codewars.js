@@ -2280,3 +2280,9 @@
 
 // console.log(arr(3));
 // console.log(arr(0));
+
+///////////////////
+/*NEW PROBLEM*/
+///////////////////
+
+const reduceFunc = () => {};

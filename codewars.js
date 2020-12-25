@@ -2285,4 +2285,7 @@
 /*NEW PROBLEM*/
 ///////////////////
 
-const reduceFunc = () => {};
+const reduceFunc = () => {
+  let ans = 0;
+  return ans;
+};

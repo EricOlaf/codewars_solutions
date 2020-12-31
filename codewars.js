@@ -2285,7 +2285,8 @@
 /*NEW PROBLEM*/
 ///////////////////
 
-const reduceFunc = () => {
-  let ans = 0;
-  return ans;
+const reduceFunc = arr => {
+  return arr.reduce();
 };
+
+console.log(reduceFunc([1, 2, 3]));

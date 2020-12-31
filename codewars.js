@@ -2290,3 +2290,4 @@ const reduceFunc = arr => {
 };
 
 console.log(reduceFunc([1, 2, 3]));
+console.log(reduceFunc([5, 2, -10]));

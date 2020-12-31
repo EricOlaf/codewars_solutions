@@ -2286,7 +2286,7 @@
 ///////////////////
 
 const reduceFunc = arr => {
-  return arr.reduce();
+  return arr.reduce((sum, x) => sum + x, 0);
 };
 
 console.log(reduceFunc([1, 2, 3]));

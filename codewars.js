@@ -2280,14 +2280,3 @@
 
 // console.log(arr(3));
 // console.log(arr(0));
-
-///////////////////
-/*NEW PROBLEM*/
-///////////////////
-
-const reduceFunc = arr => {
-  return arr.reduce((sum, x) => sum + x, 0);
-};
-
-console.log(reduceFunc([1, 2, 3]));
-console.log(reduceFunc([5, 2, -10]));

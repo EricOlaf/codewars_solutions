@@ -1041,3 +1041,10 @@ var abby = Object.create(personProto,
 //////////////////////
 //NEW PLAYGROUND
 //////////////////////
+
+const reduceFunc = arr => {
+  return arr.reduce((sum, x) => sum + x, 0);
+};
+
+console.log(reduceFunc([1, 2, 3]));
+console.log(reduceFunc([5, 2, -10]));

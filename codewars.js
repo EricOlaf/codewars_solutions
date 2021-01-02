@@ -2280,3 +2280,19 @@
 
 // console.log(arr(3));
 // console.log(arr(0));
+
+///////////////////
+/*NEW PROBLEM*/
+///////////////////
+
+function createArrayOfTiers(num) {
+  const ans = num
+    .toString()
+    .split("")
+    .reduce((t, x) => [...t, t[t.length - 1] + x], [""]);
+
+  ans.shift();
+  return ans;
+}
+
+console.log(createArrayOfTiers(420));

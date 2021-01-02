@@ -2296,3 +2296,4 @@ function createArrayOfTiers(num) {
 }
 
 console.log(createArrayOfTiers(420));
+console.log(createArrayOfTiers(420967));

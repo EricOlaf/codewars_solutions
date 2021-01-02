@@ -2285,14 +2285,22 @@
 /*NEW PROBLEM*/
 ///////////////////
 
+// function createArrayOfTiers(num) {
+//   const ans = num
+//     .toString()
+//     .split("")
+//     .reduce((t, x) => [...t, t[t.length - 1] + x], [""]);
+
+//   ans.shift();
+//   return ans;
+// }
+
+//ANOTHER ANSWER
 function createArrayOfTiers(num) {
-  const ans = num
+  return num
     .toString()
     .split("")
-    .reduce((t, x) => [...t, t[t.length - 1] + x], [""]);
-
-  ans.shift();
-  return ans;
+    .map((n, i) => num.toString().slice(0, i + 1));
 }
 
 console.log(createArrayOfTiers(420));

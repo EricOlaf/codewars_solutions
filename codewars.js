@@ -2316,8 +2316,9 @@ const numberOfCarries = (a, b) => {
   let counter = 0;
   let remainder = 0;
   for (let i = 0; i < aArr.length; i++) {
-    let sum = parseInt(aArr[i]) + parseInt(bArr[i]) + remainder;
-
+    let sum = (parseInt(aArr[i]) || 0) + (parseInt(bArr[i]) || 0) + remainder;
+    console.log({ sum });
+    console.log({ remainder });
     if (sum >= 10) {
       counter++;
       remainder = 1;
@@ -2328,5 +2329,6 @@ const numberOfCarries = (a, b) => {
   return counter;
 };
 
-console.log(numberOfCarries(543, 3456));
-console.log(numberOfCarries(1927, 6426));
+// console.log(numberOfCarries(543, 3456));
+// console.log(numberOfCarries(1927, 6426));
+console.log(numberOfCarries(9999, 1));

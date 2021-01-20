@@ -2329,4 +2329,4 @@ const numberOfCarries = (a, b) => {
 };
 
 console.log(numberOfCarries(543, 3456));
-console.log(numberOfCarries(543, 3456));
+console.log(numberOfCarries(1927, 6426));

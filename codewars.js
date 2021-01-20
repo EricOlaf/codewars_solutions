@@ -2316,7 +2316,7 @@ const numberOfCarries = (a, b) => {
   let counter = 0;
   let remainder = 0;
   for (let i = 0; i < aArr.length; i++) {
-    let sum = parseInt(a[i]) + parseInt(b[i]) + remainder;
+    let sum = parseInt(aArr[i]) + parseInt(bArr[i]) + remainder;
 
     if (sum >= 10) {
       counter++;

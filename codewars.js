@@ -2311,11 +2311,15 @@
 ///////////////////
 
 const numberOfCarries = (a, b) => {
+  aArr = a.toString().split("");
+  bArr = b.toString().split("");
   let counter = 0;
-  for (let i = 0; i < a.length; i++) {
-    if (a[i] + b[i] >= 10) {
+  for (let i = 0; i < aArr.length; i++) {
+    if (parseInt(a[i]) + parseInt(b[i]) >= 10) {
       counter++;
     }
     return counter;
   }
 };
+
+console.log(numberOfCarries(543, 3456));

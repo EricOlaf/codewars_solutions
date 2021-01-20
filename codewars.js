@@ -2314,12 +2314,19 @@ const numberOfCarries = (a, b) => {
   aArr = a.toString().split("");
   bArr = b.toString().split("");
   let counter = 0;
+  let remainder = 0;
   for (let i = 0; i < aArr.length; i++) {
-    if (parseInt(a[i]) + parseInt(b[i]) >= 10) {
+    let sum = parseInt(a[i]) + parseInt(b[i]) + remainder;
+
+    if (sum >= 10) {
       counter++;
+      remainder = 1;
+    } else {
+      remainder = 0;
     }
-    return counter;
   }
+  return counter;
 };
 
+console.log(numberOfCarries(543, 3456));
 console.log(numberOfCarries(543, 3456));

@@ -2296,12 +2296,26 @@
 // }
 
 //ANOTHER ANSWER
-function createArrayOfTiers(num) {
-  return num
-    .toString()
-    .split("")
-    .map((n, i) => num.toString().slice(0, i + 1));
-}
+// function createArrayOfTiers(num) {
+//   return num
+//     .toString()
+//     .split("")
+//     .map((n, i) => num.toString().slice(0, i + 1));
+// }
 
-console.log(createArrayOfTiers(420));
-console.log(createArrayOfTiers(420967));
+// console.log(createArrayOfTiers(420));
+// console.log(createArrayOfTiers(420967));
+
+///////////////////
+/*NEW PROBLEM*/
+///////////////////
+
+const numberOfCarries = (a, b) => {
+  let counter = 0;
+  for (let i = 0; i < a.length; i++) {
+    if (a[i] + b[i] >= 10) {
+      counter++;
+    }
+    return counter;
+  }
+};

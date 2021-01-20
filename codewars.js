@@ -2310,24 +2310,39 @@
 /*NEW PROBLEM*/
 ///////////////////
 
-const numberOfCarries = (a, b) => {
-  aArr = a.toString().split("");
-  bArr = b.toString().split("");
-  let counter = 0;
-  let remainder = 0;
-  for (let i = 0; i < aArr.length; i++) {
-    let sum = (parseInt(aArr[i]) || 0) + (parseInt(bArr[i]) || 0) + remainder;
-    console.log({ sum });
-    console.log({ remainder });
-    if (sum >= 10) {
-      counter++;
-      remainder = 1;
-    } else {
-      remainder = 0;
-    }
+// const numberOfCarries = (a, b) => {
+//   aArr = a.toString().split("");
+//   bArr = b.toString().split("");
+//   let counter = 0;
+//   let remainder = 0;
+//   for (let i = 0; i < aArr.length; i++) {
+//     let sum = (parseInt(aArr[i]) || 0) + (parseInt(bArr[i]) || 0) + remainder;
+//     console.log({ sum });
+//     console.log({ remainder });
+//     if (sum >= 10) {
+//       counter++;
+//       remainder = 1;
+//     } else {
+//       remainder = 0;
+//     }
+//   }
+//   return counter;
+// };
+
+function numberOfCarries(a, b) {
+  let res = 0,
+    carry = 0;
+
+  while (a + b) {
+    carry = +((a % 10) + (b % 10) + carry > 9);
+    res += carry;
+
+    a = (a / 10) | 0;
+    b = (b / 10) | 0;
   }
-  return counter;
-};
+
+  return res;
+}
 
 console.log(numberOfCarries(543, 3456));
 console.log(numberOfCarries(1927, 6426));

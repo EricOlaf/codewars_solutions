@@ -2352,27 +2352,40 @@
 /*NEW PROBLEM*/
 ///////////////////
 
-const solve = (s, c) => {
-  const alpha = "abcdefghijklmnopqrstuvwxyz".split("");
-  let sArr = s.split("");
-  let change = false;
-  for (let i = c; i > 0; i--) {
-    for (let j = 0; j < alpha.length; j++) {
-      for (let k = 0; k < sArr.length; k++) {
-        if (alpha[j] === sArr[k]) {
-          //console.log(alpha[j], sArr[k]);
-          sArr.splice(k, 1);
-          change = true;
-          break;
-        }
-      }
-      if (change) {
-        break;
-      }
+// const solve = (s, c) => {
+//   const alpha = "abcdefghijklmnopqrstuvwxyz".split("");
+//   let sArr = s.split("");
+//   let change = false;
+//   for (let i = c; i > 0; i--) {
+//     for (let j = 0; j < alpha.length; j++) {
+//       for (let k = 0; k < sArr.length; k++) {
+//         if (alpha[j] === sArr[k]) {
+//           //console.log(alpha[j], sArr[k]);
+//           sArr.splice(k, 1);
+//           change = true;
+//           break;
+//         }
+//       }
+//       if (change) {
+//         break;
+//       }
+//     }
+//   }
+//   return sArr.join("");
+// };
+
+function solve(s, k) {
+  const abc = "abcdefghijklmnopqrstuvwxyz";
+
+  for (let i = 0; i < abc.length; i += 1) {
+    while (s.includes(abc[i]) && k > 0) {
+      s = s.replace(abc[i], "");
+      k -= 1;
     }
   }
-  return sArr.join("");
-};
+
+  return s;
+}
 
 console.log(solve("abracadabra", 5));
 console.log(solve("abracadabra", 50));

@@ -2355,19 +2355,24 @@
 const solve = (s, c) => {
   const alpha = "abcdefghijklmnopqrstuvwxyz".split("");
   let sArr = s.split("");
+  let change = false;
   for (let i = c; i > 0; i--) {
     for (let j = 0; j < alpha.length; j++) {
       for (let k = 0; k < sArr.length; k++) {
         if (alpha[j] === sArr[k]) {
-          console.log(alpha[j], sArr[k]);
+          //console.log(alpha[j], sArr[k]);
           sArr.splice(k, 1);
+          change = true;
           break;
         }
       }
-      break;
+      if (change) {
+        break;
+      }
     }
   }
   return sArr.join("");
 };
 
-console.log(solve("abracadabra", 2));
+console.log(solve("abracadabra", 5));
+console.log(solve("abracadabra", 50));

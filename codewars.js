@@ -2359,13 +2359,15 @@ const solve = (s, c) => {
     for (let j = 0; j < alpha.length; j++) {
       for (let k = 0; k < sArr.length; k++) {
         if (alpha[j] === sArr[k]) {
+          console.log(alpha[j], sArr[k]);
           sArr.splice(k, 1);
           break;
         }
       }
+      break;
     }
   }
-  return sArr;
+  return sArr.join("");
 };
 
-console.log(solve("abracadabra", 1));
+console.log(solve("abracadabra", 2));

@@ -2329,21 +2329,43 @@
 //   return counter;
 // };
 
-function numberOfCarries(a, b) {
-  let res = 0,
-    carry = 0;
+// function numberOfCarries(a, b) {
+//   let res = 0,
+//     carry = 0;
 
-  while (a + b) {
-    carry = +((a % 10) + (b % 10) + carry > 9);
-    res += carry;
+//   while (a + b) {
+//     carry = +((a % 10) + (b % 10) + carry > 9);
+//     res += carry;
 
-    a = (a / 10) | 0;
-    b = (b / 10) | 0;
+//     a = (a / 10) | 0;
+//     b = (b / 10) | 0;
+//   }
+
+//   return res;
+// }
+
+// console.log(numberOfCarries(543, 3456));
+// console.log(numberOfCarries(1927, 6426));
+// console.log(numberOfCarries(9999, 1));
+
+///////////////////
+/*NEW PROBLEM*/
+///////////////////
+
+const solve = (s, c) => {
+  const alpha = "abcdefghijklmnopqrstuvwxyz".split("");
+  let sArr = s.split("");
+  for (let i = c; i > 0; i--) {
+    for (let j = 0; j < alpha.length; j++) {
+      for (let k = 0; k < sArr.length; k++) {
+        if (alpha[j] === sArr[k]) {
+          sArr.splice(k, 1);
+          break;
+        }
+      }
+    }
   }
+  return sArr;
+};
 
-  return res;
-}
-
-console.log(numberOfCarries(543, 3456));
-console.log(numberOfCarries(1927, 6426));
-console.log(numberOfCarries(9999, 1));
+console.log(solve("abracadabra", 1));

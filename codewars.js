@@ -2396,7 +2396,7 @@
 
 const getGrade = (s1, s2, s3) => {
   const avg = (s1 + s2 + s3) / 3;
-  switch (avg) {
+  switch (true) {
     case avg > 90:
       return "A";
     case avg > 80:

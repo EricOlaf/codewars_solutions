@@ -2374,18 +2374,27 @@
 //   return sArr.join("");
 // };
 
-function solve(s, k) {
-  const abc = "abcdefghijklmnopqrstuvwxyz";
+// function solve(s, k) {
+//   const abc = "abcdefghijklmnopqrstuvwxyz";
 
-  for (let i = 0; i < abc.length; i += 1) {
-    while (s.includes(abc[i]) && k > 0) {
-      s = s.replace(abc[i], "");
-      k -= 1;
-    }
-  }
+//   for (let i = 0; i < abc.length; i += 1) {
+//     while (s.includes(abc[i]) && k > 0) {
+//       s = s.replace(abc[i], "");
+//       k -= 1;
+//     }
+//   }
 
-  return s;
-}
+//   return s;
+// }
 
-console.log(solve("abracadabra", 5));
-console.log(solve("abracadabra", 50));
+// console.log(solve("abracadabra", 5));
+// console.log(solve("abracadabra", 50));
+
+///////////////////
+/*NEW PROBLEM*/
+///////////////////
+
+const getGrade = (s1, s2, s3) => {
+  const avg = (s1 * s2 * s3) / 3;
+  return avg;
+};

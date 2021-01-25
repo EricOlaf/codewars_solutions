@@ -2374,18 +2374,41 @@
 //   return sArr.join("");
 // };
 
-function solve(s, k) {
-  const abc = "abcdefghijklmnopqrstuvwxyz";
+// function solve(s, k) {
+//   const abc = "abcdefghijklmnopqrstuvwxyz";
 
-  for (let i = 0; i < abc.length; i += 1) {
-    while (s.includes(abc[i]) && k > 0) {
-      s = s.replace(abc[i], "");
-      k -= 1;
-    }
+//   for (let i = 0; i < abc.length; i += 1) {
+//     while (s.includes(abc[i]) && k > 0) {
+//       s = s.replace(abc[i], "");
+//       k -= 1;
+//     }
+//   }
+
+//   return s;
+// }
+
+// console.log(solve("abracadabra", 5));
+// console.log(solve("abracadabra", 50));
+
+///////////////////
+/*NEW PROBLEM*/
+///////////////////
+
+const getGrade = (s1, s2, s3) => {
+  const avg = (s1 + s2 + s3) / 3;
+  switch (true) {
+    case avg >= 90:
+      return "A";
+    case avg >= 80:
+      return "B";
+    case avg >= 70:
+      return "C";
+    case avg >= 60:
+      return "D";
+    default:
+      return "F";
   }
+};
 
-  return s;
-}
-
-console.log(solve("abracadabra", 5));
-console.log(solve("abracadabra", 50));
+console.log(getGrade(95, 90, 93));
+console.log(getGrade(90, 80, 73));

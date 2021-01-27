@@ -2417,13 +2417,25 @@
 /*NEW PROBLEM*/
 ///////////////////
 
-const highAndLow = s => {
-  const arr = s.split(" ");
-  arr.sort((a, b) => {
-    return parseInt(a) - parseInt(b);
-  });
-  return `${arr[arr.length - 1]} ${arr[0]}`;
-};
+// const highAndLow = s => {
+//   const arr = s.split(" ");
+//   arr.sort((a, b) => {
+//     return parseInt(a) - parseInt(b);
+//   });
+//   return `${arr[arr.length - 1]} ${arr[0]}`;
+// };
 
-console.log(highAndLow("2 5 10 3 6 0"));
-console.log(highAndLow("2 5 -3 10 3 6 0"));
+// console.log(highAndLow("2 5 10 3 6 0"));
+// console.log(highAndLow("2 5 -3 10 3 6 0"));
+
+///////////////////
+/*NEW PROBLEM*/
+///////////////////
+// const findDifference = (a, b) => {
+//   const sumA = a.reduce((acc, x) => acc * x, 1);
+//   const sumB = b.reduce((acc, x) => acc * x, 1);
+//   const diff = sumA - sumB;
+//   return diff * Math.sign(diff);
+// };
+
+// console.log(findDifference([2, 2, 3], [5, 4, 1]));

@@ -2422,7 +2422,7 @@ const highAndLow = s => {
   arr.sort((a, b) => {
     return parseInt(a) - parseInt(b);
   });
-  return `${arr[0]} ${arr[arr.length - 1]}`;
+  return `${arr[arr.length - 1]} ${arr[0]}`;
 };
 
 console.log(highAndLow("2 5 10 3 6 0"));

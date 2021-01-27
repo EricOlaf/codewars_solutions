@@ -2394,21 +2394,21 @@
 /*NEW PROBLEM*/
 ///////////////////
 
-const getGrade = (s1, s2, s3) => {
-  const avg = (s1 + s2 + s3) / 3;
-  switch (true) {
-    case avg >= 90:
-      return "A";
-    case avg >= 80:
-      return "B";
-    case avg >= 70:
-      return "C";
-    case avg >= 60:
-      return "D";
-    default:
-      return "F";
-  }
-};
+// const getGrade = (s1, s2, s3) => {
+//   const avg = (s1 + s2 + s3) / 3;
+//   switch (true) {
+//     case avg >= 90:
+//       return "A";
+//     case avg >= 80:
+//       return "B";
+//     case avg >= 70:
+//       return "C";
+//     case avg >= 60:
+//       return "D";
+//     default:
+//       return "F";
+//   }
+// };
 
-console.log(getGrade(95, 90, 93));
-console.log(getGrade(90, 80, 73));
+// console.log(getGrade(95, 90, 93));
+// console.log(getGrade(90, 80, 73));

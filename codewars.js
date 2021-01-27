@@ -2433,8 +2433,9 @@
 ///////////////////
 const findDifference = (a, b) => {
   const sumA = a.reduce((acc, x) => acc * x, 1);
-
-  return sumA;
+  const sumB = b.reduce((acc, x) => acc * x, 1);
+  const diff = sumA - sumB;
+  return diff * Math.sign(diff);
 };
 
 console.log(findDifference([2, 2, 3], [5, 4, 1]));

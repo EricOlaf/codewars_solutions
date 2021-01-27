@@ -2412,3 +2412,17 @@
 
 // console.log(getGrade(95, 90, 93));
 // console.log(getGrade(90, 80, 73));
+
+///////////////////
+/*NEW PROBLEM*/
+///////////////////
+
+const highAndLow = s => {
+  const arr = s.split(" ");
+  arr.sort((a, b) => {
+    return parseInt(a) - parseInt(b);
+  });
+  return arr;
+};
+
+console.log(highAndLow("2 5 10 3 6 0"));

@@ -2426,3 +2426,4 @@ const highAndLow = s => {
 };
 
 console.log(highAndLow("2 5 10 3 6 0"));
+console.log(highAndLow("2 5 -3 10 3 6 0"));

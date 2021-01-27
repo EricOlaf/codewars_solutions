@@ -2431,3 +2431,10 @@
 ///////////////////
 /*NEW PROBLEM*/
 ///////////////////
+const findDifference = (a, b) => {
+  const sumA = a.reduce((acc, x) => acc * x, 1);
+
+  return sumA;
+};
+
+console.log(findDifference([2, 2, 3], [5, 4, 1]));

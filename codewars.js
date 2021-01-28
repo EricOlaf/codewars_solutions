@@ -2439,3 +2439,9 @@
 // };
 
 // console.log(findDifference([2, 2, 3], [5, 4, 1]));
+
+///////////////////
+/*NEW PROBLEM*/
+///////////////////
+
+const longest = (s1, s2) => {};

@@ -2444,11 +2444,14 @@
 /*NEW PROBLEM*/
 ///////////////////
 
-const longest = (s1, s2) =>
-  (s1 + s2)
-    .split("")
-    .reduce((acc, x) => (acc.includes(x) ? acc : [...acc, x]), [])
-    .sort()
-    .join("");
+// const longest = (s1, s2) =>
+//   (s1 + s2)
+//     .split("")
+//     .reduce((acc, x) => (acc.includes(x) ? acc : [...acc, x]), [])
+//     .sort()
+//     .join("");
 
-console.log(longest("bbbbaaax", "yyyyyeeee"));
+//OTHER ANS
+const longest = (s1, s2) => [...new Set(s1 + s2)].sort().join("");
+
+// console.log(longest("bbbbaaax", "yyyyyeeee"));

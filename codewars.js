@@ -2444,4 +2444,13 @@
 /*NEW PROBLEM*/
 ///////////////////
 
-const longest = (s1, s2) => {};
+const longest = (s1, s2) => {
+  return (s1 + s2)
+    .split("")
+    .reduce((acc, x) => {
+      return acc.includes(x) ? acc : acc;
+    }, "")
+    .sort();
+};
+
+console.log(longest("bbbbaaax"));

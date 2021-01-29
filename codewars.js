@@ -2460,13 +2460,18 @@
 /*NEW PROBLEM*/
 ///////////////////
 
-const averages = nums => {
-  return nums.reduce((acc, x, i) => {
-    if (nums[i + 1]) {
-      return [...acc, (x + nums[i + 1]) / 2];
-    }
-    return acc;
-  }, []);
-};
+// const averages = nums => {
+//   return nums.reduce((acc, x, i) => {
+//     if (nums[i + 1]) {
+//       return [...acc, (x + nums[i + 1]) / 2];
+//     }
+//     return acc;
+//   }, []);
+// };
+const averages = nums =>
+  nums.reduce(
+    (acc, x, i) => (nums[i + 1] ? [...acc, (x + nums[i + 1]) / 2] : acc),
+    []
+  );
 
 console.table(averages([1, 3, 5, 1, -10]));

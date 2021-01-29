@@ -2452,6 +2452,14 @@
 //     .join("");
 
 //OTHER ANS
-const longest = (s1, s2) => [...new Set(s1 + s2)].sort().join("");
+// const longest = (s1, s2) => [...new Set(s1 + s2)].sort().join("");
 
 // console.log(longest("bbbbaaax", "yyyyyeeee"));
+
+///////////////////
+/*NEW PROBLEM*/
+///////////////////
+
+const averages = nums => {};
+
+console.table(averages([1, 3, 5, 1, -10]));

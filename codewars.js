@@ -2452,6 +2452,32 @@
 //     .join("");
 
 //OTHER ANS
-const longest = (s1, s2) => [...new Set(s1 + s2)].sort().join("");
+// const longest = (s1, s2) => [...new Set(s1 + s2)].sort().join("");
 
 // console.log(longest("bbbbaaax", "yyyyyeeee"));
+
+///////////////////
+/*NEW PROBLEM*/
+///////////////////
+
+// const averages = nums => {
+//   return nums.reduce((acc, x, i) => {
+//     if (nums[i + 1]) {
+//       return [...acc, (x + nums[i + 1]) / 2];
+//     }
+//     return acc;
+//   }, []);
+// };
+// const averages = nums =>
+//   nums.reduce(
+//     (acc, x, i) => (nums[i + 1] ? [...acc, (x + nums[i + 1]) / 2] : acc),
+//     []
+//   );
+
+function averages(numbers) {
+  return numbers
+    ? numbers.map((v, i, a) => (v + a[i + 1]) / 2).slice(0, -1)
+    : [];
+}
+
+console.table(averages([1, 3, 5, 1, -10]));

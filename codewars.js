@@ -2474,10 +2474,19 @@
 //     []
 //   );
 
-function averages(numbers) {
-  return numbers
-    ? numbers.map((v, i, a) => (v + a[i + 1]) / 2).slice(0, -1)
-    : [];
-}
+// function averages(numbers) {
+//   return numbers
+//     ? numbers.map((v, i, a) => (v + a[i + 1]) / 2).slice(0, -1)
+//     : [];
+// }
 
-console.table(averages([1, 3, 5, 1, -10]));
+// console.table(averages([1, 3, 5, 1, -10]));
+
+///////////////////
+/*NEW PROBLEM*/
+///////////////////
+
+const fixTheMeerkat = arr => {
+  return arr.reverse();
+};
+console.log();

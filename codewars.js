@@ -2492,3 +2492,24 @@
 ///////////////////
 /*NEW PROBLEM*/
 ///////////////////
+
+const calculate1RM = (w, r) => {
+  let ans = 0;
+  const epley = (w, r) => {
+    return w * (1 + r / 30);
+  };
+  const mcGlothin = (w, r) => {
+    return (100 * w) / (101.3 - 2.67123 * r);
+  };
+  const lombardi = (w, r) => {
+    return w * r ** 0.1;
+  };
+
+  if (r === 0) {
+    return 0;
+  } else if (r === 1) {
+    return w;
+  }
+
+  return epley(w, r), mcGlothin(w, r), lombardi(w, r);
+};

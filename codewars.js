@@ -2513,3 +2513,5 @@ const calculate1RM = (w, r) => {
 
   return epley(w, r), mcGlothin(w, r), lombardi(w, r);
 };
+
+console.log(calculate1RM(135, 20));

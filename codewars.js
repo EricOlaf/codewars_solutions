@@ -2520,3 +2520,4 @@ const calculate1RM = (w, r) => {
 console.log(calculate1RM(135, 20));
 console.log(calculate1RM(400, 0));
 console.log(calculate1RM(270, 2));
+console.log(calculate1RM(400, 1));

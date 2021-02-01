@@ -2494,7 +2494,12 @@
 ///////////////////
 
 const calculate1RM = (w, r) => {
-  let ans = 0;
+  if (r === 0) {
+    return 0;
+  } else if (r === 1) {
+    return w;
+  }
+
   const epley = (w, r) => {
     return w * (1 + r / 30);
   };
@@ -2505,13 +2510,11 @@ const calculate1RM = (w, r) => {
     return w * r ** 0.1;
   };
 
-  if (r === 0) {
-    return 0;
-  } else if (r === 1) {
-    return w;
-  }
+  const epAns = Math.round(epley(w, r));
+  const mcAns = Math.round(mcGlothin(w, r));
+  const loAns = Math.round(lombardi(w, r));
 
-  return epley(w, r), mcGlothin(w, r), lombardi(w, r);
+  return Math.max(epAns, mcAns, loAns);
 };
 
 console.log(calculate1RM(135, 20));

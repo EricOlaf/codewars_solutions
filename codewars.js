@@ -2489,4 +2489,4 @@
 const fixTheMeerkat = arr => {
   return arr.reverse();
 };
-console.log();
+console.log(fixTheMeerkat(["tail", "body", "head"]));

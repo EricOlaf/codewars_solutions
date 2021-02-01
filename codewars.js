@@ -2486,7 +2486,5 @@
 /*NEW PROBLEM*/
 ///////////////////
 
-const fixTheMeerkat = arr => {
-  return arr.reverse();
-};
+const fixTheMeerkat = arr => arr.reverse();
 console.log(fixTheMeerkat(["tail", "body", "head"]));

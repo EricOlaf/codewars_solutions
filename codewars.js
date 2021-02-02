@@ -2526,6 +2526,6 @@
 /*NEW PROBLEM*/
 ///////////////////
 
-const solve = (x, y) => x / y;
+// const solve = (x, y) => x / y;
 
-console.log(solve(4, 2));
+// console.log(solve(4, 2));

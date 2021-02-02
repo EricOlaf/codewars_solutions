@@ -2527,3 +2527,5 @@
 ///////////////////
 
 const solve = (x, y) => {};
+
+console.log(solve(4, 2));

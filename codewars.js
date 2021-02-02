@@ -2474,10 +2474,58 @@
 //     []
 //   );
 
-function averages(numbers) {
-  return numbers
-    ? numbers.map((v, i, a) => (v + a[i + 1]) / 2).slice(0, -1)
-    : [];
-}
+// function averages(numbers) {
+//   return numbers
+//     ? numbers.map((v, i, a) => (v + a[i + 1]) / 2).slice(0, -1)
+//     : [];
+// }
 
-console.table(averages([1, 3, 5, 1, -10]));
+// console.table(averages([1, 3, 5, 1, -10]));
+
+///////////////////
+/*NEW PROBLEM*/
+///////////////////
+
+// const fixTheMeerkat = arr => arr.reverse();
+// console.log(fixTheMeerkat(["tail", "body", "head"]));
+
+///////////////////
+/*NEW PROBLEM*/
+///////////////////
+
+// const calculate1RM = (w, r) => {
+//   if (r === 0) {
+//     return 0;
+//   } else if (r === 1) {
+//     return w;
+//   }
+
+//   const epley = (w, r) => {
+//     return w * (1 + r / 30);
+//   };
+//   const mcGlothin = (w, r) => {
+//     return (100 * w) / (101.3 - 2.67123 * r);
+//   };
+//   const lombardi = (w, r) => {
+//     return w * r ** 0.1;
+//   };
+
+//   const epAns = Math.round(epley(w, r));
+//   const mcAns = Math.round(mcGlothin(w, r));
+//   const loAns = Math.round(lombardi(w, r));
+
+//   return Math.max(epAns, mcAns, loAns);
+// };
+
+// console.log(calculate1RM(135, 20));
+// console.log(calculate1RM(400, 0));
+// console.log(calculate1RM(270, 2));
+// console.log(calculate1RM(400, 1));
+
+///////////////////
+/*NEW PROBLEM*/
+///////////////////
+
+// const solve = (x, y) => x / y;
+
+// console.log(solve(4, 2));

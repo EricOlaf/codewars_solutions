@@ -2521,3 +2521,9 @@
 // console.log(calculate1RM(400, 0));
 // console.log(calculate1RM(270, 2));
 // console.log(calculate1RM(400, 1));
+
+///////////////////
+/*NEW PROBLEM*/
+///////////////////
+
+const solve = (x, y) => {};

@@ -2538,7 +2538,7 @@ const rank = (str, arr, n) => {
   if (str === "") {
     return "No participants";
   }
-  let nameArr = str.slpit(",");
+  let nameArr = str.split(",");
   if (nameArr.length < n) {
     return "Not enough participants";
   }
@@ -2547,3 +2547,4 @@ const rank = (str, arr, n) => {
 };
 
 console.log(rank("Lagon,Lily", [1, 5], 2));
+console.log(rank("Lagon,Lily", [1, 5], 3));

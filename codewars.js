@@ -2538,13 +2538,25 @@ const rank = (str, arr, n) => {
   if (str === "") {
     return "No participants";
   }
-  let nameArr = str.split(",");
+  let nameArr = str.toLowerCase().split(",");
   if (nameArr.length < n) {
     return "Not enough participants";
   }
   const alpha = "abcdefghijklmnopqrstuvwxyz".split("");
-  return alpha;
+
+  const pointsArr1 = [];
+  nameArr.forEach((x, i) => {
+    let val = 0;
+    const xArr = x.split("");
+    for (let j = 0; j < xArr.length; j++) {
+      val = alpha.indexOf(xArr[j]) + 1;
+    }
+    val += xArr.length;
+    val = val * arr[i];
+    pointsArr1.push(val);
+  });
+
+  return nameArr;
 };
 
 console.log(rank("Lagon,Lily", [1, 5], 2));
-console.log(rank("Lagon,Lily", [1, 5], 3));

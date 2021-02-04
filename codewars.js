@@ -2529,3 +2529,14 @@
 // const solve = (x, y) => x / y;
 
 // console.log(solve(4, 2));
+
+///////////////////
+/*NEW PROBLEM*/
+///////////////////
+
+const rank = (st, arr, n) => {
+  const alpha = "abcdefghijklmnopqrstuvwxyz".split("");
+  return alpha;
+};
+
+console.log(rank("Lagon,Lily", [1, 5], 2));

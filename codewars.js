@@ -2529,3 +2529,51 @@
 // const solve = (x, y) => x / y;
 
 // console.log(solve(4, 2));
+
+///////////////////
+/*NEW PROBLEM*/
+///////////////////
+
+const rank = (str, arr, n) => {
+  if (str === "") {
+    return "No participants";
+  }
+  let namesNormal = str.split(",");
+  let nameArr = str.toLowerCase().split(",");
+  if (nameArr.length < n) {
+    return "Not enough participants";
+  }
+  const alpha = "abcdefghijklmnopqrstuvwxyz".split("");
+
+  const pointsArr1 = [];
+  nameArr.forEach((x, i) => {
+    let val = 0;
+    const xArr = x.split("");
+    for (let j = 0; j < xArr.length; j++) {
+      val += alpha.indexOf(xArr[j]) + 1;
+    }
+    val += xArr.length;
+    val = val * arr[i];
+    pointsArr1.push({ val, name: namesNormal[i] });
+  });
+
+  pointsArr1.sort((a, b) => b.val - a.val);
+  return pointsArr1[n - 1].name;
+};
+
+function rank(st, we, n) {
+  let names = st.split(",");
+  if (!st.length) return "No participants";
+  if (names.length < n) return "Not enough participants";
+  return names
+    .map((_, i) => ({
+      name: _,
+      s:
+        [..._.toLowerCase()].reduce((a, b) => a + b.charCodeAt() - 95, 0) *
+        we[i]
+    }))
+    .sort((a, b) => a.name > b.name)
+    .sort((a, b) => b.s - a.s)[n - 1].name;
+}
+
+console.log(rank("Lagon,Lily", [1, 5], 2));

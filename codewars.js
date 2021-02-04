@@ -2534,7 +2534,14 @@
 /*NEW PROBLEM*/
 ///////////////////
 
-const rank = (st, arr, n) => {
+const rank = (str, arr, n) => {
+  if (str === "") {
+    return "No participants";
+  }
+  let nameArr = str.slpit(",");
+  if (nameArr.length < n) {
+    return "Not enough participants";
+  }
   const alpha = "abcdefghijklmnopqrstuvwxyz".split("");
   return alpha;
 };

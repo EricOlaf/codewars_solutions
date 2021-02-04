@@ -2538,6 +2538,7 @@ const rank = (str, arr, n) => {
   if (str === "") {
     return "No participants";
   }
+  let namesNormal = str.split(",");
   let nameArr = str.toLowerCase().split(",");
   if (nameArr.length < n) {
     return "Not enough participants";
@@ -2549,14 +2550,15 @@ const rank = (str, arr, n) => {
     let val = 0;
     const xArr = x.split("");
     for (let j = 0; j < xArr.length; j++) {
-      val = alpha.indexOf(xArr[j]) + 1;
+      val += alpha.indexOf(xArr[j]) + 1;
     }
     val += xArr.length;
     val = val * arr[i];
-    pointsArr1.push({ val, name: x });
+    pointsArr1.push({ val, name: namesNormal[i] });
   });
 
-  return pointsArr1;
+  pointsArr1.sort((a, b) => b.val - a.val);
+  return pointsArr1[n - 1].name;
 };
 
 console.log(rank("Lagon,Lily", [1, 5], 2));

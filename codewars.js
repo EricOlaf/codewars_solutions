@@ -2553,10 +2553,10 @@ const rank = (str, arr, n) => {
     }
     val += xArr.length;
     val = val * arr[i];
-    pointsArr1.push(val);
+    pointsArr1.push({ val, name: x });
   });
 
-  return nameArr;
+  return pointsArr1;
 };
 
 console.log(rank("Lagon,Lily", [1, 5], 2));

@@ -2576,4 +2576,8 @@ function rank(st, we, n) {
     .sort((a, b) => b.s - a.s)[n - 1].name;
 }
 
-console.log(rank("Lagon,Lily", [1, 5], 2));
+// console.log(rank("Lagon,Lily", [1, 5], 2));
+
+///////////////////
+/*NEW PROBLEM*/
+///////////////////

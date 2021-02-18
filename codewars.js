@@ -1831,12 +1831,12 @@
 /*NEW PROBLEM*/
 ///////////////////
 
-const fizzBuzz = () => {
-  for (let i = 0; i < 101; )
-    console.log((++i % 3 ? "" : "fizz") + (i % 5 ? "" : "buzz") || i);
-};
+// const fizzBuzz = () => {
+//   for (let i = 0; i < 101; )
+//     console.log((++i % 3 ? "" : "fizz") + (i % 5 ? "" : "buzz") || i);
+// };
 
-fizzBuzz();
+// fizzBuzz();
 
 ///////////////////
 /*NEW PROBLEM*/

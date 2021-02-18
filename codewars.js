@@ -1831,12 +1831,12 @@
 /*NEW PROBLEM*/
 ///////////////////
 
-// const fizzBuzz = () => {
-//   for (let i = 0; i < 101; )
-//     console.log((i++ % 3 ? "" : "fizz") + (i % 5 ? "" : "buzz") || i);
-// };
+const fizzBuzz = () => {
+  for (let i = 0; i < 101; )
+    console.log((++i % 3 ? "" : "fizz") + (i % 5 ? "" : "buzz") || i);
+};
 
-// fizzBuzz();
+fizzBuzz();
 
 ///////////////////
 /*NEW PROBLEM*/
@@ -2570,7 +2570,7 @@ function rank(st, we, n) {
       name: _,
       s:
         [..._.toLowerCase()].reduce((a, b) => a + b.charCodeAt() - 95, 0) *
-        we[i]
+        we[i],
     }))
     .sort((a, b) => a.name > b.name)
     .sort((a, b) => b.s - a.s)[n - 1].name;

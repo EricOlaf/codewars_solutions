@@ -308,12 +308,12 @@
 //CARDIO SESSION 1
 //VERIFY PALINDROME
 
-const verifyPalindrome = s =>
-  s ===
-  s
-    .split("")
-    .reverse()
-    .join("");
+// const verifyPalindrome = s =>
+//   s ===
+//   s
+//     .split("")
+//     .reverse()
+//     .join("");
 
-console.log(verifyPalindrome("dog"));
-console.log(verifyPalindrome("racecar"));
+// console.log(verifyPalindrome("dog"));
+// console.log(verifyPalindrome("racecar"));

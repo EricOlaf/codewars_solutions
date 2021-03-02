@@ -1833,7 +1833,7 @@
 
 // const fizzBuzz = () => {
 //   for (let i = 0; i < 101; )
-//     console.log((i++ % 3 ? "" : "fizz") + (i % 5 ? "" : "buzz") || i);
+//     console.log((++i % 3 ? "" : "fizz") + (i % 5 ? "" : "buzz") || i);
 // };
 
 // fizzBuzz();
@@ -2561,23 +2561,29 @@
 //   return pointsArr1[n - 1].name;
 // };
 
-function rank(st, we, n) {
-  let names = st.split(",");
-  if (!st.length) return "No participants";
-  if (names.length < n) return "Not enough participants";
-  return names
-    .map((_, i) => ({
-      name: _,
-      s:
-        [..._.toLowerCase()].reduce((a, b) => a + b.charCodeAt() - 95, 0) *
-        we[i]
-    }))
-    .sort((a, b) => a.name > b.name)
-    .sort((a, b) => b.s - a.s)[n - 1].name;
-}
+// function rank(st, we, n) {
+//   let names = st.split(",");
+//   if (!st.length) return "No participants";
+//   if (names.length < n) return "Not enough participants";
+//   return names
+//     .map((_, i) => ({
+//       name: _,
+//       s:
+//         [..._.toLowerCase()].reduce((a, b) => a + b.charCodeAt() - 95, 0) *
+//         we[i],
+//     }))
+//     .sort((a, b) => a.name > b.name)
+//     .sort((a, b) => b.s - a.s)[n - 1].name;
+// }
 
 // console.log(rank("Lagon,Lily", [1, 5], 2));
 
 ///////////////////
 /*NEW PROBLEM*/
 ///////////////////
+
+const makeNegative = (n) => (Math.sign(n) === -1 || n === 0 ? n : -n);
+
+console.log(makeNegative(42));
+console.log(makeNegative(-42));
+console.log(makeNegative(0));

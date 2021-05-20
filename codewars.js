@@ -2582,8 +2582,8 @@
 /*NEW PROBLEM*/
 ///////////////////
 
-const makeNegative = (n) => (Math.sign(n) === -1 || n === 0 ? n : -n);
+// const makeNegative = (n) => (Math.sign(n) === -1 || n === 0 ? n : -n);
 
-console.log(makeNegative(42));
-console.log(makeNegative(-42));
-console.log(makeNegative(0));
+// console.log(makeNegative(42));
+// console.log(makeNegative(-42));
+// console.log(makeNegative(0));

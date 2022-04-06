@@ -2591,8 +2591,16 @@
 function insertDash(num) {
     return num.toString().split("").reduce((a,b)=>{
       console.log(a, b)
-      if(b%2 === 0){
-        return a+b
-      } return a+"-"+b
+      const x = a.slice(-1)
+      console.log(+x, +b)
+      if(a.length === 0){
+          return a+b
+      }
+      else if(+b%2 !== 0 && +x%2 !== 0 ){
+        return a+"-"+b
+      } return a+b
+    // return a + b
     }, "")
  }
+
+ console.log("final", insertDash(542279));

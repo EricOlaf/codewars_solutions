@@ -2587,3 +2587,12 @@
 // console.log(makeNegative(42));
 // console.log(makeNegative(-42));
 // console.log(makeNegative(0));
+
+function insertDash(num) {
+    return num.toString().split("").reduce((a,b)=>{
+      console.log(a, b)
+      if(b%2 === 0){
+        return a+b
+      } return a+"-"+b
+    }, "")
+ }

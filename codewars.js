@@ -2618,15 +2618,15 @@
 ///////////////////
 
 function nthFloyd(n){
-    let count = 0;
+    let count = 1;
     let tempNum = 1;
     let step = 2;
-    for(; tempNum <= n;){
-        tempNum = count + step; 
+    for(; tempNum < n;){
+        tempNum = tempNum + step; 
         ++step;
         ++count;
     }
     return count;
   }
 
-  console.log(nthFloyd(4))
+  console.log(nthFloyd(11));

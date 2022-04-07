@@ -2612,3 +2612,21 @@
 //  function insertDash(num) {
 //     return num.toString().replace(/[13579](?=[13579])/g, "$&-");
 //  }
+
+///////////////////
+/*NEW PROBLEM*/
+///////////////////
+
+function nthFloyd(n){
+    let count = 0;
+    let tempNum = 1;
+    let step = 2;
+    for(; tempNum <= n;){
+        tempNum = count + step; 
+        ++step;
+        ++count;
+    }
+    return count;
+  }
+
+  console.log(nthFloyd(4))
